@@ -1,0 +1,11 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>assets/app_icon.png</file>
+        <file>assets/tree.png</file>
+        <file>assets/list.png</file>
+        <file>assets/mp3.png</file>
+        <file>assets/folder.png</file>
+        <file>assets/cnst_folder.png</file>
+    </qresource>
+</RCC>

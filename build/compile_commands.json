@@ -1,0 +1,80 @@
+[
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/mocs_compilation.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/main.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/src/main.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/src/main.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/MainWindow.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/MainWindow.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/src/core/PlaylistManager.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/src/core/PlaylistManager.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/src/core/AudioPlayer.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/src/core/AudioPlayer.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/src/core/TrackMetadata.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/src/core/TrackMetadata.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/models/FileBrowserModelFactory.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/models/FileBrowserModelFactory.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/models/CustomSortProxyModel.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/models/CustomSortProxyModel.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/InteractiveBackground.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/InteractiveBackground.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/LeftWidget.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/LeftWidget.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/RightWidget.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/RightWidget.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/BottomWidget.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/BottomWidget.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o"
+},
+{
+  "directory": "/home/kalos/windows_D/Study/mp3player_after_refactor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/include -I/home/kalos/windows_D/Study/mp3player_after_refactor/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp",
+  "file": "/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+}
+]
