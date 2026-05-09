@@ -1,39 +1,46 @@
 Mp3Player_autogen/timestamp: \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/CMakeLists.txt \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/moc_predefs.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/AudioPlayer.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/AudioPlayer.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/PlaylistManager.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/PlaylistManager.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/RingBuffer.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/RingBuffer.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/TrackMetadata.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/TrackMetadata.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/main.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/miniaudio.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/miniaudio_impl.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/qrc_resources.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/BottomWidget.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/BottomWidget.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/ClickableSlider.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/CustomIconProvider.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/HighlightDelegate.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/InteractiveBackground.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/InteractiveBackground.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/LeftWidget.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/LeftWidget.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/MainWindow.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/MainWindow.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/RightWidget.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/RightWidget.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/Visualizer.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/Visualizer.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/CustomSortProxyModel.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/CustomSortProxyModel.h \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/FileBrowserModelFactory.cpp \
-	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/FileBrowserModelFactory.h \
+	/home/kalos/Study/mp3players/mp3player/CMakeLists.txt \
+	/home/kalos/Study/mp3players/mp3player/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
+	/home/kalos/Study/mp3players/mp3player/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
+	/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/moc_predefs.h \
+	/home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.h \
+	/home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.h \
+	/home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.h \
+	/home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.h \
+	/home/kalos/Study/mp3players/mp3player/src/main.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/miniaudio_impl.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/qrc_resources.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.h \
+	/home/kalos/Study/mp3players/mp3player/src/ui/ClickableSlider.h \
+	/home/kalos/Study/mp3players/mp3player/src/ui/HighlightDelegate.h \
+	/home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.h \
+	/home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.h \
+	/home/kalos/Study/mp3players/mp3player/src/ui/MainWindow.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/ui/MainWindow.h \
+	/home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.h \
+	/home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.h \
+	/home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.h \
+	/home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.cpp \
+	/home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player/src/core/AudioPlayer.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player/src/core/PlaylistManager.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player/src/core/RingBuffer.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player/src/core/TrackMetadata.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player/src/miniaudio.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player/src/ui/CustomIconProvider.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player/src/ui/HighlightDelegate.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player/src/ui/InteractiveBackground.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player/src/ui/Visualizer.h \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/errno-base.h \
 	/usr/include/asm-generic/errno.h \

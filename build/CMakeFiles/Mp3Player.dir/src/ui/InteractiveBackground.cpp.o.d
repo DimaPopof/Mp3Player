@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o: \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/InteractiveBackground.cpp \
+ /home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.cpp \
  /usr/include/stdc-predef.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/InteractiveBackground.h \
+ /home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

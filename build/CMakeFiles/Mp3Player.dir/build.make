@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)"
+CMAKE_SOURCE_DIR = /home/kalos/Study/mp3players/mp3player
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build"
+CMAKE_BINARY_DIR = /home/kalos/Study/mp3players/mp3player/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Mp3Player.dir/depend.make
@@ -72,233 +72,233 @@ include CMakeFiles/Mp3Player.dir/flags.make
 Mp3Player_autogen/timestamp: /usr/lib/qt6/libexec/moc
 Mp3Player_autogen/timestamp: /usr/lib/qt6/libexec/uic
 Mp3Player_autogen/timestamp: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Mp3Player"
-	/usr/bin/cmake -E cmake_autogen "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/Mp3Player_autogen.dir/AutogenInfo.json" Debug
-	/usr/bin/cmake -E touch "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/Mp3Player_autogen/timestamp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Mp3Player"
+	/usr/bin/cmake -E cmake_autogen /home/kalos/Study/mp3players/mp3player/build/CMakeFiles/Mp3Player_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E touch /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/timestamp
 
 CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
 CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: Mp3Player_autogen/mocs_compilation.cpp
 CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o -MF CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/Mp3Player_autogen/mocs_compilation.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o -MF CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o -c /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/mocs_compilation.cpp
 
 CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/Mp3Player_autogen/mocs_compilation.cpp" > CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/mocs_compilation.cpp > CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/Mp3Player_autogen/mocs_compilation.cpp" -o CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/mocs_compilation.cpp -o CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/main.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/main.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/main.cpp
+CMakeFiles/Mp3Player.dir/src/main.cpp.o: /home/kalos/Study/mp3players/mp3player/src/main.cpp
 CMakeFiles/Mp3Player.dir/src/main.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Mp3Player.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/main.cpp.o -MF CMakeFiles/Mp3Player.dir/src/main.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/main.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Mp3Player.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/main.cpp.o -MF CMakeFiles/Mp3Player.dir/src/main.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/main.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/main.cpp
 
 CMakeFiles/Mp3Player.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/main.cpp" > CMakeFiles/Mp3Player.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/main.cpp > CMakeFiles/Mp3Player.dir/src/main.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/main.cpp" -o CMakeFiles/Mp3Player.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/main.cpp -o CMakeFiles/Mp3Player.dir/src/main.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/miniaudio_impl.cpp
+CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o: /home/kalos/Study/mp3players/mp3player/src/miniaudio_impl.cpp
 CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o -MF CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/miniaudio_impl.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o -MF CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/miniaudio_impl.cpp
 
 CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/miniaudio_impl.cpp" > CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/miniaudio_impl.cpp > CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/miniaudio_impl.cpp" -o CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/miniaudio_impl.cpp -o CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/MainWindow.cpp
+CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o: /home/kalos/Study/mp3players/mp3player/src/ui/MainWindow.cpp
 CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/MainWindow.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/MainWindow.cpp
 
 CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/MainWindow.cpp" > CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/ui/MainWindow.cpp > CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/MainWindow.cpp" -o CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/ui/MainWindow.cpp -o CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/PlaylistManager.cpp
+CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o: /home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.cpp
 CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o -MF CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/PlaylistManager.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o -MF CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.cpp
 
 CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/PlaylistManager.cpp" > CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.cpp > CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/PlaylistManager.cpp" -o CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.cpp -o CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/AudioPlayer.cpp
+CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: /home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.cpp
 CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o -MF CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/AudioPlayer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o -MF CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.cpp
 
 CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/AudioPlayer.cpp" > CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.cpp > CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/AudioPlayer.cpp" -o CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.cpp -o CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/TrackMetadata.cpp
+CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o: /home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.cpp
 CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o -MF CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/TrackMetadata.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o -MF CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.cpp
 
 CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/TrackMetadata.cpp" > CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.cpp > CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/TrackMetadata.cpp" -o CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.cpp -o CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/RingBuffer.cpp
+CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o: /home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.cpp
 CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o -MF CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/RingBuffer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o -MF CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.cpp
 
 CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/RingBuffer.cpp" > CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.cpp > CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/RingBuffer.cpp" -o CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.cpp -o CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/FileBrowserModelFactory.cpp
+CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o: /home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.cpp
 CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/models/FileBrowserModelFactory.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.cpp
 
 CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/models/FileBrowserModelFactory.cpp" > CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.cpp > CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/models/FileBrowserModelFactory.cpp" -o CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.cpp -o CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/CustomSortProxyModel.cpp
+CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o: /home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.cpp
 CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/models/CustomSortProxyModel.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.cpp
 
 CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/models/CustomSortProxyModel.cpp" > CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.cpp > CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/models/CustomSortProxyModel.cpp" -o CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.cpp -o CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/Visualizer.cpp
+CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o: /home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.cpp
 CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/Visualizer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.cpp
 
 CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/Visualizer.cpp" > CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.cpp > CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/Visualizer.cpp" -o CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.cpp -o CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/InteractiveBackground.cpp
+CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o: /home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.cpp
 CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/InteractiveBackground.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.cpp
 
 CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/InteractiveBackground.cpp" > CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.cpp > CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/InteractiveBackground.cpp" -o CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.cpp -o CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/qrc_resources.cpp
+CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o: /home/kalos/Study/mp3players/mp3player/src/qrc_resources.cpp
 CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o -MF CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/qrc_resources.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o -MF CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/qrc_resources.cpp
 
 CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/qrc_resources.cpp" > CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/qrc_resources.cpp > CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/qrc_resources.cpp" -o CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/qrc_resources.cpp -o CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/LeftWidget.cpp
+CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: /home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.cpp
 CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/LeftWidget.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.cpp
 
 CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/LeftWidget.cpp" > CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.cpp > CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/LeftWidget.cpp" -o CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.cpp -o CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/RightWidget.cpp
+CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o: /home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.cpp
 CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/RightWidget.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.cpp
 
 CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/RightWidget.cpp" > CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.cpp > CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/RightWidget.cpp" -o CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.cpp -o CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.s
 
 CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o: CMakeFiles/Mp3Player.dir/flags.make
-CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/BottomWidget.cpp
+CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o: /home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.cpp
 CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o: CMakeFiles/Mp3Player.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o -c "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/BottomWidget.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o -MF CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o.d -o CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.cpp
 
 CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/BottomWidget.cpp" > CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.cpp > CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.i
 
 CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/BottomWidget.cpp" -o CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.cpp -o CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.s
 
 # Object files for target Mp3Player
 Mp3Player_OBJECTS = \
@@ -345,7 +345,7 @@ Mp3Player: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 Mp3Player: /usr/lib/x86_64-linux-gnu/libGLX.so
 Mp3Player: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 Mp3Player: CMakeFiles/Mp3Player.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable Mp3Player"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable Mp3Player"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Mp3Player.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -357,6 +357,6 @@ CMakeFiles/Mp3Player.dir/clean:
 .PHONY : CMakeFiles/Mp3Player.dir/clean
 
 CMakeFiles/Mp3Player.dir/depend: Mp3Player_autogen/timestamp
-	cd "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)" "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)" "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build" "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build" "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/Mp3Player.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd /home/kalos/Study/mp3players/mp3player/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kalos/Study/mp3players/mp3player /home/kalos/Study/mp3players/mp3player /home/kalos/Study/mp3players/mp3player/build /home/kalos/Study/mp3players/mp3player/build /home/kalos/Study/mp3players/mp3player/build/CMakeFiles/Mp3Player.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Mp3Player.dir/depend
 

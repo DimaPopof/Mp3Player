@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o: \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/RightWidget.cpp \
+ /home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.cpp \
  /usr/include/stdc-predef.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/RightWidget.h \
+ /home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -381,7 +381,7 @@ CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QModelIndex \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/HighlightDelegate.h \
+ /home/kalos/Study/mp3players/mp3player/src/ui/HighlightDelegate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyledItemDelegate \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleditemdelegate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
@@ -423,7 +423,7 @@ CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdiriterator.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFileInfo \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/CustomIconProvider.h \
+ /home/kalos/Study/mp3players/mp3player/src/ui/CustomIconProvider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QAbstractFileIconProvider \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstractfileiconprovider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QIcon \
@@ -442,11 +442,11 @@ CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdiriterator.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QStandardItemModel \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qstandarditemmodel.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/CustomSortProxyModel.h \
+ /home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractproxymodel.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/FileBrowserModelFactory.h \
+ /home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QAbstractItemModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h

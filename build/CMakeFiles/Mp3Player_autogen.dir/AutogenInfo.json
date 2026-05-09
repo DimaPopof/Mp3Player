@@ -1,16 +1,16 @@
 {
-	"BUILD_DIR" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/Mp3Player_autogen",
-	"CMAKE_BINARY_DIR" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)",
+	"BUILD_DIR" : "/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen",
+	"CMAKE_BINARY_DIR" : "/home/kalos/Study/mp3players/mp3player/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/kalos/Study/mp3players/mp3player/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/kalos/Study/mp3players/mp3player",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/CMakeLists.txt",
-		"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/3.28.3/CMakeSystem.cmake",
+		"/home/kalos/Study/mp3players/mp3player/CMakeLists.txt",
+		"/home/kalos/Study/mp3players/mp3player/build/CMakeFiles/3.28.3/CMakeSystem.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake",
-		"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake",
+		"/home/kalos/Study/mp3players/mp3player/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake",
@@ -169,99 +169,99 @@
 		"/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake",
 		"/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)",
-	"DEP_FILE" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/Mp3Player_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "/home/kalos/Study/mp3players/mp3player",
+	"DEP_FILE" : "/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "Mp3Player_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/AudioPlayer.h",
+			"/home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.h",
 			"MU",
 			"PRMOGMWJPH/moc_AudioPlayer.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/PlaylistManager.h",
+			"/home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.h",
 			"MU",
 			"PRMOGMWJPH/moc_PlaylistManager.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/RingBuffer.h",
+			"/home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.h",
 			"MU",
 			"PRMOGMWJPH/moc_RingBuffer.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/TrackMetadata.h",
+			"/home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.h",
 			"MU",
 			"PRMOGMWJPH/moc_TrackMetadata.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/BottomWidget.h",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.h",
 			"MU",
 			"YPKJ5OE7LN/moc_BottomWidget.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/ClickableSlider.h",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/ClickableSlider.h",
 			"MU",
 			"YPKJ5OE7LN/moc_ClickableSlider.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/HighlightDelegate.h",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/HighlightDelegate.h",
 			"MU",
 			"YPKJ5OE7LN/moc_HighlightDelegate.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/InteractiveBackground.h",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.h",
 			"MU",
 			"YPKJ5OE7LN/moc_InteractiveBackground.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/LeftWidget.h",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.h",
 			"MU",
 			"YPKJ5OE7LN/moc_LeftWidget.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/MainWindow.h",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/MainWindow.h",
 			"MU",
 			"YPKJ5OE7LN/moc_MainWindow.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/RightWidget.h",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.h",
 			"MU",
 			"YPKJ5OE7LN/moc_RightWidget.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/Visualizer.h",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.h",
 			"MU",
 			"YPKJ5OE7LN/moc_Visualizer.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/models/CustomSortProxyModel.h",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.h",
 			"MU",
 			"J6PSKMGISE/moc_CustomSortProxyModel.cpp",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/models/FileBrowserModelFactory.h",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.h",
 			"MU",
 			"J6PSKMGISE/moc_FileBrowserModelFactory.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/Mp3Player_autogen/include",
-	"MOC_COMPILATION_FILE" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/Mp3Player_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -272,7 +272,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src",
+		"/home/kalos/Study/mp3players/mp3player/src",
 		"/usr/include/taglib",
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
 		"/usr/include/x86_64-linux-gnu/qt6",
@@ -306,91 +306,87 @@
 		"-c",
 		"/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/Mp3Player_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 6,
-	"PARSE_CACHE_FILE" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/Mp3Player_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/kalos/Study/mp3players/mp3player/build/CMakeFiles/Mp3Player_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 4,
-	"SETTINGS_FILE" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/Mp3Player_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/kalos/Study/mp3players/mp3player/build/CMakeFiles/Mp3Player_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/AudioPlayer.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/PlaylistManager.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/RingBuffer.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/core/TrackMetadata.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.cpp",
+			"MU",
+			null
+		],
+		[ "/home/kalos/Study/mp3players/mp3player/src/main.cpp", "MU", null ],
+		[
+			"/home/kalos/Study/mp3players/mp3player/src/miniaudio_impl.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/main.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/qrc_resources.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/miniaudio_impl.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/qrc_resources.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/BottomWidget.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/InteractiveBackground.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/MainWindow.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/LeftWidget.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/MainWindow.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/RightWidget.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/Visualizer.cpp",
-			"MU",
-			null
-		],
-		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/models/CustomSortProxyModel.cpp",
-			"MU",
-			null
-		],
-		[
-			"/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src/ui/models/FileBrowserModelFactory.cpp",
+			"/home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.cpp",
 			"MU",
 			null
 		]

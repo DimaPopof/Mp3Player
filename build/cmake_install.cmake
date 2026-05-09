@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)
+# Install script for directory: /home/kalos/Study/mp3players/mp3player
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kalos/Study/mp3players/mp3player/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

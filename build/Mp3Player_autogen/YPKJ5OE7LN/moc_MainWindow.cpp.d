@@ -1,11 +1,11 @@
-/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/moc_MainWindow.cpp: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/MainWindow.h \
-  /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/moc_predefs.h \
-  /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/AudioPlayer.h \
-  /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/PlaylistManager.h \
-  /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/RingBuffer.h \
-  /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/miniaudio.h \
-  /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/HighlightDelegate.h \
-  /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/InteractiveBackground.h \
+/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_MainWindow.cpp: /home/kalos/Study/mp3players/mp3player/src/ui/MainWindow.h \
+  /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/moc_predefs.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player/src/core/AudioPlayer.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player/src/core/PlaylistManager.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player/src/core/RingBuffer.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player/src/miniaudio.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player/src/ui/HighlightDelegate.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player/src/ui/InteractiveBackground.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

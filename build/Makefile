@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)"
+CMAKE_SOURCE_DIR = /home/kalos/Study/mp3players/mp3player
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build"
+CMAKE_BINARY_DIR = /home/kalos/Study/mp3players/mp3player/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalos/Study/mp3players/mp3player/build/CMakeFiles /home/kalos/Study/mp3players/mp3player/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalos/Study/mp3players/mp3player/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

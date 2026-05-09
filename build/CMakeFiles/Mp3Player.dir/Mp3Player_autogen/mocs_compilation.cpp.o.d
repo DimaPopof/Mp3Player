@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/mocs_compilation.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/PRMOGMWJPH/moc_AudioPlayer.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/moc_AudioPlayer.cpp \
  /usr/include/c++/14/memory /usr/include/c++/14/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/14/backward/auto_ptr.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/AudioPlayer.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/AudioPlayer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
@@ -299,10 +299,10 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/14/bits/std_mutex.h \
  /usr/include/c++/14/bits/unique_lock.h \
  /usr/include/c++/14/condition_variable \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/miniaudio.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/RingBuffer.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/PRMOGMWJPH/moc_PlaylistManager.cpp \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/PlaylistManager.h \
+ /home/kalos/Study/mp3players/mp3player/src/miniaudio.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/RingBuffer.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/moc_PlaylistManager.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/PlaylistManager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
@@ -358,8 +358,8 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFileInfoList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/moc_BottomWidget.cpp \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/BottomWidget.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_BottomWidget.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/BottomWidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -422,8 +422,8 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/moc_ClickableSlider.cpp \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/ClickableSlider.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_ClickableSlider.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/ClickableSlider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
@@ -458,8 +458,8 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyle \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/moc_HighlightDelegate.cpp \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/HighlightDelegate.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_HighlightDelegate.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/HighlightDelegate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyledItemDelegate \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleditemdelegate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
@@ -477,27 +477,27 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/moc_InteractiveBackground.cpp \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/InteractiveBackground.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_InteractiveBackground.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/InteractiveBackground.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointF \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPaintEvent \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/moc_LeftWidget.cpp \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/LeftWidget.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_LeftWidget.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/LeftWidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/TrackMetadata.h \
+ /home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/Visualizer.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/Visualizer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/c++/14/complex \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/moc_MainWindow.cpp \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/MainWindow.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_MainWindow.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/MainWindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
@@ -509,12 +509,12 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QAbstractItemModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/HighlightDelegate.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/PlaylistManager.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/AudioPlayer.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/InteractiveBackground.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/moc_RightWidget.cpp \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/RightWidget.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/HighlightDelegate.h \
+ /home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.h \
+ /home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/InteractiveBackground.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_RightWidget.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/RightWidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListView \
@@ -522,7 +522,7 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QModelIndex \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/CustomIconProvider.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/CustomIconProvider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QAbstractFileIconProvider \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstractfileiconprovider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QIcon \
@@ -536,10 +536,10 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdiriterator.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QStandardItemModel \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qstandarditemmodel.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/moc_Visualizer.cpp \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/Visualizer.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/J6PSKMGISE/moc_CustomSortProxyModel.cpp \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/J6PSKMGISE/../../../src/ui/models/CustomSortProxyModel.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_Visualizer.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/Visualizer.h \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/J6PSKMGISE/moc_CustomSortProxyModel.cpp \
+ /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/J6PSKMGISE/../../../src/ui/models/CustomSortProxyModel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractproxymodel.h

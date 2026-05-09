@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o: \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/Visualizer.cpp \
+ /home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.cpp \
  /usr/include/stdc-predef.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/Visualizer.h \
+ /home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -355,7 +355,7 @@ CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o: \
  /usr/include/c++/14/bits/ostream.tcc \
  /usr/include/c++/14/bits/istream.tcc \
  /usr/include/c++/14/bits/sstream.tcc \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/AudioPlayer.h \
+ /home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \
@@ -367,8 +367,8 @@ CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o: \
  /usr/include/c++/14/bits/std_mutex.h \
  /usr/include/c++/14/bits/unique_lock.h \
  /usr/include/c++/14/condition_variable \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/miniaudio.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/RingBuffer.h \
+ /home/kalos/Study/mp3players/mp3player/src/miniaudio.h \
+ /home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \

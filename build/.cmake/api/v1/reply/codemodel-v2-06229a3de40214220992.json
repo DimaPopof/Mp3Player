@@ -43,7 +43,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Mp3Player::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Mp3Player-Debug-a3a4b5a4cf8e15500536.json",
+					"jsonFile" : "target-Mp3Player-Debug-4d4a2757512a1ea7e72e.json",
 					"name" : "Mp3Player",
 					"projectIndex" : 0
 				},
@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build",
-		"source" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)"
+		"build" : "/home/kalos/Study/mp3players/mp3player/build",
+		"source" : "/home/kalos/Study/mp3players/mp3player"
 	},
 	"version" : 
 	{

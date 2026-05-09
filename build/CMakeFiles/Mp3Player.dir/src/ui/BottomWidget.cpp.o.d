@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o: \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/BottomWidget.cpp \
+ /home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.cpp \
  /usr/include/stdc-predef.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/BottomWidget.h \
+ /home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -362,7 +362,7 @@ CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qprogressbar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedlayout.h \
- /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/ClickableSlider.h \
+ /home/kalos/Study/mp3players/mp3player/src/ui/ClickableSlider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \

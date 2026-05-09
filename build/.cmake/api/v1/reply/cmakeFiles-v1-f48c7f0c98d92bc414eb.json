@@ -719,8 +719,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build",
-		"source" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)"
+		"build" : "/home/kalos/Study/mp3players/mp3player/build",
+		"source" : "/home/kalos/Study/mp3players/mp3player"
 	},
 	"version" : 
 	{

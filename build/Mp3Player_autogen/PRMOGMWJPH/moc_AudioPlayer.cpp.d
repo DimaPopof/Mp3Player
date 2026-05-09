@@ -1,7 +1,7 @@
-/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/PRMOGMWJPH/moc_AudioPlayer.cpp: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/AudioPlayer.h \
-  /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/moc_predefs.h \
-  /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/RingBuffer.h \
-  /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/miniaudio.h \
+/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/moc_AudioPlayer.cpp: /home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.h \
+  /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/moc_predefs.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player/src/core/RingBuffer.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player/src/miniaudio.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

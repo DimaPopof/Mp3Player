@@ -1,5 +1,5 @@
-/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/PRMOGMWJPH/moc_PlaylistManager.cpp: /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/PlaylistManager.h \
-  /mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/moc_predefs.h \
+/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/moc_PlaylistManager.cpp: /home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.h \
+  /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

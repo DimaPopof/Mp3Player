@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build"
+			"value" : "/home/kalos/Study/mp3players/mp3player/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -427,7 +427,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/kalos/Study/mp3players/mp3player/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -499,7 +499,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)"
+			"value" : "/mnt/w_disk_D/Study/mp3players/mp3player"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1463,7 +1463,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build"
+			"value" : "/home/kalos/Study/mp3players/mp3player/build"
 		},
 		{
 			"name" : "Mp3Player_IS_TOP_LEVEL",
@@ -1487,7 +1487,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)"
+			"value" : "/home/kalos/Study/mp3players/mp3player"
 		},
 		{
 			"name" : "OPENGL_EGL_INCLUDE_DIR",

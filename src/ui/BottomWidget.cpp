@@ -145,13 +145,12 @@ void BottomWidget::setupUi() {
     bottomLayout->addWidget(timeLabel);
     
     QWidget* sliderContainer = new QWidget(this);
+    sliderContainer->setFixedHeight(24);
     sliderContainer->setAttribute(Qt::WA_TranslucentBackground);
     sliderContainer->setStyleSheet("background: transparent;");
     QStackedLayout* stackedLayout = new QStackedLayout(sliderContainer);
     stackedLayout->setStackingMode(QStackedLayout::StackAll);
     stackedLayout->setContentsMargins(0, 0, 0, 0);
-    stackedLayout->setContentsMargins(0, 0, 0, 0);
-    stackedLayout->setStackingMode(QStackedLayout::StackAll);
     
     // IMPORTANT: Widget added first is at the bottom.
     stackedLayout->addWidget(bufferProgressBar);

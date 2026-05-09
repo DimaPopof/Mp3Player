@@ -162,11 +162,11 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/Mp3Player_autogen/include"
+					"path" : "/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include"
 				},
 				{
 					"backtrace" : 17,
-					"path" : "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/src"
+					"path" : "/home/kalos/Study/mp3players/mp3player/src"
 				},
 				{
 					"backtrace" : 17,
