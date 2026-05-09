@@ -1,6 +1,7 @@
 // MainWindow.cpp
 #include "MainWindow.h"
 #include "LeftWidget.h"
+#include "Visualizer.h"
 #include "RightWidget.h"
 #include "BottomWidget.h"
 #include "core/TrackMetadata.h"
@@ -19,11 +20,12 @@
 #include <QChar>
 #include <QEvent>
 #include <QKeyEvent>
-#include "InteractiveBackground.h"
 #include <QShortcut>
 #include <QKeySequence>
 #include <QApplication>
+#include <cstddef>
 #include <algorithm>
+#include "InteractiveBackground.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent){
     QCoreApplication::setOrganizationName("MySoft");
@@ -46,27 +48,37 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent){
 }
 
 void MainWindow::setupUi() {
+    centralWidget = new QWidget(this);
+    setCentralWidget(centralWidget);
 
-    InteractiveBackground *backgroundWidget = new InteractiveBackground(this);
-    
-    //QWidget *centralWidget = new QWidget(backgroundWidget);
-    setCentralWidget(backgroundWidget);
+    mainLayout = new QVBoxLayout(centralWidget);
+    mainLayout->setContentsMargins(0, 0, 0, 0);
+    mainLayout->setSpacing(0);
 
-    QVBoxLayout *mainLayout = new QVBoxLayout(backgroundWidget);
-    QSplitter *topSplitter = new QSplitter(Qt::Horizontal, this);
+    InteractiveBackground *backgroundWidget = new InteractiveBackground(centralWidget);
+    QVBoxLayout *backgroundLayout = new QVBoxLayout(backgroundWidget);
+    backgroundLayout->setContentsMargins(0, 0, 0, 0);
+    backgroundLayout->setSpacing(0);
+
+    topSplitter = new QSplitter(Qt::Horizontal, backgroundWidget);
 
     // Instantiate the custom widgets
     leftWidget = new LeftWidget(backgroundWidget);
+    leftWidget->setMinimumWidth(400);
+    leftWidget->pass_AudioPlayer_To_Visualizer()->setAudioPlayer(audioPlayer);
     rightWidget = new RightWidget(backgroundWidget);
-    bottomWidget = new BottomWidget(backgroundWidget);
+    bottomWidget = new BottomWidget(centralWidget);
 
+    // Add widgets to the splitters
     topSplitter->addWidget(leftWidget);
     topSplitter->addWidget(rightWidget);
-    topSplitter->setSizes({200, 400});
+    topSplitter->setSizes({400, 700});
     topSplitter->setChildrenCollapsible(false);
 
-    mainLayout->addWidget(topSplitter, 1);
-    mainLayout->addWidget(bottomWidget);
+    backgroundLayout->addWidget(topSplitter, 1);
+
+    mainLayout->addWidget(backgroundWidget, 1);
+    mainLayout->addWidget(bottomWidget, 0);
 
     resize(1000, 700);
     setMinimumSize(600, 400);
@@ -84,25 +96,25 @@ void MainWindow::setupConnections() {
     connect(bottomWidget, &BottomWidget::volumeChanged, this, &MainWindow::changeVolume);
     connect(bottomWidget, &BottomWidget::seekRequested, this, &MainWindow::seekAudio);
     connect(audioPlayer, &AudioPlayer::playbackStateChanged, bottomWidget, &BottomWidget::updatePlayButtonState);
-    connect(audioPlayer, &AudioPlayer::positionChanged, this, [this](qint64 position) {
-        // Получаем общую длину трека из плеера
-        qint64 duration = audioPlayer->duration(); 
-        bottomWidget->updatePosition(position, duration);
+    connect(audioPlayer, &AudioPlayer::bufferedAmountChanged, bottomWidget, &BottomWidget::updateBufferedAmount);
+    connect(audioPlayer, &AudioPlayer::positionChanged, this, [this](qint64 positionMs) {
+        qint64 durationMs = audioPlayer->durationMs();
+        bottomWidget->updatePosition(positionMs, durationMs);
     });
 
-    connect(audioPlayer, &AudioPlayer::durationChanged, bottomWidget, [this](qint64 duration) {
-        bottomWidget->setDuration(duration);
+    connect(audioPlayer, &AudioPlayer::durationChanged, bottomWidget, [this](qint64 durationMs) {
+        bottomWidget->setDuration(durationMs);
     });
     // Connect RightWidget signals
     connect(rightWidget, &RightWidget::trackPlayRequested, this, &MainWindow::playTrackByPath);
     connect(rightWidget, &RightWidget::listFolderNavigationRequested, this, [this](const QString &folderPath) {
-        this->loadListDirectory(folderPath, false); 
+        this->loadListDirectory(folderPath, false);
     });
-
     // AudioPlayer to MainWindow logic (these stay here)
     //connect(audioPlayer, &AudioPlayer::playbackStateChanged, this, &MainWindow::updatePlayButton);
     connect(audioPlayer, &AudioPlayer::durationChanged, this, &MainWindow::updateDuration);
     connect(audioPlayer, &AudioPlayer::positionChanged, this, &MainWindow::updatePosition);
+
     connect(audioPlayer, &AudioPlayer::trackFinished, this, &MainWindow::onTrackFinished);
 
     // Setup Shortcuts (these belong to MainWindow logic)
@@ -116,6 +128,8 @@ void MainWindow::setupConnections() {
     setMinimumSize(600, 400);
     setWindowTitle("MP3 Player");
 }
+
+
 void MainWindow::loadDefaultFolder() {
     if (!constantFolderPath.isEmpty()) {
         rightWidget->setTreeRootPath(constantFolderPath);
@@ -154,7 +168,7 @@ void MainWindow::openConstantFolder() {
     // Save and load the new folder if the user made a selection
     if (!folderPath.isEmpty()) {
         constantFolderPath = folderPath;
-        
+        bottomWidget->resetSlider();
         // Save the new path to system settings
         QSettings settings;
         settings.setValue("defaultFolder", constantFolderPath);
@@ -177,7 +191,7 @@ void MainWindow::loadListDirectory(const QString &folderPath, bool resetPlayback
         audioPlayer->stop();
         isMediaLoaded = false;
         bottomWidget->updatePlayButtonState(false);
-        
+        bottomWidget->resetSlider();
         leftWidget->resetTrackDisplay(); 
     }
 }
@@ -202,16 +216,13 @@ void MainWindow::playTrackByPath(const QString &filePath) {
     // 1. Store the current path so Next/Previous buttons know where to start
     currentTrackPath = filePath;
 
-    // --- NEW CODE: UPDATE PLAYLIST ---
     // Extract the folder path and load all MP3s into the manager
     QFileInfo fileInfo(filePath);
     QString folderPath = fileInfo.absolutePath();
     
-    // Ensure this pointer matches your actual variable name (e.g., playlistManager)
     if (playlistManager) {
         playlistManager->loadDirectory(folderPath);
     }
-    // ---------------------------------
 
     // Delegate UI updates to RightWidget
     if (filePath.startsWith(treeCurrentRootPath)) {
@@ -222,6 +233,7 @@ void MainWindow::playTrackByPath(const QString &filePath) {
     audioPlayer->stop();
     QUrl fileUrl = QUrl::fromLocalFile(filePath);
     audioPlayer->loadMedia(fileUrl);
+    bottomWidget->resetSlider();
     
     // Apply the stored volume state instead of reading the UI slider
     changeVolume(bottomWidget->getVolumeValue()); // This will ensure the audio player is in sync with the current volume level, including mute state
@@ -287,13 +299,13 @@ void MainWindow::changeVolume(int value) {
     }
 }
 
-void MainWindow::updateDuration(int duration) {
-    currentDuration = duration;
-    bottomWidget->setDuration(duration);
+void MainWindow::updateDuration(qint64 durationMs) {
+    currentDurationMs = durationMs;
+    bottomWidget->setDuration(durationMs);
 }
 
-void MainWindow::updatePosition(int position) {
-    bottomWidget->updatePosition(position, currentDuration);
+void MainWindow::updatePosition(qint64 positionMs) {
+    bottomWidget->updatePosition(positionMs, currentDurationMs);
 }
 
 void MainWindow::seekAudio(int position) {
@@ -303,39 +315,34 @@ void MainWindow::skipForward() {
     if (!isMediaLoaded) {
         return;
     }
-    
-    // 1. Запрашиваем текущую позицию у плеера, а не у интерфейса
-    int currentPos = audioPlayer->position(); 
-    
-    // 2. Прибавляем 15 секунд (15000 миллисекунд)
-    int skipAmountMs = 15000;
-    int newPosition = currentPos + skipAmountMs;
-    
-    // 3. Не даем выйти за пределы трека
-    if (newPosition > currentDuration) {
-        newPosition = currentDuration;
+
+    qint64 currentPosMs = audioPlayer->positionMs();
+
+    qint64 skipAmountMs = 15000;
+    qint64 newPositionMs = currentPosMs + skipAmountMs;
+
+    if (newPositionMs > currentDurationMs) {
+        newPositionMs = currentDurationMs;
     }
-    
-    // 4. Передаем команду плееру.
-    // Интерфейс обновится автоматически благодаря сигналу audioPlayer->positionChanged
-    seekAudio(newPosition); 
+
+    seekAudio(newPositionMs / 1000); // audioPlayer still seeks in seconds
 }
 
 void MainWindow::skipBackward() {
     if (!isMediaLoaded) {
         return;
     }
-    
-    int currentPos = audioPlayer->position();
-    
-    int skipAmountMs = 15000;
-    int newPosition = currentPos - skipAmountMs;
-    
-    if (newPosition < 0) {
-        newPosition = 0;
+
+    qint64 currentPosMs = audioPlayer->positionMs();
+
+    qint64 skipAmountMs = 15000;
+    qint64 newPositionMs = currentPosMs - skipAmountMs;
+
+    if (newPositionMs < 0) {
+        newPositionMs = 0;
     }
-    
-    seekAudio(newPosition);
+
+    seekAudio(newPositionMs / 1000);
 }
 void MainWindow::toggleMute() {
     if (isMuted) {

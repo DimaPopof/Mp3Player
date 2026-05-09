@@ -4,11 +4,48 @@
 #include <QTreeView>
 #include <QListView>
 #include <QPushButton>
+#include <QLineEdit>
 #include <QVBoxLayout>
 #include <QModelIndex>
 #include "HighlightDelegate.h"
 #include "CustomIconProvider.h"
 #include <QPainter>
+#include <QThread>
+#include <QDirIterator>
+#include <QStandardItemModel>
+#include <atomic>
+
+class SearchWorker : public QThread {
+    Q_OBJECT
+public:
+    SearchWorker(const QString& rootPath, const QString& query, QObject* parent = nullptr) 
+        : QThread(parent), rootPath(rootPath), query(query), stopRequested(false) {}
+
+    void stop() { stopRequested.store(true, std::memory_order_relaxed); }
+
+signals:
+    void fileFound(const QString& filePath, const QString& fileName);
+    void searchFinished();
+
+protected:
+    void run() override {
+        QDirIterator it(rootPath, QDir::Files | QDir::Dirs | QDir::NoDotAndDotDot, QDirIterator::Subdirectories);
+        QString lowerQuery = query.toLower();
+        while (it.hasNext() && !stopRequested.load(std::memory_order_relaxed)) {
+            it.next();
+            QString fileName = it.fileName();
+            if (fileName.toLower().contains(lowerQuery)) {
+                emit fileFound(it.filePath(), fileName);
+            }
+        }
+        emit searchFinished();
+    }
+
+private:
+    QString rootPath;
+    QString query;
+    std::atomic<bool> stopRequested;
+};
 
 class QTreeView;
 class QLabel;
@@ -85,14 +122,18 @@ signals:
 private slots:
     void onListDoubleClicked(const QModelIndex &index);
     void treeViewDoubleClicked(const QModelIndex &index);
-
+    void onSearchTextChanged(const QString &text);
+    void onSearchFileFound(const QString &filePath, const QString &fileName);
+    void onSearchResultsDoubleClicked(const QModelIndex &index);
 
 private:
     QStackedWidget *viewStack;
     VsCodeTreeView *fileTreeView;
     VsCodeListView *fileListView;
+    VsCodeListView *searchResultsView;
     QPushButton *treeButton;
     QPushButton *listButton;
+    QLineEdit *searchBox;
     QAbstractItemModel *treeFileSystemModel;
     QFileSystemModel *treeSourceModel;
     CustomSortProxyModel *treeProxyModel;
@@ -102,6 +143,10 @@ private:
     QAbstractItemModel *listFileSystemModel;
     QFileSystemModel *listSourceModel;
     CustomSortProxyModel *listProxyModel;
+    
+    QStandardItemModel *searchResultsModel;
+    SearchWorker *currentSearchWorker{nullptr};
+    int lastViewIndex{0};
 
     void setupUi();
     void setupConnections();

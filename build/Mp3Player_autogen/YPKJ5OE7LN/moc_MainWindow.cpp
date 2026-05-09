@@ -26,7 +26,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_MainWindow_t {
-    uint offsetsAndSizes[40];
+    uint offsetsAndSizes[42];
     char stringdata0[11];
     char stringdata1[17];
     char stringdata2[1];
@@ -39,14 +39,15 @@ struct qt_meta_stringdata_MainWindow_t {
     char stringdata9[13];
     char stringdata10[6];
     char stringdata11[15];
-    char stringdata12[9];
+    char stringdata12[11];
     char stringdata13[15];
-    char stringdata14[9];
+    char stringdata14[11];
     char stringdata15[10];
-    char stringdata16[12];
-    char stringdata17[13];
-    char stringdata18[11];
-    char stringdata19[12];
+    char stringdata16[9];
+    char stringdata17[12];
+    char stringdata18[13];
+    char stringdata19[11];
+    char stringdata20[12];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
@@ -64,14 +65,15 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
         QT_MOC_LITERAL(122, 12),  // "changeVolume"
         QT_MOC_LITERAL(135, 5),  // "value"
         QT_MOC_LITERAL(141, 14),  // "updateDuration"
-        QT_MOC_LITERAL(156, 8),  // "duration"
-        QT_MOC_LITERAL(165, 14),  // "updatePosition"
-        QT_MOC_LITERAL(180, 8),  // "position"
-        QT_MOC_LITERAL(189, 9),  // "seekAudio"
-        QT_MOC_LITERAL(199, 11),  // "skipForward"
-        QT_MOC_LITERAL(211, 12),  // "skipBackward"
-        QT_MOC_LITERAL(224, 10),  // "zoomInText"
-        QT_MOC_LITERAL(235, 11)   // "zoomOutText"
+        QT_MOC_LITERAL(156, 10),  // "durationMs"
+        QT_MOC_LITERAL(167, 14),  // "updatePosition"
+        QT_MOC_LITERAL(182, 10),  // "positionMs"
+        QT_MOC_LITERAL(193, 9),  // "seekAudio"
+        QT_MOC_LITERAL(203, 8),  // "position"
+        QT_MOC_LITERAL(212, 11),  // "skipForward"
+        QT_MOC_LITERAL(224, 12),  // "skipBackward"
+        QT_MOC_LITERAL(237, 10),  // "zoomInText"
+        QT_MOC_LITERAL(248, 11)   // "zoomOutText"
     },
     "MainWindow",
     "openFolderDialog",
@@ -85,10 +87,11 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
     "changeVolume",
     "value",
     "updateDuration",
-    "duration",
+    "durationMs",
     "updatePosition",
-    "position",
+    "positionMs",
     "seekAudio",
+    "position",
     "skipForward",
     "skipBackward",
     "zoomInText",
@@ -122,10 +125,10 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
       11,    1,  114,    2, 0x08,   10 /* Private */,
       13,    1,  117,    2, 0x08,   12 /* Private */,
       15,    1,  120,    2, 0x08,   14 /* Private */,
-      16,    0,  123,    2, 0x08,   16 /* Private */,
-      17,    0,  124,    2, 0x08,   17 /* Private */,
-      18,    0,  125,    2, 0x08,   18 /* Private */,
-      19,    0,  126,    2, 0x08,   19 /* Private */,
+      17,    0,  123,    2, 0x08,   16 /* Private */,
+      18,    0,  124,    2, 0x08,   17 /* Private */,
+      19,    0,  125,    2, 0x08,   18 /* Private */,
+      20,    0,  126,    2, 0x08,   19 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -136,9 +139,9 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,   10,
-    QMetaType::Void, QMetaType::Int,   12,
-    QMetaType::Void, QMetaType::Int,   14,
-    QMetaType::Void, QMetaType::Int,   14,
+    QMetaType::Void, QMetaType::LongLong,   12,
+    QMetaType::Void, QMetaType::LongLong,   14,
+    QMetaType::Void, QMetaType::Int,   16,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -175,10 +178,10 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'updateDuration'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<qint64, std::false_type>,
         // method 'updatePosition'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<qint64, std::false_type>,
         // method 'seekAudio'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
@@ -208,8 +211,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 5: _t->playPreviousTrack(); break;
         case 6: _t->onTrackFinished(); break;
         case 7: _t->changeVolume((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 8: _t->updateDuration((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 9: _t->updatePosition((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 8: _t->updateDuration((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 9: _t->updatePosition((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
         case 10: _t->seekAudio((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 11: _t->skipForward(); break;
         case 12: _t->skipBackward(); break;

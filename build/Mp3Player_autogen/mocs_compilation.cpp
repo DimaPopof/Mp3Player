@@ -8,4 +8,5 @@
 #include "YPKJ5OE7LN/moc_LeftWidget.cpp"
 #include "YPKJ5OE7LN/moc_MainWindow.cpp"
 #include "YPKJ5OE7LN/moc_RightWidget.cpp"
+#include "YPKJ5OE7LN/moc_Visualizer.cpp"
 #include "J6PSKMGISE/moc_CustomSortProxyModel.cpp"

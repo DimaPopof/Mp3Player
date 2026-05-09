@@ -12,10 +12,10 @@ InteractiveBackground::InteractiveBackground(QWidget *parent)
 
     initializeClouds();
 
-    // Setup animation timer (60 frames per second)
+    // Setup animation timer (30 frames per second to save CPU)
     animationTimer = new QTimer(this);
     connect(animationTimer, &QTimer::timeout, this, &InteractiveBackground::updateAnimation);
-    animationTimer->start(16); // ~60 FPS (1000ms / 60)
+    animationTimer->start(33); // ~30 FPS (1000ms / 30)
 }
 
 void InteractiveBackground::initializeClouds() {

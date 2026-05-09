@@ -9,6 +9,7 @@
 #include <QPixmap>
 #include <QResizeEvent>
 #include <QShortcut>
+#include <QDebug>
 
 #include <QAbstractItemModel>
 #include <QString>
@@ -16,8 +17,10 @@
 
 #include "core/PlaylistManager.h"
 #include "core/AudioPlayer.h"
+#include "InteractiveBackground.h"
 
-// 1. Предварительное объявление новых классов (Forward declarations)
+
+
 class LeftWidget;
 class RightWidget;
 class BottomWidget;
@@ -45,8 +48,8 @@ private slots:
     void onTrackFinished();
     void changeVolume(int value);
 
-    void updateDuration(int duration);
-    void updatePosition(int position);
+    void updateDuration(qint64 durationMs);
+    void updatePosition(qint64 positionMs);
     void seekAudio(int position);
     
     void skipForward();
@@ -61,13 +64,13 @@ private:
     AudioPlayer *audioPlayer;
 
     bool isMediaLoaded{false};
-    int currentDuration{0};
+    qint64 currentDurationMs{0};
     int baseFontSize{14};
     QString constantFolderPath;
     QString treeCurrentRootPath{QDir::homePath()};
     QString listCurrentRootPath{QDir::homePath()};
     bool isMuted{false};
-    int savedVolume{50};
+    int savedVolume{35};
     
     QString currentRootPath;
     QString currentTrackPath;
@@ -89,12 +92,11 @@ private:
     QVBoxLayout *mainLayout;
     QSplitter *topSplitter;
 
-    // 2. Подключаем твои новые виджеты вместо десятков кнопок и слайдеров
     LeftWidget *leftWidget;
     RightWidget *rightWidget;
     BottomWidget *bottomWidget;
     
-    // 3. Оставляем горячие клавиши, они относятся к главному окну
+
     QShortcut *enterShortcut;
     QShortcut *returnShortcut;
 };

@@ -3,6 +3,19 @@
 #include <QFileSystemModel>
 
 CustomSortProxyModel::CustomSortProxyModel(QObject *parent) : QSortFilterProxyModel(parent) {
+    setRecursiveFilteringEnabled(true);
+}
+
+bool CustomSortProxyModel::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const {
+    // 1. Keep ".." permanently visible for easy navigation up
+    QModelIndex index = sourceModel()->index(source_row, 0, source_parent);
+    QString dataStr = sourceModel()->data(index).toString();
+    if (dataStr == "..") {
+        return true;
+    }
+
+    // 2. Delegate to the builtin QSortFilterProxyModel which handles recursive checks safely
+    return QSortFilterProxyModel::filterAcceptsRow(source_row, source_parent);
 }
 
 bool CustomSortProxyModel::lessThan(const QModelIndex &left, const QModelIndex &right) const {

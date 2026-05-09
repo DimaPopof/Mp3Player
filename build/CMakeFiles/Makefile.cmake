@@ -7,10 +7,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/kalos/windows_D/Study/mp3player_after_refactor/CMakeLists.txt"
+  "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/home/kalos/windows_D/Study/mp3player_after_refactor/resources.qrc"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin/FindXKB.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake"
@@ -147,7 +146,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/Mp3Player_autogen.dir/AutogenInfo.json"
-  "CMakeFiles/Mp3Player_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json"
   ".qt/QtDeploySupport.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )

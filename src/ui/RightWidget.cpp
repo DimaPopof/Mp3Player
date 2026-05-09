@@ -13,7 +13,7 @@ RightWidget::RightWidget(QWidget *parent) : QWidget(parent){
 
 void RightWidget::setupUi() {
     QVBoxLayout *rightLayout = new QVBoxLayout(this);
-    rightLayout->setContentsMargins(10, 10, 10, 10);
+    rightLayout->setContentsMargins(10, rightLayout->spacing(), 0, 10);
 
     viewStack = new QStackedWidget(this);
     
@@ -43,6 +43,7 @@ void RightWidget::setupUi() {
     fileTreeView->setExpandsOnDoubleClick(false);
     fileTreeView->setSelectionBehavior(QAbstractItemView::SelectRows);
     fileTreeView->setSelectionMode(QAbstractItemView::SingleSelection);
+    fileTreeView->setEditTriggers(QAbstractItemView::NoEditTriggers);
         const QString scrollBarStyle =
             "QScrollBar:vertical {"
             "background: rgba(255, 255, 255, 0.04);"
@@ -104,12 +105,30 @@ void RightWidget::setupUi() {
     fileListView->setViewMode(QListView::ListMode);
     fileListView->setModel(listProxyModel);
     fileListView->setSelectionMode(QAbstractItemView::SingleSelection);
+    fileListView->setEditTriggers(QAbstractItemView::NoEditTriggers);
         fileListView->setStyleSheet(scrollBarStyle);
     fileListView->setSpacing(0);
     fileListView->setUniformItemSizes(true);
 
-    viewStack->addWidget(fileTreeView);
-    viewStack->addWidget(fileListView);
+    searchResultsView = new VsCodeListView(viewStack);
+    searchResultsModel = new QStandardItemModel(this);
+    searchResultsView->setModel(searchResultsModel);
+    searchResultsView->setFrameShape(QFrame::NoFrame);
+    searchResultsView->setAutoFillBackground(false);
+    searchResultsView->setAttribute(Qt::WA_TranslucentBackground);
+    searchResultsView->viewport()->setAutoFillBackground(false);
+    searchResultsView->viewport()->setAttribute(Qt::WA_TranslucentBackground);
+    searchResultsView->setItemDelegate(highlightDelegate);
+    searchResultsView->setViewMode(QListView::ListMode);
+    searchResultsView->setSelectionMode(QAbstractItemView::SingleSelection);
+    searchResultsView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    searchResultsView->setStyleSheet(scrollBarStyle);
+    searchResultsView->setSpacing(0);
+    searchResultsView->setUniformItemSizes(true);
+
+    viewStack->addWidget(fileTreeView); // index 0
+    viewStack->addWidget(fileListView); // index 1
+    viewStack->addWidget(searchResultsView); // index 2
 
     QHBoxLayout *buttonsLayout = new QHBoxLayout();
     treeButton = new QPushButton(QIcon(":/assets/tree.png"), "", this);
@@ -129,9 +148,17 @@ void RightWidget::setupUi() {
         "}";
     treeButton->setStyleSheet(viewToggleStyle);
     listButton->setStyleSheet(viewToggleStyle);
+    
+    searchBox = new QLineEdit(this);
+    searchBox->setPlaceholderText("Search...");
+    searchBox->setClearButtonEnabled(true);
+    searchBox->setStyleSheet("QLineEdit { background: rgba(255, 255, 255, 0.05); color: white; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 6px; padding: 4px; margin-left: 10px; } QLineEdit:focus { border: 1px solid rgba(255, 255, 255, 0.3); }");
+
     buttonsLayout->addWidget(treeButton);
     buttonsLayout->addWidget(listButton);
     buttonsLayout->addStretch();
+    buttonsLayout->addWidget(searchBox);
+    buttonsLayout->addSpacing(10);
 
     QFrame *separator = new QFrame(this);
     separator->setFixedHeight(3);
@@ -146,33 +173,112 @@ void RightWidget::setupConnections() {
 
     connect(fileTreeView, &QTreeView::doubleClicked, this, &RightWidget::treeViewDoubleClicked);
     connect(fileListView, &QListView::doubleClicked, this, &RightWidget::onListDoubleClicked);
+    connect(searchResultsView, &QListView::doubleClicked, this, &RightWidget::onSearchResultsDoubleClicked);
     connect(treeButton, &QPushButton::clicked, this, &RightWidget::toggleFileView);
     connect(listButton, &QPushButton::clicked, this, &RightWidget::toggleListView);
+    connect(searchBox, &QLineEdit::textChanged, this, &RightWidget::onSearchTextChanged);
 }
+
+void RightWidget::onSearchTextChanged(const QString &text) {
+    if (currentSearchWorker) {
+        currentSearchWorker->stop();
+        currentSearchWorker->wait();
+        currentSearchWorker->deleteLater();
+        currentSearchWorker = nullptr;
+    }
+
+    if (text.isEmpty()) {
+        viewStack->setCurrentIndex(lastViewIndex);
+        return;
+    }
+
+    if (viewStack->currentIndex() != 2) {
+        lastViewIndex = viewStack->currentIndex();
+    }
+    
+    viewStack->setCurrentIndex(2);
+    searchResultsModel->clear();
+
+    QString currentRoot = getCurrentFolderPath();
+    if (currentRoot.isEmpty()) {
+        currentRoot = QDir::homePath();
+    }
+
+    currentSearchWorker = new SearchWorker(currentRoot, text, this);
+    connect(currentSearchWorker, &SearchWorker::fileFound, this, &RightWidget::onSearchFileFound);
+    // Removed automatic deleteLater to prevent dangling pointers, RightWidget now fully manages the worker's lifecycle.
+    
+    currentSearchWorker->start();
+}
+
+void RightWidget::onSearchFileFound(const QString &filePath, const QString &fileName) {
+    QFileInfo info(filePath);
+
+    if (!info.isFile() || info.suffix().toLower() != "mp3") {
+        return;
+    }
+
+    CustomIconProvider iconProvider;
+    QIcon icon = iconProvider.icon(info);
+    
+    QStandardItem *item = new QStandardItem(icon, fileName);
+    // Path string
+    item->setData(filePath, QFileSystemModel::FilePathRole); 
+    // Additional data for double click
+    item->setData(info.isDir(), Qt::UserRole + 2);
+    
+    searchResultsModel->appendRow(item);
+}
+
+void RightWidget::onSearchResultsDoubleClicked(const QModelIndex &index) {
+    if (!index.isValid()) return;
+    
+    QString filePath = searchResultsModel->data(index, QFileSystemModel::FilePathRole).toString();
+    bool isDir = searchResultsModel->data(index, Qt::UserRole + 2).toBool();
+    
+    if (isDir) {
+        searchBox->clear();
+        emit listFolderNavigationRequested(filePath);
+    } else {
+        QFileInfo fileInfo(filePath);
+        if (fileInfo.suffix().toLower() == "mp3") {
+            emit trackPlayRequested(filePath);
+        }
+    }
+}
+
 void RightWidget::applySize(int pointSize) {
     QFont font = this->font(); // Берем текущий шрифт виджета
     font.setPointSize(pointSize);
 
     fileTreeView->setFont(font);
     fileListView->setFont(font);
+    searchResultsView->setFont(font);
 
     int iconSizeDim = static_cast<int>(pointSize * 1.45);
     QSize newIconSize(iconSizeDim, iconSizeDim);
     fileTreeView->setIconSize(newIconSize);
     fileListView->setIconSize(newIconSize);
+    searchResultsView->setIconSize(newIconSize);
 
     const int verticalPadding = qMax(1, pointSize / 4);
     fileTreeView->setStyleSheet(QString("QTreeView::item { padding: %1px 0px; }").arg(verticalPadding));
     fileListView->setStyleSheet(QString("QListView::item { padding: %1px 0px; }").arg(verticalPadding));
+    searchResultsView->setStyleSheet(QString("QListView::item { padding: %1px 0px; }").arg(verticalPadding));
 
     fileTreeView->requestDelayedItemsLayout();
     fileListView->requestDelayedItemsLayout();
+    searchResultsView->requestDelayedItemsLayout();
 }
 void RightWidget::toggleFileView() {
+    searchBox->clear();
+    lastViewIndex = 0;
     viewStack->setCurrentIndex(0);
 }
 
 void RightWidget::toggleListView() {
+    searchBox->clear();
+    lastViewIndex = 1;
     viewStack->setCurrentIndex(1);
 }
 
@@ -295,6 +401,6 @@ void RightWidget::paintEvent(QPaintEvent *event) {
     // Отключаем обводку
     painter.setPen(Qt::NoPen);
     
-    // Рисуем прямоугольник по размеру всего виджета со скруглением 10px
-    painter.drawRoundedRect(rect(), 10, 10);
+    // Рисуем прямоугольник без скругления
+    painter.drawRect(rect());
 }

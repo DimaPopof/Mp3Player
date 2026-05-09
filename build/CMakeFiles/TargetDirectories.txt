@@ -1,5 +1,5 @@
-/home/kalos/windows_D/Study/mp3player_after_refactor/build/CMakeFiles/Mp3Player.dir
-/home/kalos/windows_D/Study/mp3player_after_refactor/build/CMakeFiles/edit_cache.dir
-/home/kalos/windows_D/Study/mp3player_after_refactor/build/CMakeFiles/rebuild_cache.dir
-/home/kalos/windows_D/Study/mp3player_after_refactor/build/CMakeFiles/Mp3Player_autogen_timestamp_deps.dir
-/home/kalos/windows_D/Study/mp3player_after_refactor/build/CMakeFiles/Mp3Player_autogen.dir
+/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/Mp3Player.dir
+/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/edit_cache.dir
+/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/rebuild_cache.dir
+/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/Mp3Player_autogen_timestamp_deps.dir
+/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles/Mp3Player_autogen.dir

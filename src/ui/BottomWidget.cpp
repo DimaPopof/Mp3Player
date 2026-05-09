@@ -14,11 +14,11 @@ BottomWidget::BottomWidget(QWidget *parent) : QWidget(parent) {
     setStyleSheet(
         "#bottomWidget {"
         "   background-color: rgba(30, 30, 30, 200);"
-        "   border-radius: 10px;"
-        "   padding: 5px 15px;"
+        "   border-radius: 0px;"
+        "   padding: 0px;"
         "}"
     );
-    setFixedHeight(40);
+    setMinimumHeight(50);
     setupUi();
     setupConnections();
 }
@@ -87,29 +87,53 @@ void BottomWidget::setupUi() {
     timeLabel = new QLabel("00:00 / 00:00", this);
     timeLabel->setStyleSheet("color: #FFFFFF;");
     
+    
+    bufferProgressBar = new QProgressBar(this);
+    bufferProgressBar->setTextVisible(false);
+    bufferProgressBar->setFixedHeight(24); // Match slider height
+    bufferProgressBar->setAttribute(Qt::WA_TransparentForMouseEvents, true);
+    bufferProgressBar->setStyleSheet(
+        "QProgressBar {"
+        "   background: rgba(255, 255, 255, 0.05);"
+        "   border: none;"
+        "   border-radius: 3px;"
+        "   margin-top: 9px;"
+        "   margin-bottom: 9px;"
+        "}"
+        "QProgressBar::chunk {"
+        "   background: rgba(71, 182, 251, 0.3);" // Light blue, semi-transparent
+        "   border-radius: 3px;"
+        "}" 
+    );
+
     timelineSlider = new ClickableSlider(Qt::Horizontal, this);
+    timelineSlider->setFixedHeight(24); // Give it some height for easier clicking
     timelineSlider->setStyleSheet(
         "QSlider::groove:horizontal {"
-        "background: rgba(255, 255, 255, 0.10);"
-        "height: 6px;"
-        "border-radius: 3px;"
+        "   background: transparent;"
+        "   height: 6px;"
+        "   border-radius: 3px;"
         "}"
         "QSlider::sub-page:horizontal {"
-        "background: #666666;"
-        "border-radius: 3px;"
+        "   background: #47b6fb;" // Match the blue theme
+        "   height: 6px;"
+        "   border-radius: 3px;"
         "}"
         "QSlider::add-page:horizontal {"
-        "background: rgba(255, 255, 255, 0.06);"
-        "border-radius: 3px;"
+        "   background: transparent;" // Let the buffer bar show through
+        "   height: 6px;"
+        "   border-radius: 3px;"
         "}"
         "QSlider::handle:horizontal {"
-        "background: #A0A0A0;"
-        "width: 14px;"
-        "margin: -5px 0;"
-        "border-radius: 7px;"
+        "   background: white;"
+        "   width: 16px;"
+        "   height: 16px;"
+        "   margin: -5px 0;"
+        "   border-radius: 8px;"
+        "   border: none;"
         "}"
         "QSlider::handle:horizontal:hover {"
-        "background: #B5B5B5;"
+        "   background: #ff6666;"
         "}"
     );
 
@@ -119,7 +143,23 @@ void BottomWidget::setupUi() {
     bottomLayout->addWidget(volumeButton);
     bottomLayout->addWidget(volumeSlider);
     bottomLayout->addWidget(timeLabel);
-    bottomLayout->addWidget(timelineSlider, 1);
+    
+    QWidget* sliderContainer = new QWidget(this);
+    sliderContainer->setAttribute(Qt::WA_TranslucentBackground);
+    sliderContainer->setStyleSheet("background: transparent;");
+    QStackedLayout* stackedLayout = new QStackedLayout(sliderContainer);
+    stackedLayout->setStackingMode(QStackedLayout::StackAll);
+    stackedLayout->setContentsMargins(0, 0, 0, 0);
+    stackedLayout->setContentsMargins(0, 0, 0, 0);
+    stackedLayout->setStackingMode(QStackedLayout::StackAll);
+    
+    // IMPORTANT: Widget added first is at the bottom.
+    stackedLayout->addWidget(bufferProgressBar);
+    stackedLayout->addWidget(timelineSlider);
+    bufferProgressBar->lower();
+    timelineSlider->raise();
+    
+    bottomLayout->addWidget(sliderContainer, 1);
 }
 
 void BottomWidget::setupConnections() {
@@ -130,9 +170,11 @@ void BottomWidget::setupConnections() {
     volumeButton->installEventFilter(this);
     connect(volumeButton, &QPushButton::clicked, this, &BottomWidget::volumeMuteClicked);
     connect(volumeSlider, &QSlider::valueChanged, this, &BottomWidget::volumeChanged);
-    //connect(timelineSlider, &QSlider::sliderMoved, this, &BottomWidget::seekRequested);
+    connect(timelineSlider, &QSlider::sliderMoved, this, [this](int value) {
+        timeLabel->setText(QString("%1 / %2").arg(formatTime(value / 1000), formatTime(timelineSlider->maximum() / 1000)));
+    });
     connect(timelineSlider, &QSlider::sliderReleased, this, [this]() {
-        emit seekRequested(timelineSlider->value());
+        emit seekRequested(timelineSlider->value() / 1000);
     });
     
 }
@@ -192,18 +234,19 @@ QString BottomWidget::formatTime(int totalSeconds) {
     return QString("%1:%2").arg(minutes, 2, 10, QChar('0')).arg(seconds, 2, 10, QChar('0'));
 }
 
-void BottomWidget::setDuration(int duration) {
-    timelineSlider->setRange(0, duration);
-    timeLabel->setText(QString("00:00 / %1").arg(formatTime(duration)));
+void BottomWidget::setDuration(qint64 durationMs) {
+    timelineSlider->setRange(0, durationMs);
+    bufferProgressBar->setRange(0, durationMs);
+    timeLabel->setText(QString("00:00 / %1").arg(formatTime(durationMs / 1000)));
 }
 
-void BottomWidget::updatePosition(int position, int duration) {
-    // Защита от "дергания" ползунка, когда пользователь его перетаскивает
+void BottomWidget::updatePosition(qint64 positionMs, qint64 durationMs) {
+    // Only update slider if user is not actively dragging it
     if (!timelineSlider->isSliderDown()) {
-        timelineSlider->setValue(position);
+        timelineSlider->setValue(positionMs);
     }
     
-    timeLabel->setText(QString("%1 / %2").arg(formatTime(position), formatTime(duration)));
+    timeLabel->setText(QString("%1 / %2").arg(formatTime(positionMs / 1000), formatTime(durationMs / 1000)));
 }
 int BottomWidget::getVolumeValue() const {
     return volumeSlider->value();
@@ -226,4 +269,16 @@ void BottomWidget::leaveEvent(QEvent *event) {
     // Когда мышь покидает пределы нижней панели, прячем слайдер
     volumeSlider->hide();
     QWidget::leaveEvent(event);
+}
+
+void BottomWidget::resetSlider() {
+    timelineSlider->setValue(0);
+}
+
+void BottomWidget::updateBufferedAmount(qint64 bufferedMs) {
+    int val = static_cast<int>(bufferedMs);
+    if (val > bufferProgressBar->maximum()) {
+        val = bufferProgressBar->maximum();
+    }
+    bufferProgressBar->setValue(val);
 }

@@ -1,234 +1,229 @@
 Mp3Player_autogen/timestamp: \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/CMakeLists.txt \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/build/Mp3Player_autogen/moc_predefs.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/resources.qrc \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/core/AudioPlayer.cpp \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/core/AudioPlayer.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/core/PlaylistManager.cpp \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/core/PlaylistManager.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/core/TrackMetadata.cpp \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/core/TrackMetadata.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/main.cpp \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/BottomWidget.cpp \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/BottomWidget.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/ClickableSlider.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/HighlightDelegate.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/InteractiveBackground.cpp \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/InteractiveBackground.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/LeftWidget.cpp \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/LeftWidget.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/MainWindow.cpp \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/MainWindow.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/RightWidget.cpp \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/RightWidget.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/models/CustomSortProxyModel.cpp \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/models/CustomSortProxyModel.h \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/models/FileBrowserModelFactory.cpp \
-	/home/kalos/windows_D/Study/mp3player_after_refactor/src/ui/models/FileBrowserModelFactory.h \
-	/mnt/w_disk_D/Study/mp3player_after_refactor/src/core/AudioPlayer.h \
-	/mnt/w_disk_D/Study/mp3player_after_refactor/src/core/PlaylistManager.h \
-	/mnt/w_disk_D/Study/mp3player_after_refactor/src/core/TrackMetadata.h \
-	/mnt/w_disk_D/Study/mp3player_after_refactor/src/miniaudio.h \
-	/mnt/w_disk_D/Study/mp3player_after_refactor/src/ui/CustomIconProvider.h \
-	/mnt/w_disk_D/Study/mp3player_after_refactor/src/ui/HighlightDelegate.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/CMakeLists.txt \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/build/Mp3Player_autogen/moc_predefs.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/AudioPlayer.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/AudioPlayer.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/PlaylistManager.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/PlaylistManager.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/RingBuffer.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/RingBuffer.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/TrackMetadata.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/core/TrackMetadata.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/main.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/miniaudio.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/miniaudio_impl.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/qrc_resources.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/BottomWidget.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/BottomWidget.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/ClickableSlider.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/CustomIconProvider.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/HighlightDelegate.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/InteractiveBackground.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/InteractiveBackground.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/LeftWidget.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/LeftWidget.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/MainWindow.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/MainWindow.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/RightWidget.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/RightWidget.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/Visualizer.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/Visualizer.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/CustomSortProxyModel.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/CustomSortProxyModel.h \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/FileBrowserModelFactory.cpp \
+	/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2\ windows\ but\ work\ properly)/src/ui/models/FileBrowserModelFactory.h \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/errno-base.h \
 	/usr/include/asm-generic/errno.h \
 	/usr/include/assert.h \
-	/usr/include/c++/13/algorithm \
-	/usr/include/c++/13/array \
-	/usr/include/c++/13/atomic \
-	/usr/include/c++/13/backward/auto_ptr.h \
-	/usr/include/c++/13/backward/binders.h \
-	/usr/include/c++/13/bit \
-	/usr/include/c++/13/bits/algorithmfwd.h \
-	/usr/include/c++/13/bits/align.h \
-	/usr/include/c++/13/bits/alloc_traits.h \
-	/usr/include/c++/13/bits/allocated_ptr.h \
-	/usr/include/c++/13/bits/allocator.h \
-	/usr/include/c++/13/bits/atomic_base.h \
-	/usr/include/c++/13/bits/atomic_lockfree_defines.h \
-	/usr/include/c++/13/bits/atomic_wait.h \
-	/usr/include/c++/13/bits/basic_ios.h \
-	/usr/include/c++/13/bits/basic_ios.tcc \
-	/usr/include/c++/13/bits/basic_string.h \
-	/usr/include/c++/13/bits/basic_string.tcc \
-	/usr/include/c++/13/bits/c++0x_warning.h \
-	/usr/include/c++/13/bits/char_traits.h \
-	/usr/include/c++/13/bits/charconv.h \
-	/usr/include/c++/13/bits/chrono.h \
-	/usr/include/c++/13/bits/codecvt.h \
-	/usr/include/c++/13/bits/concept_check.h \
-	/usr/include/c++/13/bits/cpp_type_traits.h \
-	/usr/include/c++/13/bits/cxxabi_forced.h \
-	/usr/include/c++/13/bits/cxxabi_init_exception.h \
-	/usr/include/c++/13/bits/enable_special_members.h \
-	/usr/include/c++/13/bits/erase_if.h \
-	/usr/include/c++/13/bits/exception.h \
-	/usr/include/c++/13/bits/exception_defines.h \
-	/usr/include/c++/13/bits/exception_ptr.h \
-	/usr/include/c++/13/bits/fs_dir.h \
-	/usr/include/c++/13/bits/fs_fwd.h \
-	/usr/include/c++/13/bits/fs_ops.h \
-	/usr/include/c++/13/bits/fs_path.h \
-	/usr/include/c++/13/bits/functexcept.h \
-	/usr/include/c++/13/bits/functional_hash.h \
-	/usr/include/c++/13/bits/hash_bytes.h \
-	/usr/include/c++/13/bits/invoke.h \
-	/usr/include/c++/13/bits/ios_base.h \
-	/usr/include/c++/13/bits/iterator_concepts.h \
-	/usr/include/c++/13/bits/list.tcc \
-	/usr/include/c++/13/bits/locale_classes.h \
-	/usr/include/c++/13/bits/locale_classes.tcc \
-	/usr/include/c++/13/bits/locale_conv.h \
-	/usr/include/c++/13/bits/locale_facets.h \
-	/usr/include/c++/13/bits/locale_facets.tcc \
-	/usr/include/c++/13/bits/locale_facets_nonio.h \
-	/usr/include/c++/13/bits/locale_facets_nonio.tcc \
-	/usr/include/c++/13/bits/localefwd.h \
-	/usr/include/c++/13/bits/max_size_type.h \
-	/usr/include/c++/13/bits/memory_resource.h \
-	/usr/include/c++/13/bits/memoryfwd.h \
-	/usr/include/c++/13/bits/mofunc_impl.h \
-	/usr/include/c++/13/bits/move.h \
-	/usr/include/c++/13/bits/move_only_function.h \
-	/usr/include/c++/13/bits/nested_exception.h \
-	/usr/include/c++/13/bits/new_allocator.h \
-	/usr/include/c++/13/bits/node_handle.h \
-	/usr/include/c++/13/bits/ostream.tcc \
-	/usr/include/c++/13/bits/ostream_insert.h \
-	/usr/include/c++/13/bits/parse_numbers.h \
-	/usr/include/c++/13/bits/postypes.h \
-	/usr/include/c++/13/bits/predefined_ops.h \
-	/usr/include/c++/13/bits/ptr_traits.h \
-	/usr/include/c++/13/bits/quoted_string.h \
-	/usr/include/c++/13/bits/range_access.h \
-	/usr/include/c++/13/bits/ranges_algo.h \
-	/usr/include/c++/13/bits/ranges_algobase.h \
-	/usr/include/c++/13/bits/ranges_base.h \
-	/usr/include/c++/13/bits/ranges_cmp.h \
-	/usr/include/c++/13/bits/ranges_uninitialized.h \
-	/usr/include/c++/13/bits/ranges_util.h \
-	/usr/include/c++/13/bits/refwrap.h \
-	/usr/include/c++/13/bits/requires_hosted.h \
-	/usr/include/c++/13/bits/shared_ptr.h \
-	/usr/include/c++/13/bits/shared_ptr_atomic.h \
-	/usr/include/c++/13/bits/shared_ptr_base.h \
-	/usr/include/c++/13/bits/specfun.h \
-	/usr/include/c++/13/bits/std_abs.h \
-	/usr/include/c++/13/bits/std_function.h \
-	/usr/include/c++/13/bits/std_mutex.h \
-	/usr/include/c++/13/bits/stl_algo.h \
-	/usr/include/c++/13/bits/stl_algobase.h \
-	/usr/include/c++/13/bits/stl_bvector.h \
-	/usr/include/c++/13/bits/stl_construct.h \
-	/usr/include/c++/13/bits/stl_function.h \
-	/usr/include/c++/13/bits/stl_heap.h \
-	/usr/include/c++/13/bits/stl_iterator.h \
-	/usr/include/c++/13/bits/stl_iterator_base_funcs.h \
-	/usr/include/c++/13/bits/stl_iterator_base_types.h \
-	/usr/include/c++/13/bits/stl_list.h \
-	/usr/include/c++/13/bits/stl_map.h \
-	/usr/include/c++/13/bits/stl_multimap.h \
-	/usr/include/c++/13/bits/stl_numeric.h \
-	/usr/include/c++/13/bits/stl_pair.h \
-	/usr/include/c++/13/bits/stl_raw_storage_iter.h \
-	/usr/include/c++/13/bits/stl_relops.h \
-	/usr/include/c++/13/bits/stl_tempbuf.h \
-	/usr/include/c++/13/bits/stl_tree.h \
-	/usr/include/c++/13/bits/stl_uninitialized.h \
-	/usr/include/c++/13/bits/stl_vector.h \
-	/usr/include/c++/13/bits/stream_iterator.h \
-	/usr/include/c++/13/bits/streambuf.tcc \
-	/usr/include/c++/13/bits/streambuf_iterator.h \
-	/usr/include/c++/13/bits/string_view.tcc \
-	/usr/include/c++/13/bits/stringfwd.h \
-	/usr/include/c++/13/bits/uniform_int_dist.h \
-	/usr/include/c++/13/bits/unique_ptr.h \
-	/usr/include/c++/13/bits/uses_allocator.h \
-	/usr/include/c++/13/bits/uses_allocator_args.h \
-	/usr/include/c++/13/bits/utility.h \
-	/usr/include/c++/13/bits/vector.tcc \
-	/usr/include/c++/13/cctype \
-	/usr/include/c++/13/cerrno \
-	/usr/include/c++/13/chrono \
-	/usr/include/c++/13/climits \
-	/usr/include/c++/13/clocale \
-	/usr/include/c++/13/cmath \
-	/usr/include/c++/13/codecvt \
-	/usr/include/c++/13/compare \
-	/usr/include/c++/13/concepts \
-	/usr/include/c++/13/cstddef \
-	/usr/include/c++/13/cstdint \
-	/usr/include/c++/13/cstdlib \
-	/usr/include/c++/13/cstring \
-	/usr/include/c++/13/ctime \
-	/usr/include/c++/13/cwchar \
-	/usr/include/c++/13/cwctype \
-	/usr/include/c++/13/debug/assertions.h \
-	/usr/include/c++/13/debug/debug.h \
-	/usr/include/c++/13/exception \
-	/usr/include/c++/13/ext/aligned_buffer.h \
-	/usr/include/c++/13/ext/alloc_traits.h \
-	/usr/include/c++/13/ext/atomicity.h \
-	/usr/include/c++/13/ext/concurrence.h \
-	/usr/include/c++/13/ext/numeric_traits.h \
-	/usr/include/c++/13/ext/string_conversions.h \
-	/usr/include/c++/13/ext/type_traits.h \
-	/usr/include/c++/13/filesystem \
-	/usr/include/c++/13/functional \
-	/usr/include/c++/13/initializer_list \
-	/usr/include/c++/13/iomanip \
-	/usr/include/c++/13/ios \
-	/usr/include/c++/13/iosfwd \
-	/usr/include/c++/13/iterator \
-	/usr/include/c++/13/limits \
-	/usr/include/c++/13/list \
-	/usr/include/c++/13/locale \
-	/usr/include/c++/13/map \
-	/usr/include/c++/13/memory \
-	/usr/include/c++/13/new \
-	/usr/include/c++/13/numbers \
-	/usr/include/c++/13/numeric \
-	/usr/include/c++/13/optional \
-	/usr/include/c++/13/ostream \
-	/usr/include/c++/13/pstl/execution_defs.h \
-	/usr/include/c++/13/pstl/glue_algorithm_defs.h \
-	/usr/include/c++/13/pstl/glue_memory_defs.h \
-	/usr/include/c++/13/pstl/glue_numeric_defs.h \
-	/usr/include/c++/13/ratio \
-	/usr/include/c++/13/stdexcept \
-	/usr/include/c++/13/streambuf \
-	/usr/include/c++/13/string \
-	/usr/include/c++/13/string_view \
-	/usr/include/c++/13/system_error \
-	/usr/include/c++/13/tr1/bessel_function.tcc \
-	/usr/include/c++/13/tr1/beta_function.tcc \
-	/usr/include/c++/13/tr1/ell_integral.tcc \
-	/usr/include/c++/13/tr1/exp_integral.tcc \
-	/usr/include/c++/13/tr1/gamma.tcc \
-	/usr/include/c++/13/tr1/hypergeometric.tcc \
-	/usr/include/c++/13/tr1/legendre_function.tcc \
-	/usr/include/c++/13/tr1/modified_bessel_func.tcc \
-	/usr/include/c++/13/tr1/poly_hermite.tcc \
-	/usr/include/c++/13/tr1/poly_laguerre.tcc \
-	/usr/include/c++/13/tr1/riemann_zeta.tcc \
-	/usr/include/c++/13/tr1/special_function_util.h \
-	/usr/include/c++/13/tuple \
-	/usr/include/c++/13/type_traits \
-	/usr/include/c++/13/typeinfo \
-	/usr/include/c++/13/unordered_map \
-	/usr/include/c++/13/utility \
-	/usr/include/c++/13/variant \
-	/usr/include/c++/13/vector \
+	/usr/include/c++/14/algorithm \
+	/usr/include/c++/14/array \
+	/usr/include/c++/14/atomic \
+	/usr/include/c++/14/backward/auto_ptr.h \
+	/usr/include/c++/14/backward/binders.h \
+	/usr/include/c++/14/bit \
+	/usr/include/c++/14/bits/algorithmfwd.h \
+	/usr/include/c++/14/bits/align.h \
+	/usr/include/c++/14/bits/alloc_traits.h \
+	/usr/include/c++/14/bits/allocated_ptr.h \
+	/usr/include/c++/14/bits/allocator.h \
+	/usr/include/c++/14/bits/atomic_base.h \
+	/usr/include/c++/14/bits/atomic_lockfree_defines.h \
+	/usr/include/c++/14/bits/atomic_wait.h \
+	/usr/include/c++/14/bits/basic_ios.h \
+	/usr/include/c++/14/bits/basic_ios.tcc \
+	/usr/include/c++/14/bits/basic_string.h \
+	/usr/include/c++/14/bits/basic_string.tcc \
+	/usr/include/c++/14/bits/c++0x_warning.h \
+	/usr/include/c++/14/bits/char_traits.h \
+	/usr/include/c++/14/bits/charconv.h \
+	/usr/include/c++/14/bits/concept_check.h \
+	/usr/include/c++/14/bits/cpp_type_traits.h \
+	/usr/include/c++/14/bits/cxxabi_forced.h \
+	/usr/include/c++/14/bits/cxxabi_init_exception.h \
+	/usr/include/c++/14/bits/erase_if.h \
+	/usr/include/c++/14/bits/exception.h \
+	/usr/include/c++/14/bits/exception_defines.h \
+	/usr/include/c++/14/bits/exception_ptr.h \
+	/usr/include/c++/14/bits/functexcept.h \
+	/usr/include/c++/14/bits/functional_hash.h \
+	/usr/include/c++/14/bits/hash_bytes.h \
+	/usr/include/c++/14/bits/invoke.h \
+	/usr/include/c++/14/bits/ios_base.h \
+	/usr/include/c++/14/bits/istream.tcc \
+	/usr/include/c++/14/bits/iterator_concepts.h \
+	/usr/include/c++/14/bits/list.tcc \
+	/usr/include/c++/14/bits/locale_classes.h \
+	/usr/include/c++/14/bits/locale_classes.tcc \
+	/usr/include/c++/14/bits/locale_facets.h \
+	/usr/include/c++/14/bits/locale_facets.tcc \
+	/usr/include/c++/14/bits/localefwd.h \
+	/usr/include/c++/14/bits/max_size_type.h \
+	/usr/include/c++/14/bits/memory_resource.h \
+	/usr/include/c++/14/bits/memoryfwd.h \
+	/usr/include/c++/14/bits/mofunc_impl.h \
+	/usr/include/c++/14/bits/move.h \
+	/usr/include/c++/14/bits/move_only_function.h \
+	/usr/include/c++/14/bits/nested_exception.h \
+	/usr/include/c++/14/bits/new_allocator.h \
+	/usr/include/c++/14/bits/node_handle.h \
+	/usr/include/c++/14/bits/ostream.tcc \
+	/usr/include/c++/14/bits/ostream_insert.h \
+	/usr/include/c++/14/bits/out_ptr.h \
+	/usr/include/c++/14/bits/postypes.h \
+	/usr/include/c++/14/bits/predefined_ops.h \
+	/usr/include/c++/14/bits/ptr_traits.h \
+	/usr/include/c++/14/bits/range_access.h \
+	/usr/include/c++/14/bits/ranges_algo.h \
+	/usr/include/c++/14/bits/ranges_algobase.h \
+	/usr/include/c++/14/bits/ranges_base.h \
+	/usr/include/c++/14/bits/ranges_cmp.h \
+	/usr/include/c++/14/bits/ranges_uninitialized.h \
+	/usr/include/c++/14/bits/ranges_util.h \
+	/usr/include/c++/14/bits/refwrap.h \
+	/usr/include/c++/14/bits/requires_hosted.h \
+	/usr/include/c++/14/bits/sat_arith.h \
+	/usr/include/c++/14/bits/shared_ptr.h \
+	/usr/include/c++/14/bits/shared_ptr_atomic.h \
+	/usr/include/c++/14/bits/shared_ptr_base.h \
+	/usr/include/c++/14/bits/specfun.h \
+	/usr/include/c++/14/bits/sstream.tcc \
+	/usr/include/c++/14/bits/std_abs.h \
+	/usr/include/c++/14/bits/std_function.h \
+	/usr/include/c++/14/bits/std_mutex.h \
+	/usr/include/c++/14/bits/stl_algo.h \
+	/usr/include/c++/14/bits/stl_algobase.h \
+	/usr/include/c++/14/bits/stl_bvector.h \
+	/usr/include/c++/14/bits/stl_construct.h \
+	/usr/include/c++/14/bits/stl_function.h \
+	/usr/include/c++/14/bits/stl_heap.h \
+	/usr/include/c++/14/bits/stl_iterator.h \
+	/usr/include/c++/14/bits/stl_iterator_base_funcs.h \
+	/usr/include/c++/14/bits/stl_iterator_base_types.h \
+	/usr/include/c++/14/bits/stl_list.h \
+	/usr/include/c++/14/bits/stl_map.h \
+	/usr/include/c++/14/bits/stl_multimap.h \
+	/usr/include/c++/14/bits/stl_numeric.h \
+	/usr/include/c++/14/bits/stl_pair.h \
+	/usr/include/c++/14/bits/stl_raw_storage_iter.h \
+	/usr/include/c++/14/bits/stl_relops.h \
+	/usr/include/c++/14/bits/stl_tempbuf.h \
+	/usr/include/c++/14/bits/stl_tree.h \
+	/usr/include/c++/14/bits/stl_uninitialized.h \
+	/usr/include/c++/14/bits/stl_vector.h \
+	/usr/include/c++/14/bits/stream_iterator.h \
+	/usr/include/c++/14/bits/streambuf.tcc \
+	/usr/include/c++/14/bits/streambuf_iterator.h \
+	/usr/include/c++/14/bits/string_view.tcc \
+	/usr/include/c++/14/bits/stringfwd.h \
+	/usr/include/c++/14/bits/uniform_int_dist.h \
+	/usr/include/c++/14/bits/unique_ptr.h \
+	/usr/include/c++/14/bits/uses_allocator.h \
+	/usr/include/c++/14/bits/uses_allocator_args.h \
+	/usr/include/c++/14/bits/utility.h \
+	/usr/include/c++/14/bits/vector.tcc \
+	/usr/include/c++/14/bits/version.h \
+	/usr/include/c++/14/cctype \
+	/usr/include/c++/14/cerrno \
+	/usr/include/c++/14/charconv \
+	/usr/include/c++/14/chrono \
+	/usr/include/c++/14/climits \
+	/usr/include/c++/14/clocale \
+	/usr/include/c++/14/cmath \
+	/usr/include/c++/14/compare \
+	/usr/include/c++/14/complex \
+	/usr/include/c++/14/concepts \
+	/usr/include/c++/14/condition_variable \
+	/usr/include/c++/14/cstddef \
+	/usr/include/c++/14/cstdint \
+	/usr/include/c++/14/cstdlib \
+	/usr/include/c++/14/cstring \
+	/usr/include/c++/14/cwchar \
+	/usr/include/c++/14/cwctype \
+	/usr/include/c++/14/debug/assertions.h \
+	/usr/include/c++/14/debug/debug.h \
+	/usr/include/c++/14/exception \
+	/usr/include/c++/14/ext/aligned_buffer.h \
+	/usr/include/c++/14/ext/alloc_traits.h \
+	/usr/include/c++/14/ext/atomicity.h \
+	/usr/include/c++/14/ext/concurrence.h \
+	/usr/include/c++/14/ext/numeric_traits.h \
+	/usr/include/c++/14/ext/string_conversions.h \
+	/usr/include/c++/14/ext/type_traits.h \
+	/usr/include/c++/14/filesystem \
+	/usr/include/c++/14/format \
+	/usr/include/c++/14/functional \
+	/usr/include/c++/14/future \
+	/usr/include/c++/14/initializer_list \
+	/usr/include/c++/14/ios \
+	/usr/include/c++/14/iosfwd \
+	/usr/include/c++/14/istream \
+	/usr/include/c++/14/iterator \
+	/usr/include/c++/14/limits \
+	/usr/include/c++/14/list \
+	/usr/include/c++/14/map \
+	/usr/include/c++/14/memory \
+	/usr/include/c++/14/mutex \
+	/usr/include/c++/14/new \
+	/usr/include/c++/14/numbers \
+	/usr/include/c++/14/numeric \
+	/usr/include/c++/14/optional \
+	/usr/include/c++/14/ostream \
+	/usr/include/c++/14/pstl/execution_defs.h \
+	/usr/include/c++/14/pstl/glue_numeric_defs.h \
+	/usr/include/c++/14/sstream \
+	/usr/include/c++/14/stdexcept \
+	/usr/include/c++/14/streambuf \
+	/usr/include/c++/14/string \
+	/usr/include/c++/14/string_view \
+	/usr/include/c++/14/text_encoding \
+	/usr/include/c++/14/thread \
+	/usr/include/c++/14/tr1/bessel_function.tcc \
+	/usr/include/c++/14/tr1/beta_function.tcc \
+	/usr/include/c++/14/tr1/ell_integral.tcc \
+	/usr/include/c++/14/tr1/exp_integral.tcc \
+	/usr/include/c++/14/tr1/gamma.tcc \
+	/usr/include/c++/14/tr1/hypergeometric.tcc \
+	/usr/include/c++/14/tr1/legendre_function.tcc \
+	/usr/include/c++/14/tr1/modified_bessel_func.tcc \
+	/usr/include/c++/14/tr1/poly_hermite.tcc \
+	/usr/include/c++/14/tr1/poly_laguerre.tcc \
+	/usr/include/c++/14/tr1/riemann_zeta.tcc \
+	/usr/include/c++/14/tr1/special_function_util.h \
+	/usr/include/c++/14/tuple \
+	/usr/include/c++/14/type_traits \
+	/usr/include/c++/14/typeinfo \
+	/usr/include/c++/14/unordered_map \
+	/usr/include/c++/14/utility \
+	/usr/include/c++/14/variant \
+	/usr/include/c++/14/vector \
 	/usr/include/ctype.h \
 	/usr/include/endian.h \
 	/usr/include/errno.h \
 	/usr/include/features-time64.h \
 	/usr/include/features.h \
-	/usr/include/libintl.h \
 	/usr/include/limits.h \
 	/usr/include/linux/errno.h \
 	/usr/include/linux/limits.h \
@@ -322,22 +317,24 @@ Mp3Player_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
 	/usr/include/x86_64-linux-gnu/bits/wordsize.h \
 	/usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
-	/usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
+	/usr/include/x86_64-linux-gnu/c++/14/bits/atomic_word.h \
+	/usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h \
+	/usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
+	/usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h \
+	/usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h \
+	/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_base.h \
+	/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h \
+	/usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h \
+	/usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h \
+	/usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h \
+	/usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
 	/usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
 	/usr/include/x86_64-linux-gnu/gnu/stubs.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QAbstractItemModel \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/QDirIterator \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QFileInfo \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QFileInfoList \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
@@ -350,6 +347,7 @@ Mp3Player_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QSortFilterProxyModel \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/QThread \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
@@ -382,9 +380,11 @@ Mp3Player_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdiriterator.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
@@ -448,6 +448,7 @@ Mp3Player_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtcore-config.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreexports.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qthread.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
@@ -458,6 +459,7 @@ Mp3Player_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/QAbstractFileIconProvider \
+	/usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/QFileSystemModel \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/QIcon \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
@@ -466,6 +468,7 @@ Mp3Player_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/QResizeEvent \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut \
+	/usr/include/x86_64-linux-gnu/qt6/QtGui/QStandardItemModel \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qabstractfileiconprovider.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
@@ -497,7 +500,10 @@ Mp3Player_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qshortcut.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtGui/qstandarditemmodel.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
@@ -509,11 +515,14 @@ Mp3Player_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListView \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QProgressBar \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedLayout \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedWidget \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyle \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyleOptionSlider \
@@ -534,13 +543,16 @@ Mp3Player_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qprogressbar.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplitter.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedlayout.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleditemdelegate.h \
@@ -556,9 +568,9 @@ Mp3Player_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/sys/select.h \
 	/usr/include/x86_64-linux-gnu/sys/syscall.h \
 	/usr/include/x86_64-linux-gnu/sys/types.h \
-	/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-	/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
-	/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+	/usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
+	/usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
+	/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin/FindXKB.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake \

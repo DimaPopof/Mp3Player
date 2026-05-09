@@ -4,6 +4,8 @@
 #include <QSlider>
 #include <QLabel>
 #include <QHBoxLayout>
+#include <QProgressBar>
+#include <QStackedLayout>
 
 class ClickableSlider; // Forward declaration
 
@@ -19,10 +21,11 @@ public:
     int getVolumeValue() const;
     void updatePlayButtonState(bool isPlaying);
     void updateVolumeIcon(bool isMuted);
-    void setDuration(int duration);
-    void updatePosition(int position, int duration);
+    void setDuration(qint64 durationMs);
+    void updatePosition(qint64 positionMs, qint64 durationMs);
+    void updateBufferedAmount(qint64 bufferedMs);
+    void resetSlider();
     
-
 signals:
     // Signals emitted when user interacts with this widget
     void previousClicked();
@@ -41,6 +44,7 @@ private:
     QSlider *volumeSlider;
     QLabel *timeLabel;
     ClickableSlider *timelineSlider;
+    QProgressBar *bufferProgressBar;
 
     void setupUi();
     void setupConnections();

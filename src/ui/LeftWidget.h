@@ -4,9 +4,11 @@
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QEvent>
 #include <core/TrackMetadata.h>
+#include "Visualizer.h"
 
-class InteractiveBackground; // Forward declaration
+class Visualizer;
 
 class LeftWidget : public QWidget { 
     Q_OBJECT
@@ -19,20 +21,27 @@ public:
     void resetTrackDisplay();
     void updateTrackDisplay(const TrackInfo &trackInfo);
 
+    Visualizer* pass_AudioPlayer_To_Visualizer() const { return visualizer; }
 signals:
     void openFolderRequested();
     void constantFolderRequested();   
-
+    
 private:
     QPushButton *openFolderButton;
     QPushButton *constantFolderButton;
     QLabel *coverLabel;
     QLabel *metadataLabel;
     QPixmap currentCoverPixmap;
+    QVBoxLayout *leftLayout;
+    QVBoxLayout *trackInfoLayout;
+    QWidget *trackInfoContainer;
+    Visualizer *visualizer;
 
     void setupUi();
     void setupConnections();
     void updateCoverImage();
+    void updateTrackInfoContainerHeight();
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
+    void resizeEvent(QResizeEvent *event) override;
 };

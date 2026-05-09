@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kalos/windows_D/Study/mp3player_after_refactor
+CMAKE_SOURCE_DIR = "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kalos/windows_D/Study/mp3player_after_refactor/build
+CMAKE_BINARY_DIR = "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalos/windows_D/Study/mp3player_after_refactor/build/CMakeFiles /home/kalos/windows_D/Study/mp3player_after_refactor/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalos/windows_D/Study/mp3player_after_refactor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/w_disk_D/Study/mp3player/mp3player_with_musializer(2 windows but work properly)/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -154,30 +154,6 @@ Mp3Player_autogen: cmake_check_build_system
 Mp3Player_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player_autogen.dir/build.make CMakeFiles/Mp3Player_autogen.dir/build
 .PHONY : Mp3Player_autogen/fast
-
-Mp3Player_autogen/EWIEGA46WW/qrc_resources.o: Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o
-.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.o
-
-# target to build an object file
-Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o
-.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o
-
-Mp3Player_autogen/EWIEGA46WW/qrc_resources.i: Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.i
-.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.i
-
-# target to preprocess a source file
-Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.i
-.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.i
-
-Mp3Player_autogen/EWIEGA46WW/qrc_resources.s: Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.s
-.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.s
-
-# target to generate assembly for a file
-Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.s
-.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.s
 
 Mp3Player_autogen/mocs_compilation.o: Mp3Player_autogen/mocs_compilation.cpp.o
 .PHONY : Mp3Player_autogen/mocs_compilation.o
@@ -251,6 +227,30 @@ src/core/PlaylistManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.s
 .PHONY : src/core/PlaylistManager.cpp.s
 
+src/core/RingBuffer.o: src/core/RingBuffer.cpp.o
+.PHONY : src/core/RingBuffer.o
+
+# target to build an object file
+src/core/RingBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o
+.PHONY : src/core/RingBuffer.cpp.o
+
+src/core/RingBuffer.i: src/core/RingBuffer.cpp.i
+.PHONY : src/core/RingBuffer.i
+
+# target to preprocess a source file
+src/core/RingBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.i
+.PHONY : src/core/RingBuffer.cpp.i
+
+src/core/RingBuffer.s: src/core/RingBuffer.cpp.s
+.PHONY : src/core/RingBuffer.s
+
+# target to generate assembly for a file
+src/core/RingBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.s
+.PHONY : src/core/RingBuffer.cpp.s
+
 src/core/TrackMetadata.o: src/core/TrackMetadata.cpp.o
 .PHONY : src/core/TrackMetadata.o
 
@@ -298,6 +298,54 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/miniaudio_impl.o: src/miniaudio_impl.cpp.o
+.PHONY : src/miniaudio_impl.o
+
+# target to build an object file
+src/miniaudio_impl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o
+.PHONY : src/miniaudio_impl.cpp.o
+
+src/miniaudio_impl.i: src/miniaudio_impl.cpp.i
+.PHONY : src/miniaudio_impl.i
+
+# target to preprocess a source file
+src/miniaudio_impl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.i
+.PHONY : src/miniaudio_impl.cpp.i
+
+src/miniaudio_impl.s: src/miniaudio_impl.cpp.s
+.PHONY : src/miniaudio_impl.s
+
+# target to generate assembly for a file
+src/miniaudio_impl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.s
+.PHONY : src/miniaudio_impl.cpp.s
+
+src/qrc_resources.o: src/qrc_resources.cpp.o
+.PHONY : src/qrc_resources.o
+
+# target to build an object file
+src/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o
+.PHONY : src/qrc_resources.cpp.o
+
+src/qrc_resources.i: src/qrc_resources.cpp.i
+.PHONY : src/qrc_resources.i
+
+# target to preprocess a source file
+src/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.i
+.PHONY : src/qrc_resources.cpp.i
+
+src/qrc_resources.s: src/qrc_resources.cpp.s
+.PHONY : src/qrc_resources.s
+
+# target to generate assembly for a file
+src/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.s
+.PHONY : src/qrc_resources.cpp.s
 
 src/ui/BottomWidget.o: src/ui/BottomWidget.cpp.o
 .PHONY : src/ui/BottomWidget.o
@@ -419,6 +467,30 @@ src/ui/RightWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.s
 .PHONY : src/ui/RightWidget.cpp.s
 
+src/ui/Visualizer.o: src/ui/Visualizer.cpp.o
+.PHONY : src/ui/Visualizer.o
+
+# target to build an object file
+src/ui/Visualizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o
+.PHONY : src/ui/Visualizer.cpp.o
+
+src/ui/Visualizer.i: src/ui/Visualizer.cpp.i
+.PHONY : src/ui/Visualizer.i
+
+# target to preprocess a source file
+src/ui/Visualizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.i
+.PHONY : src/ui/Visualizer.cpp.i
+
+src/ui/Visualizer.s: src/ui/Visualizer.cpp.s
+.PHONY : src/ui/Visualizer.s
+
+# target to generate assembly for a file
+src/ui/Visualizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.s
+.PHONY : src/ui/Visualizer.cpp.s
+
 src/ui/models/CustomSortProxyModel.o: src/ui/models/CustomSortProxyModel.cpp.o
 .PHONY : src/ui/models/CustomSortProxyModel.o
 
@@ -478,9 +550,6 @@ help:
 	@echo "... Mp3Player_autogen"
 	@echo "... Mp3Player_autogen_timestamp_deps"
 	@echo "... Mp3Player"
-	@echo "... Mp3Player_autogen/EWIEGA46WW/qrc_resources.o"
-	@echo "... Mp3Player_autogen/EWIEGA46WW/qrc_resources.i"
-	@echo "... Mp3Player_autogen/EWIEGA46WW/qrc_resources.s"
 	@echo "... Mp3Player_autogen/mocs_compilation.o"
 	@echo "... Mp3Player_autogen/mocs_compilation.i"
 	@echo "... Mp3Player_autogen/mocs_compilation.s"
@@ -490,12 +559,21 @@ help:
 	@echo "... src/core/PlaylistManager.o"
 	@echo "... src/core/PlaylistManager.i"
 	@echo "... src/core/PlaylistManager.s"
+	@echo "... src/core/RingBuffer.o"
+	@echo "... src/core/RingBuffer.i"
+	@echo "... src/core/RingBuffer.s"
 	@echo "... src/core/TrackMetadata.o"
 	@echo "... src/core/TrackMetadata.i"
 	@echo "... src/core/TrackMetadata.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/miniaudio_impl.o"
+	@echo "... src/miniaudio_impl.i"
+	@echo "... src/miniaudio_impl.s"
+	@echo "... src/qrc_resources.o"
+	@echo "... src/qrc_resources.i"
+	@echo "... src/qrc_resources.s"
 	@echo "... src/ui/BottomWidget.o"
 	@echo "... src/ui/BottomWidget.i"
 	@echo "... src/ui/BottomWidget.s"
@@ -511,6 +589,9 @@ help:
 	@echo "... src/ui/RightWidget.o"
 	@echo "... src/ui/RightWidget.i"
 	@echo "... src/ui/RightWidget.s"
+	@echo "... src/ui/Visualizer.o"
+	@echo "... src/ui/Visualizer.i"
+	@echo "... src/ui/Visualizer.s"
 	@echo "... src/ui/models/CustomSortProxyModel.o"
 	@echo "... src/ui/models/CustomSortProxyModel.i"
 	@echo "... src/ui/models/CustomSortProxyModel.s"
