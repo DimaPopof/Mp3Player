@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/mocs_compilation.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/moc_AudioPlayer.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/PRMOGMWJPH/moc_AudioPlayer.cpp \
  /usr/include/c++/14/memory /usr/include/c++/14/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/14/backward/auto_ptr.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/AudioPlayer.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/AudioPlayer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
@@ -299,10 +299,13 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/14/bits/std_mutex.h \
  /usr/include/c++/14/bits/unique_lock.h \
  /usr/include/c++/14/condition_variable \
- /home/kalos/Study/mp3players/mp3player/src/miniaudio.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/RingBuffer.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/moc_PlaylistManager.cpp \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/PlaylistManager.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/miniaudio.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/readerwriterqueue.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/atomicops.h \
+ /usr/include/c++/14/cassert /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/PRMOGMWJPH/moc_PlaylistManager.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/PRMOGMWJPH/../../../src/core/PlaylistManager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
@@ -358,72 +361,80 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFileInfoList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_BottomWidget.cpp \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/BottomWidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_BottomWidget.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/BottomWidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QIcon \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QProgressBar \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qprogressbar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyle \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_ClickableSlider.cpp \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/ClickableSlider.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_ClickableSlider.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/ClickableSlider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
@@ -440,11 +451,12 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyleOptionSlider \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
@@ -456,48 +468,43 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyle \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_HighlightDelegate.cpp \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/HighlightDelegate.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyledItemDelegate \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleditemdelegate.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyleOptionViewItem \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_HighlightDelegate.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/HighlightDelegate.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/ThemeManager.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QFileInfo \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFileSystemModel \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfilesystemmodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdiriterator.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QFileInfo \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyleOptionViewItem \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyledItemDelegate \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleditemdelegate.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTreeView \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtreeview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_InteractiveBackground.cpp \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/InteractiveBackground.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_InteractiveBackground.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/InteractiveBackground.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointF \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPaintEvent \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_LeftWidget.cpp \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/LeftWidget.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_LeftWidget.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/LeftWidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
- /home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/TrackMetadata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/Visualizer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/Visualizer.h \
  /usr/include/c++/14/complex \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_MainWindow.cpp \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/MainWindow.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_MainWindow.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/MainWindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
@@ -509,12 +516,12 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QAbstractItemModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/HighlightDelegate.h \
- /home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.h \
- /home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/InteractiveBackground.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_RightWidget.cpp \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/RightWidget.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/HighlightDelegate.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/PlaylistManager.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/AudioPlayer.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/InteractiveBackground.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_RightWidget.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/RightWidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListView \
@@ -522,11 +529,9 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QModelIndex \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/CustomIconProvider.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/CustomIconProvider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QAbstractFileIconProvider \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstractfileiconprovider.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QIcon \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QThread \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qthread.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
@@ -536,10 +541,11 @@ CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdiriterator.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QStandardItemModel \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qstandarditemmodel.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_Visualizer.cpp \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/Visualizer.h \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/J6PSKMGISE/moc_CustomSortProxyModel.cpp \
- /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/J6PSKMGISE/../../../src/ui/models/CustomSortProxyModel.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_ThemeManager.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_Visualizer.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/../../../src/ui/Visualizer.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/J6PSKMGISE/moc_CustomSortProxyModel.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/J6PSKMGISE/../../../src/ui/models/CustomSortProxyModel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractproxymodel.h

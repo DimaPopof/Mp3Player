@@ -1,7 +1,7 @@
-/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_LeftWidget.cpp: /home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.h \
-  /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/moc_predefs.h \
-  /mnt/w_disk_D/Study/mp3players/mp3player/src/core/TrackMetadata.h \
-  /mnt/w_disk_D/Study/mp3players/mp3player/src/ui/Visualizer.h \
+/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_LeftWidget.cpp: /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/LeftWidget.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/moc_predefs.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/TrackMetadata.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/Visualizer.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

@@ -1,7 +1,8 @@
-/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/PRMOGMWJPH/moc_AudioPlayer.cpp: /home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.h \
-  /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/moc_predefs.h \
-  /mnt/w_disk_D/Study/mp3players/mp3player/src/core/RingBuffer.h \
-  /mnt/w_disk_D/Study/mp3players/mp3player/src/miniaudio.h \
+/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/PRMOGMWJPH/moc_AudioPlayer.cpp: /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/AudioPlayer.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/moc_predefs.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/atomicops.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/readerwriterqueue.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/miniaudio.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -111,6 +112,7 @@
   /usr/include/c++/14/bits/utility.h \
   /usr/include/c++/14/bits/vector.tcc \
   /usr/include/c++/14/bits/version.h \
+  /usr/include/c++/14/cassert \
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/charconv \
@@ -125,6 +127,7 @@
   /usr/include/c++/14/cstdint \
   /usr/include/c++/14/cstdlib \
   /usr/include/c++/14/cstring \
+  /usr/include/c++/14/ctime \
   /usr/include/c++/14/cwchar \
   /usr/include/c++/14/cwctype \
   /usr/include/c++/14/debug/assertions.h \
@@ -191,6 +194,7 @@
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/semaphore.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdlib.h \
@@ -228,6 +232,7 @@
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \

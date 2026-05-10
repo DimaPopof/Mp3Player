@@ -1,0 +1,296 @@
+#bottomWidget {
+    /* Очень плотный, почти непрозрачный белый с легчайшим лавандово-розовым подтоном */
+    background-color: rgba(252, 248, 255, 245); 
+    /* Тонкая лавандовая линия сверху, чтобы отделить панель от основного окна */
+    border-top: 1px solid rgba(200, 198, 250, 200);
+}
+
+#leftWidget,
+#rightWidget {
+    background: transparent;
+}
+
+#topSplitter::handle {
+    background-color: rgba(200, 198, 250, 200);
+    width: 5px;
+}
+
+/* Suppress default Qt styling artifacts in tree/list views */
+#fileTreeView,
+#fileListView,
+#searchResultsView {
+    outline: none;
+    border: none;
+    show-decoration-selected: 0;
+}
+
+#fileTreeView::item:focus,
+#fileListView::item:focus,
+#searchResultsView::item:focus {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+#fileTreeView::item:hover,
+#fileListView::item:hover,
+#searchResultsView::item:hover {
+    background-color: transparent;
+}
+
+#fileTreeView::item:selected,
+#fileListView::item:selected,
+#searchResultsView::item:selected {
+    background-color: transparent;
+}
+
+#leftWidget QPushButton,
+#rightWidget QPushButton {
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+}
+
+#leftWidget QPushButton:hover,
+#rightWidget QPushButton:hover {
+    background-color: rgba(220, 208, 255, 150);
+}
+
+#leftWidget QPushButton:pressed,
+#rightWidget QPushButton:pressed {
+    background-color: rgba(200, 198, 250, 190);
+}
+
+#searchBox {
+    background: rgba(255, 255, 255, 100);
+    color: #5D5466;
+    border: 1px solid rgba(200, 198, 250, 150);
+    border-radius: 6px;
+    padding: 6px 8px;
+    margin-left: 10px;
+}
+
+#searchBox:focus {
+    border: 2px solid #FFA8B6;
+}
+
+#timeLabel,
+#metadataLabel {
+    color: #3B3542;
+    font-weight: 600;
+}
+
+#metadataLabel {
+    background-color: rgba(255, 255, 255, 240);
+    border: 1px solid rgba(200, 198, 250, 200);
+    border-top: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#visualizerWidget {
+    /* Глубокий угольно-ежевичный цвет для контраста радуги */
+    background-color: rgba(59, 53, 66, 240); 
+    border: 1px solid rgba(200, 198, 250, 200);
+    border-bottom: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#trackSeparator,
+#separatorLine {
+    background-color: rgba(59, 53, 66, 100);
+    min-height: 5px;
+    max-height: 5px;
+    border: none;
+}
+
+#treeButton,
+#listButton,
+#volumeButton {
+    min-width: 25px;
+    min-height: 25px;
+    background-color: transparent;
+    border: none;
+    qproperty-flat: true;
+}
+
+#treeButton:hover,
+#listButton:hover,
+#volumeButton:hover {
+    background-color: rgba(200, 198, 250, 180);
+}
+
+#prevButton,
+#nextButton {
+    background-color: #c8c6fa;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 6px;
+    min-width: 14px; /* let padding and icon size dictate */
+    min-height: 14px;
+}
+
+#prevButton:hover,
+#nextButton:hover {
+    background-color: #a6a3f0;
+}
+
+#playPauseButton {
+    background-color: #ffa8b6;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 6px;
+    min-width: 14px;
+    min-height: 14px;
+}
+
+#playPauseButton:hover {
+    background-color: #ff8a9d;
+}
+
+#bufferProgressBar {
+    background: rgba(0, 0, 0, 0.05); /* Легкая тень вместо белого */
+    border: none;
+    border-radius: 3px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+#bufferProgressBar::chunk {
+    background: rgba(200, 198, 250, 0.7); /* Мягкий лавандовый буфер */
+    border-radius: 3px;
+}
+
+#timelineSlider::groove:horizontal,
+#volumeSlider::groove:horizontal {
+    background: transparent;
+    height: 6px;
+    border-radius: 3px;
+}
+
+/* Закрашенная часть ползунка (теперь розовая, а не синяя) */
+#timelineSlider::sub-page:horizontal,
+#volumeSlider::sub-page:horizontal {
+    background: #ffa8b6; 
+    height: 6px;
+    border-radius: 3px;
+}
+
+/* Пустая часть ползунка */
+#timelineSlider::add-page:horizontal,
+#volumeSlider::add-page:horizontal {
+    background: transparent;
+    height: 6px;
+    border-radius: 3px;
+}
+
+/* Сам кружок (белый с лавандовой обводкой) */
+#timelineSlider::handle:horizontal,
+#volumeSlider::handle:horizontal {
+    background: #FFFFFF;
+    border: 1px solid rgba(200, 198, 250, 200);
+    width: 16px;
+    height: 16px;
+    margin: -5px 0;
+    border-radius: 8px;
+}
+
+/* Кружок при наведении (яркий розовый, вместо старого агрессивного красного) */
+#timelineSlider::handle:horizontal:hover,
+#volumeSlider::handle:horizontal:hover {
+    background: #ff8a9d;
+    border: 1px solid #ff8a9d;
+}
+
+#fileTreeView,
+#fileListView,
+#searchResultsView {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #3B3542;
+    selection-background-color: transparent;
+    selection-color: #3B3542;
+}
+
+#rightWidget QScrollBar:vertical,
+#rightWidget QScrollBar:horizontal {
+    background: rgba(0, 0, 0, 0.03);
+    border: none;
+}
+
+#rightWidget QScrollBar::handle:vertical,
+#rightWidget QScrollBar::handle:horizontal {
+    background: #DCD0FF;
+    border-radius: 6px;
+}
+
+#rightWidget QScrollBar::handle:vertical:hover,
+#rightWidget QScrollBar::handle:horizontal:hover {
+    background: #C8C6FA;
+}
+
+#rightWidget QScrollBar::add-line:vertical,
+#rightWidget QScrollBar::sub-line:vertical,
+#rightWidget QScrollBar::add-line:horizontal,
+#rightWidget QScrollBar::sub-line:horizontal {
+    background: none;
+    border: none;
+    width: 0px;
+    height: 0px;
+}
+
+#fileTreeView::item,
+#fileListView::item,
+#searchResultsView::item {
+    padding: 4px 0px;
+    border: none;
+    outline: none;
+}
+
+#fileTreeView::item:selected,
+#fileTreeView::item:hover,
+#fileListView::item:selected,
+#fileListView::item:hover,
+#searchResultsView::item:selected,
+#searchResultsView::item:hover {
+    background: transparent;
+    color: transparent;
+}
+
+#darkThemeButton,
+#pastelThemeButton {
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 4px 8px;
+    color: #3B3542;
+    font-weight: 400;
+    min-width: 50px;
+}
+
+#darkThemeButton:checked {
+    background-color: rgba(220, 208, 255, 150);
+    border: 2px solid #FFA8B6;
+}
+
+#pastelThemeButton:checked {
+    background-color: rgba(220, 208, 255, 150);
+    border: 2px solid #FFA8B6;
+}
+
+#darkThemeButton:hover,
+#pastelThemeButton:hover {
+    background-color: rgba(200, 198, 250, 180);
+    border: 2px solid rgba(220, 208, 255, 150);
+}
+
+#darkThemeButton:pressed,
+#pastelThemeButton:pressed {
+    background-color: rgba(200, 198, 250, 220);
+}
+
+#interactiveBackground {
+    background-color: rgb(180, 215, 255);
+}

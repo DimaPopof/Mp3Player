@@ -7,6 +7,8 @@
 #include <QLineEdit>
 #include <QVBoxLayout>
 #include <QModelIndex>
+#include <QColor>
+#include <QIcon>
 #include "HighlightDelegate.h"
 #include "CustomIconProvider.h"
 #include <QPainter>
@@ -114,6 +116,7 @@ public:
     void setPlayingTrackHighlight(const QString &filePath);
     void applySize(int pointSize);
     QString getCurrentFolderPath() const;
+    void refreshTheme();
     
 
 signals:
@@ -147,9 +150,13 @@ private:
     QStandardItemModel *searchResultsModel;
     SearchWorker *currentSearchWorker{nullptr};
     int lastViewIndex{0};
+    QPushButton *darkThemeButton;
+    QPushButton *pastelThemeButton;
 
     void setupUi();
     void setupConnections();
+    void updateThemeButtonStates();
+    QIcon tintedIcon(const QString &iconPath, const QColor &color) const;
     void toggleFileView();
     void toggleListView();
 protected:

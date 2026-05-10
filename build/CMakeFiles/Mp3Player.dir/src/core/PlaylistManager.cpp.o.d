@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o: \
- /home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/PlaylistManager.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/PlaylistManager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \

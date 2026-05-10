@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTORCC OFF)
+set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 find_package(Threads REQUIRED)
@@ -42,7 +42,6 @@ set(PROJECT_SOURCES
     src/ui/Visualizer.h
     src/ui/InteractiveBackground.cpp
     src/ui/InteractiveBackground.h
-    src/qrc_resources.cpp
     src/ui/HighlightDelegate.h
     src/ui/LeftWidget.cpp
     src/ui/LeftWidget.h
@@ -50,6 +49,9 @@ set(PROJECT_SOURCES
     src/ui/RightWidget.h
     src/ui/BottomWidget.cpp
     src/ui/BottomWidget.h
+    src/ui/ThemeManager.cpp
+    src/ui/ThemeManager.h
+    resources.qrc
 )
 
 if(WIN32)

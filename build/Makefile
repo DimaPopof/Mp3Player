@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kalos/Study/mp3players/mp3player
+CMAKE_SOURCE_DIR = /mnt/w_disk_D/Study/mp3players/mp3_new_design
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kalos/Study/mp3players/mp3player/build
+CMAKE_BINARY_DIR = /mnt/w_disk_D/Study/mp3players/mp3_new_design/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalos/Study/mp3players/mp3player/build/CMakeFiles /home/kalos/Study/mp3players/mp3player/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles /mnt/w_disk_D/Study/mp3players/mp3_new_design/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalos/Study/mp3players/mp3player/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -154,6 +154,30 @@ Mp3Player_autogen: cmake_check_build_system
 Mp3Player_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player_autogen.dir/build.make CMakeFiles/Mp3Player_autogen.dir/build
 .PHONY : Mp3Player_autogen/fast
+
+Mp3Player_autogen/EWIEGA46WW/qrc_resources.o: Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.o
+
+# target to build an object file
+Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o
+
+Mp3Player_autogen/EWIEGA46WW/qrc_resources.i: Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+Mp3Player_autogen/EWIEGA46WW/qrc_resources.s: Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.s
 
 Mp3Player_autogen/mocs_compilation.o: Mp3Player_autogen/mocs_compilation.cpp.o
 .PHONY : Mp3Player_autogen/mocs_compilation.o
@@ -323,30 +347,6 @@ src/miniaudio_impl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.s
 .PHONY : src/miniaudio_impl.cpp.s
 
-src/qrc_resources.o: src/qrc_resources.cpp.o
-.PHONY : src/qrc_resources.o
-
-# target to build an object file
-src/qrc_resources.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o
-.PHONY : src/qrc_resources.cpp.o
-
-src/qrc_resources.i: src/qrc_resources.cpp.i
-.PHONY : src/qrc_resources.i
-
-# target to preprocess a source file
-src/qrc_resources.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.i
-.PHONY : src/qrc_resources.cpp.i
-
-src/qrc_resources.s: src/qrc_resources.cpp.s
-.PHONY : src/qrc_resources.s
-
-# target to generate assembly for a file
-src/qrc_resources.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.s
-.PHONY : src/qrc_resources.cpp.s
-
 src/ui/BottomWidget.o: src/ui/BottomWidget.cpp.o
 .PHONY : src/ui/BottomWidget.o
 
@@ -467,6 +467,30 @@ src/ui/RightWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.s
 .PHONY : src/ui/RightWidget.cpp.s
 
+src/ui/ThemeManager.o: src/ui/ThemeManager.cpp.o
+.PHONY : src/ui/ThemeManager.o
+
+# target to build an object file
+src/ui/ThemeManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/ui/ThemeManager.cpp.o
+.PHONY : src/ui/ThemeManager.cpp.o
+
+src/ui/ThemeManager.i: src/ui/ThemeManager.cpp.i
+.PHONY : src/ui/ThemeManager.i
+
+# target to preprocess a source file
+src/ui/ThemeManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/ui/ThemeManager.cpp.i
+.PHONY : src/ui/ThemeManager.cpp.i
+
+src/ui/ThemeManager.s: src/ui/ThemeManager.cpp.s
+.PHONY : src/ui/ThemeManager.s
+
+# target to generate assembly for a file
+src/ui/ThemeManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mp3Player.dir/build.make CMakeFiles/Mp3Player.dir/src/ui/ThemeManager.cpp.s
+.PHONY : src/ui/ThemeManager.cpp.s
+
 src/ui/Visualizer.o: src/ui/Visualizer.cpp.o
 .PHONY : src/ui/Visualizer.o
 
@@ -550,6 +574,9 @@ help:
 	@echo "... Mp3Player_autogen"
 	@echo "... Mp3Player_autogen_timestamp_deps"
 	@echo "... Mp3Player"
+	@echo "... Mp3Player_autogen/EWIEGA46WW/qrc_resources.o"
+	@echo "... Mp3Player_autogen/EWIEGA46WW/qrc_resources.i"
+	@echo "... Mp3Player_autogen/EWIEGA46WW/qrc_resources.s"
 	@echo "... Mp3Player_autogen/mocs_compilation.o"
 	@echo "... Mp3Player_autogen/mocs_compilation.i"
 	@echo "... Mp3Player_autogen/mocs_compilation.s"
@@ -571,9 +598,6 @@ help:
 	@echo "... src/miniaudio_impl.o"
 	@echo "... src/miniaudio_impl.i"
 	@echo "... src/miniaudio_impl.s"
-	@echo "... src/qrc_resources.o"
-	@echo "... src/qrc_resources.i"
-	@echo "... src/qrc_resources.s"
 	@echo "... src/ui/BottomWidget.o"
 	@echo "... src/ui/BottomWidget.i"
 	@echo "... src/ui/BottomWidget.s"
@@ -589,6 +613,9 @@ help:
 	@echo "... src/ui/RightWidget.o"
 	@echo "... src/ui/RightWidget.i"
 	@echo "... src/ui/RightWidget.s"
+	@echo "... src/ui/ThemeManager.o"
+	@echo "... src/ui/ThemeManager.i"
+	@echo "... src/ui/ThemeManager.s"
 	@echo "... src/ui/Visualizer.o"
 	@echo "... src/ui/Visualizer.i"
 	@echo "... src/ui/Visualizer.s"

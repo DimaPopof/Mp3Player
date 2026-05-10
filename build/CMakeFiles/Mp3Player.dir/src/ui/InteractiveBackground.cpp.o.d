@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o: \
- /home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/InteractiveBackground.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/InteractiveBackground.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -370,6 +370,12 @@ CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/ThemeManager.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \

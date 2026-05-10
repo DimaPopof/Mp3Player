@@ -1,7 +1,8 @@
-/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_RightWidget.cpp: /home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.h \
-  /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/moc_predefs.h \
-  /mnt/w_disk_D/Study/mp3players/mp3player/src/ui/CustomIconProvider.h \
-  /mnt/w_disk_D/Study/mp3players/mp3player/src/ui/HighlightDelegate.h \
+/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_RightWidget.cpp: /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/RightWidget.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/moc_predefs.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/CustomIconProvider.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/HighlightDelegate.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/ThemeManager.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -293,6 +294,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QDirIterator \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFileInfo \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QModelIndex \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QThread \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
@@ -395,6 +397,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QAbstractFileIconProvider \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QFileSystemModel \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QIcon \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \

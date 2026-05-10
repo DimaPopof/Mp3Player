@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o: \
- /home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/models/FileBrowserModelFactory.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/models/FileBrowserModelFactory.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QAbstractItemModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
@@ -334,7 +334,7 @@ CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
- /home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/models/CustomSortProxyModel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractproxymodel.h \

@@ -1,98 +1,104 @@
 [
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o -c /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/mocs_compilation.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/mocs_compilation.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/mocs_compilation.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/mocs_compilation.cpp",
   "output": "CMakeFiles/Mp3Player.dir/Mp3Player_autogen/mocs_compilation.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/main.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/main.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/main.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/main.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/main.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/main.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/main.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/miniaudio_impl.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/miniaudio_impl.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/miniaudio_impl.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/miniaudio_impl.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/MainWindow.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/ui/MainWindow.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/MainWindow.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/MainWindow.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/ui/MainWindow.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/core/PlaylistManager.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/PlaylistManager.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/PlaylistManager.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/core/PlaylistManager.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/AudioPlayer.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/AudioPlayer.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/TrackMetadata.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/TrackMetadata.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/RingBuffer.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/RingBuffer.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/ui/models/FileBrowserModelFactory.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/models/FileBrowserModelFactory.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/models/FileBrowserModelFactory.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/ui/models/FileBrowserModelFactory.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/models/CustomSortProxyModel.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/models/CustomSortProxyModel.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/Visualizer.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/Visualizer.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/ui/InteractiveBackground.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/InteractiveBackground.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/InteractiveBackground.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/ui/InteractiveBackground.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/qrc_resources.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/qrc_resources.cpp",
-  "output": "CMakeFiles/Mp3Player.dir/src/qrc_resources.cpp.o"
-},
-{
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/LeftWidget.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/LeftWidget.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/ui/RightWidget.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/RightWidget.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/RightWidget.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o"
 },
 {
-  "directory": "/home/kalos/Study/mp3players/mp3player/build",
-  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o -c /home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.cpp",
-  "file": "/home/kalos/Study/mp3players/mp3player/src/ui/BottomWidget.cpp",
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/BottomWidget.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/BottomWidget.cpp",
   "output": "CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o"
+},
+{
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/src/ui/ThemeManager.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/ThemeManager.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/ThemeManager.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/src/ui/ThemeManager.cpp.o"
+},
+{
+  "directory": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3_new_design/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Mp3Player.dir/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp",
+  "file": "/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp",
+  "output": "CMakeFiles/Mp3Player.dir/Mp3Player_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 }
 ]

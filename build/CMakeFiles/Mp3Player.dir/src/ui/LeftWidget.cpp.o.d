@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: \
- /home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/LeftWidget.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3player/src/ui/LeftWidget.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/LeftWidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -358,12 +358,12 @@ CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
- /home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/TrackMetadata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
- /home/kalos/Study/mp3players/mp3player/src/ui/Visualizer.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/Visualizer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
@@ -381,7 +381,7 @@ CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: \
  /usr/include/c++/14/bits/ostream.tcc \
  /usr/include/c++/14/bits/istream.tcc \
  /usr/include/c++/14/bits/sstream.tcc \
- /home/kalos/Study/mp3players/mp3player/src/core/AudioPlayer.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/AudioPlayer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \
@@ -391,5 +391,8 @@ CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: \
  /usr/include/c++/14/bits/std_mutex.h \
  /usr/include/c++/14/bits/unique_lock.h \
  /usr/include/c++/14/condition_variable \
- /home/kalos/Study/mp3players/mp3player/src/miniaudio.h \
- /home/kalos/Study/mp3players/mp3player/src/core/RingBuffer.h
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/miniaudio.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/readerwriterqueue.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/atomicops.h \
+ /usr/include/c++/14/cassert /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h

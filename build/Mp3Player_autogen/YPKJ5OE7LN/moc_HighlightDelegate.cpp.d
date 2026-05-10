@@ -1,5 +1,6 @@
-/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/YPKJ5OE7LN/moc_HighlightDelegate.cpp: /home/kalos/Study/mp3players/mp3player/src/ui/HighlightDelegate.h \
-  /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/moc_predefs.h \
+/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_HighlightDelegate.cpp: /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/HighlightDelegate.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/moc_predefs.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/ThemeManager.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -288,6 +289,7 @@
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFileInfo \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -384,6 +386,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QFileSystemModel \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \

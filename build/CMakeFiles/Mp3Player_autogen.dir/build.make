@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kalos/Study/mp3players/mp3player
+CMAKE_SOURCE_DIR = /mnt/w_disk_D/Study/mp3players/mp3_new_design
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kalos/Study/mp3players/mp3player/build
+CMAKE_BINARY_DIR = /mnt/w_disk_D/Study/mp3players/mp3_new_design/build
 
 # Utility rule file for Mp3Player_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/Mp3Player_autogen: Mp3Player_autogen/timestamp
 Mp3Player_autogen/timestamp: /usr/lib/qt6/libexec/moc
 Mp3Player_autogen/timestamp: /usr/lib/qt6/libexec/uic
 Mp3Player_autogen/timestamp: CMakeFiles/Mp3Player_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kalos/Study/mp3players/mp3player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Mp3Player"
-	/usr/bin/cmake -E cmake_autogen /home/kalos/Study/mp3players/mp3player/build/CMakeFiles/Mp3Player_autogen.dir/AutogenInfo.json Debug
-	/usr/bin/cmake -E touch /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Mp3Player"
+	/usr/bin/cmake -E cmake_autogen /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles/Mp3Player_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E touch /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/timestamp
 
 Mp3Player_autogen: CMakeFiles/Mp3Player_autogen
 Mp3Player_autogen: Mp3Player_autogen/timestamp
@@ -89,6 +89,6 @@ CMakeFiles/Mp3Player_autogen.dir/clean:
 .PHONY : CMakeFiles/Mp3Player_autogen.dir/clean
 
 CMakeFiles/Mp3Player_autogen.dir/depend:
-	cd /home/kalos/Study/mp3players/mp3player/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kalos/Study/mp3players/mp3player /home/kalos/Study/mp3players/mp3player /home/kalos/Study/mp3players/mp3player/build /home/kalos/Study/mp3players/mp3player/build /home/kalos/Study/mp3players/mp3player/build/CMakeFiles/Mp3Player_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/w_disk_D/Study/mp3players/mp3_new_design/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/w_disk_D/Study/mp3players/mp3_new_design /mnt/w_disk_D/Study/mp3players/mp3_new_design /mnt/w_disk_D/Study/mp3players/mp3_new_design/build /mnt/w_disk_D/Study/mp3players/mp3_new_design/build /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles/Mp3Player_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Mp3Player_autogen.dir/depend
 

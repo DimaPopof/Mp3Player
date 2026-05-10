@@ -8,4 +8,9 @@
         <file>assets/folder.png</file>
         <file>assets/cnst_folder.png</file>
     </qresource>
+
+    <qresource prefix="/">
+        <file>themes/theme_dark.qss</file>
+        <file>themes/theme_pastel.qss</file>
+    </qresource>
 </RCC>

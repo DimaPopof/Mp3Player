@@ -13,7 +13,10 @@ LeftWidget::LeftWidget(QWidget *parent)
       trackInfoLayout(nullptr),
     trackInfoContainer(nullptr),
       visualizer(nullptr) {
-    setMinimumWidth(120);
+    setMinimumWidth(400);
+    setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
+        setObjectName("leftWidget");
+        setAttribute(Qt::WA_StyledBackground, true);
     setupUi();
     setupConnections();
 }
@@ -25,36 +28,18 @@ void LeftWidget::setupUi() {
     QHBoxLayout *folderButtonsLayout = new QHBoxLayout();
 
     openFolderButton = new QPushButton(this);
+    openFolderButton->setObjectName("openFolderButton");
     openFolderButton->setIcon(QIcon(":/assets/folder.png"));
     openFolderButton->setFixedSize(50, 50);
     openFolderButton->setIconSize(QSize(45, 45));
     openFolderButton->setFlat(true);
-    openFolderButton->setStyleSheet(
-        "QPushButton {"
-        "background: transparent;"
-        "border: none;"
-        "border-radius: 8px;"
-        "}"
-        "QPushButton:hover {"
-        "background-color: rgba(140, 140, 140, 120);"
-        "}"
-    );
 
     constantFolderButton = new QPushButton(this);
+    constantFolderButton->setObjectName("constantFolderButton");
     constantFolderButton->setIcon(QIcon(":/assets/cnst_folder.png"));
     constantFolderButton->setFixedSize(50, 50);
     constantFolderButton->setIconSize(QSize(45, 45));
     constantFolderButton->setFlat(true);
-    constantFolderButton->setStyleSheet(
-        "QPushButton {"
-        "background: transparent;"
-        "border: none;"
-        "border-radius: 8px;"
-        "}"
-        "QPushButton:hover {"
-        "background-color: rgba(140, 140, 140, 120);"
-        "}"
-    );
 
     folderButtonsLayout->addWidget(openFolderButton);
     folderButtonsLayout->addWidget(constantFolderButton);
@@ -68,36 +53,21 @@ void LeftWidget::setupUi() {
 
 
     visualizer = new Visualizer(this);
+    visualizer->setObjectName("visualizerWidget");
     visualizer->setMinimumHeight(50);
     visualizer->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Minimum);
-    visualizer->setStyleSheet(
-        "background-color: rgba(30, 30, 30, 175);"
-        "border-top-left-radius: 10px;"
-        "border-top-right-radius: 10px;"
-        "border-bottom-left-radius: 0px;"
-        "border-bottom-right-radius: 0px;"
-    );
 
     // 2. Настройка текста
     metadataLabel = new QLabel("Artist - Title", this);
-    metadataLabel->setStyleSheet(
-        "background-color: rgba(30, 30, 30, 175);"
-        "color: white;"
-        "font-weight: bold;"
-        "border-top-left-radius: 0px;"
-        "border-top-right-radius: 0px;"
-        "border-bottom-left-radius: 10px;"
-        "border-bottom-right-radius: 10px;"
-    );
+    metadataLabel->setObjectName("metadataLabel");
     metadataLabel->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Maximum);
     metadataLabel->setAlignment(Qt::AlignCenter);
     metadataLabel->setWordWrap(true);
     metadataLabel->setMinimumHeight(40); 
 
-    // 3. Контейнер (Обертка)
-    // Создаем невидимый виджет-контейнер
     trackInfoContainer = new QWidget(this);
-    trackInfoContainer->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
+    trackInfoContainer->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
+    // Remove the minimum width that was causing overflow into RightWidget
     trackInfoContainer->setFixedHeight(kTrackInfoMinHeight);
 
     // Создаем Layout и сразу привязываем его к нашему новому контейнеру
@@ -106,8 +76,8 @@ void LeftWidget::setupUi() {
     trackInfoLayout->setSpacing(0);
 
     QFrame *separator = new QFrame(trackInfoContainer);
+    separator->setObjectName("trackSeparator");
     separator->setFixedHeight(3);
-    separator->setStyleSheet("background-color: rgba(10, 10, 10, 220); border: none;");
 
     // Добавляем элементы внутрь Layout'а (который живет в контейнере)
     trackInfoLayout->addWidget(visualizer);

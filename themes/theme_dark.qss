@@ -1,0 +1,293 @@
+/* --- Главные панели (Ночной туман) --- */
+#bottomWidget {
+    background-color: rgba(20, 26, 40, 240);
+    border-top: 1px solid rgba(143, 183, 255, 30);
+}
+
+#leftWidget,
+#rightWidget {
+    background: transparent;
+}
+
+#topSplitter::handle {
+    background-color: rgba(143, 183, 255, 72);
+    width: 5px;
+}
+
+/* Suppress default Qt styling artifacts in tree/list views */
+#fileTreeView,
+#fileListView,
+#searchResultsView {
+    outline: none;
+    border: none;
+    show-decoration-selected: 0;
+}
+
+#fileTreeView::item:focus,
+#fileListView::item:focus,
+#searchResultsView::item:focus {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+#fileTreeView::item:hover,
+#fileListView::item:hover,
+#searchResultsView::item:hover {
+    background-color: transparent;
+}
+
+#fileTreeView::item:selected,
+#fileListView::item:selected,
+#searchResultsView::item:selected {
+    background-color: transparent;
+}
+
+#leftWidget QPushButton,
+#rightWidget QPushButton {
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+}
+
+#leftWidget QPushButton:hover,
+#rightWidget QPushButton:hover {
+    background-color: rgba(143, 183, 255, 36);
+}
+
+#leftWidget QPushButton:pressed,
+#rightWidget QPushButton:pressed {
+    background-color: rgba(143, 183, 255, 64);
+}
+
+#searchBox {
+    background: rgba(12, 16, 26, 150);
+    color: #E9EDF5;
+    border: 1px solid rgba(143, 183, 255, 50);
+    border-radius: 8px; /* Скругляем поиск */
+    padding: 6px 8px;
+    margin-left: 10px;
+}
+
+#searchBox:focus {
+    border: 1px solid #79C0FF; /* Светящийся голубой фокус */
+}
+
+#timeLabel,
+#metadataLabel {
+    color: #E9EDF5;
+    font-weight: 600;
+}
+
+#metadataLabel {
+    background-color: rgba(20, 26, 40, 240);
+    border: 1px solid rgba(143, 183, 255, 30);
+    border-top: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#visualizerWidget {
+    background-color: rgba(20, 26, 40, 240);
+    border: 1px solid rgba(143, 183, 255, 30);
+    border-bottom: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#trackSeparator,
+#separatorLine {
+    background-color: rgba(143, 183, 255, 30);
+    min-height: 1px;
+    max-height: 1px;
+    border: none;
+}
+
+#treeButton,
+#listButton,
+#volumeButton {
+    min-width: 25px;
+    min-height: 25px;
+    background-color: transparent;
+    border: none;
+    qproperty-flat: true;
+}
+
+#treeButton:hover,
+#listButton:hover,
+#volumeButton:hover {
+    background-color: rgba(143, 183, 255, 52);
+}
+
+/* --- Кнопки навигации (Лунный голубой) --- */
+#prevButton,
+#nextButton {
+    background-color: #79C0FF;
+    border: 1px solid transparent;
+    border-radius: 8px; /* Облачные скругления */
+    padding: 6px;
+    min-width: 14px;
+    min-height: 14px;
+}
+
+#prevButton:hover,
+#nextButton:hover {
+    background-color: #58A6FF;
+}
+
+/* --- Главная кнопка (Светящийся розовый) --- */
+#playPauseButton {
+    background-color: #FF8FA3;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 6px;
+    min-width: 14px;
+    min-height: 14px;
+}
+
+#playPauseButton:hover {
+    background-color: #FF7088;
+}
+
+/* --- Ползунки (Неоновые треки) --- */
+#bufferProgressBar {
+    background: rgba(0, 0, 0, 0.2); /* Темная впадина */
+    border: none;
+    border-radius: 3px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+#bufferProgressBar::chunk {
+    background: rgba(143, 183, 255, 0.2);
+    border-radius: 3px;
+}
+
+#timelineSlider::groove:horizontal,
+#volumeSlider::groove:horizontal {
+    background: transparent;
+    height: 6px;
+    border-radius: 3px;
+}
+
+#timelineSlider::sub-page:horizontal,
+#volumeSlider::sub-page:horizontal {
+    background: #79C0FF; /* Заполненный трек в цвет кнопок */
+    height: 6px;
+    border-radius: 3px;
+}
+
+#timelineSlider::add-page:horizontal,
+#volumeSlider::add-page:horizontal {
+    background: transparent;
+    height: 6px;
+    border-radius: 3px;
+}
+
+#timelineSlider::handle:horizontal,
+#volumeSlider::handle:horizontal {
+    background: #E9EDF5;
+    border: 1px solid rgba(143, 183, 255, 50);
+    width: 16px;
+    height: 16px;
+    margin: -5px 0;
+    border-radius: 8px;
+}
+
+#timelineSlider::handle:horizontal:hover,
+#volumeSlider::handle:horizontal:hover {
+    background: #FF8FA3; /* Розовый отклик при наведении */
+    border: 1px solid #FF8FA3;
+}
+
+#fileTreeView,
+#fileListView,
+#searchResultsView {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #E9EDF5;
+    selection-background-color: transparent;
+    selection-color: #FFFFFF;
+}
+
+#rightWidget QScrollBar:vertical,
+#rightWidget QScrollBar:horizontal {
+    background: rgba(255, 255, 255, 0.03);
+    border: none;
+}
+
+#rightWidget QScrollBar::handle:vertical,
+#rightWidget QScrollBar::handle:horizontal {
+    background: rgba(143, 183, 255, 0.72);
+    border-radius: 6px;
+}
+
+#rightWidget QScrollBar::handle:vertical:hover,
+#rightWidget QScrollBar::handle:horizontal:hover {
+    background: rgba(143, 183, 255, 0.9);
+}
+
+#rightWidget QScrollBar::add-line:vertical,
+#rightWidget QScrollBar::sub-line:vertical,
+#rightWidget QScrollBar::add-line:horizontal,
+#rightWidget QScrollBar::sub-line:horizontal {
+    background: none;
+    border: none;
+    width: 0px;
+    height: 0px;
+}
+
+#fileTreeView::item,
+#fileListView::item,
+#searchResultsView::item {
+    padding: 4px 0px;
+    border: none;
+    outline: none;
+}
+
+#fileTreeView::item:selected,
+#fileTreeView::item:hover,
+#fileListView::item:selected,
+#fileListView::item:hover,
+#searchResultsView::item:selected,
+#searchResultsView::item:hover {
+    background: transparent;
+    color: transparent;
+}
+
+#darkThemeButton,
+#pastelThemeButton {
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 4px 8px;
+    color: #E9EDF5;
+    font-weight: 400;
+    min-width: 50px;
+}
+
+#darkThemeButton:checked {
+    background-color: rgba(143, 183, 255, 72);
+    border: 2px solid #8FB7FF;
+}
+
+#pastelThemeButton:checked {
+    background-color: rgba(143, 183, 255, 72);
+    border: 2px solid #8FB7FF;
+}
+
+#darkThemeButton:hover,
+#pastelThemeButton:hover {
+    background-color: rgba(143, 183, 255, 52);
+    border: 2px solid rgba(143, 183, 255, 100);
+}
+
+#darkThemeButton:pressed,
+#pastelThemeButton:pressed {
+    background-color: rgba(143, 183, 255, 100);
+}
+
+#interactiveBackground {
+    background-color: rgb(18, 25, 38);
+}

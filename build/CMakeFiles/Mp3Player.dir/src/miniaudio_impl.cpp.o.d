@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/miniaudio_impl.cpp.o: \
- /home/kalos/Study/mp3players/mp3player/src/miniaudio_impl.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/miniaudio_impl.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3player/src/miniaudio.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/miniaudio.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h /usr/include/pthread.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

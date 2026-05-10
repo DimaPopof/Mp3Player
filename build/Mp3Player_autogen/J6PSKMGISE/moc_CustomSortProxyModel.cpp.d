@@ -1,5 +1,5 @@
-/home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/J6PSKMGISE/moc_CustomSortProxyModel.cpp: /home/kalos/Study/mp3players/mp3player/src/ui/models/CustomSortProxyModel.h \
-  /home/kalos/Study/mp3players/mp3player/build/Mp3Player_autogen/moc_predefs.h \
+/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/J6PSKMGISE/moc_CustomSortProxyModel.cpp: /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/models/CustomSortProxyModel.h \
+  /mnt/w_disk_D/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

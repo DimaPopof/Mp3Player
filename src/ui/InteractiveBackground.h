@@ -22,6 +22,7 @@ class InteractiveBackground : public QWidget {
 
 public:
     explicit InteractiveBackground(QWidget *parent = nullptr);
+    void initializeClouds(int width, int height);
 
 protected:
     void paintEvent(QPaintEvent *event) override;
@@ -31,6 +32,7 @@ protected:
 
 private slots:
     void updateAnimation(); // Called by the timer to update physics
+    void refreshClouds();   // Re-creates clouds with current theme colors
 
 private:
     QVector<Cloud> clouds;          // List of all cloud objects
@@ -38,7 +40,6 @@ private:
     QPointF lastMousePosition;    // Tracks the current cursor location
     bool isMouseOver;              // True if the cursor is inside this widget
 
-    void initializeClouds();       // Creates initial cloud objects
 };
 
 #endif // INTERACTIVEBACKGROUND_H

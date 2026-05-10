@@ -12,7 +12,13 @@
 #include <mutex>
 #include <condition_variable>
 #include "miniaudio.h"
-#include "RingBuffer.h"
+#include "readerwriterqueue.h"
+
+constexpr size_t CHUNK_FRAMES = 4096;
+struct AudioChunk {
+    float data[CHUNK_FRAMES * 2]; // Stereo interleaved
+    size_t validFrames;
+};
 
 class Visualizer;
 
@@ -37,7 +43,7 @@ public:
     void setPosition(int seconds);
     std::size_t readVisualizer(float* dst, std::size_t maxSamples);
     void pushToVisualizerBuffer(float* pcmFrames, ma_uint32 frameCount);
-    ma_pcm_rb* getRingBuffer() { return &rb; }
+    // ma_pcm_rb* getRingBuffer() { return &rb; } // Removed since rb is removed
     void setVisualizer(Visualizer* vis) { m_visualizer = vis; }
     Visualizer* getVisualizer() const { return m_visualizer; }
 
@@ -61,11 +67,12 @@ private:
 
     std::atomic<float> m_fadeMultiplier{1.0f}; 
     std::atomic<float> m_targetFade{1.0f};
-    RingBuffer visualizerBuffer;
+    moodycamel::ReaderWriterQueue<float> visualizerQueue;
+    moodycamel::ReaderWriterQueue<AudioChunk*> freeQueue;
+    moodycamel::ReaderWriterQueue<AudioChunk*> readyQueue;
     
     ma_device device;
     ma_decoder decoder;
-    ma_pcm_rb rb; // Miniaudio PCM ring buffer
     
     std::recursive_mutex m_audioMutex; // Protects decoder and rb lifecycle
     std::thread decoderThread;

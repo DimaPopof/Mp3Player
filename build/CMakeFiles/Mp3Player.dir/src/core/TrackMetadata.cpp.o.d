@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/core/TrackMetadata.cpp.o: \
- /home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/TrackMetadata.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3player/src/core/TrackMetadata.h \
+ /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/TrackMetadata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
