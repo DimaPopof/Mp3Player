@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kalos/Study/mp3players/mp3_new_design
+CMAKE_SOURCE_DIR = /home/kalos/Study/mp3players/mp3player_work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kalos/Study/mp3players/mp3_new_design/build
+CMAKE_BINARY_DIR = /home/kalos/Study/mp3players/mp3player_work/build
 
 # Utility rule file for Mp3Player_autogen_timestamp_deps.
 
@@ -66,10 +66,10 @@ include CMakeFiles/Mp3Player_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/Mp3Player_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/Mp3Player_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 CMakeFiles/Mp3Player_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
-CMakeFiles/Mp3Player_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
 CMakeFiles/Mp3Player_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/Mp3Player_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
+CMakeFiles/Mp3Player_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 CMakeFiles/Mp3Player_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 
 Mp3Player_autogen_timestamp_deps: CMakeFiles/Mp3Player_autogen_timestamp_deps
@@ -85,6 +85,6 @@ CMakeFiles/Mp3Player_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/Mp3Player_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/Mp3Player_autogen_timestamp_deps.dir/depend:
-	cd /home/kalos/Study/mp3players/mp3_new_design/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kalos/Study/mp3players/mp3_new_design /home/kalos/Study/mp3players/mp3_new_design /home/kalos/Study/mp3players/mp3_new_design/build /home/kalos/Study/mp3players/mp3_new_design/build /home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/Mp3Player_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kalos/Study/mp3players/mp3player_work/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kalos/Study/mp3players/mp3player_work /home/kalos/Study/mp3players/mp3player_work /home/kalos/Study/mp3players/mp3player_work/build /home/kalos/Study/mp3players/mp3player_work/build /home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/Mp3Player_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Mp3Player_autogen_timestamp_deps.dir/depend
 

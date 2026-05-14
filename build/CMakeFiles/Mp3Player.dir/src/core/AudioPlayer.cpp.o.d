@@ -1,8 +1,8 @@
 CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: \
- /home/kalos/Study/mp3players/mp3_new_design/src/core/AudioPlayer.cpp \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/AudioPlayer.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/core/AudioPlayer.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/miniaudio.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/AudioPlayer.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/miniaudio.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h /usr/include/pthread.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -42,8 +42,8 @@ CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/core/readerwriterqueue.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/core/atomicops.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/readerwriterqueue.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/atomicops.h \
  /usr/include/c++/14/cassert \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -303,13 +303,25 @@ CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: \
  /usr/include/c++/14/bits/unique_lock.h /usr/include/c++/14/mutex \
  /usr/include/c++/14/thread /usr/include/c++/14/bits/std_thread.h \
  /usr/include/c++/14/bits/this_thread_sleep.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/core/../ui/Visualizer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/../ui/Visualizer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
@@ -323,16 +335,6 @@ CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
@@ -360,8 +362,6 @@ CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/c++/14/complex /usr/include/c++/14/sstream \
  /usr/include/c++/14/istream /usr/include/c++/14/ios \
  /usr/include/c++/14/bits/basic_ios.h \

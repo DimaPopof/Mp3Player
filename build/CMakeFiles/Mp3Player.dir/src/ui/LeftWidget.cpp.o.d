@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: \
- /home/kalos/Study/mp3players/mp3_new_design/src/ui/LeftWidget.cpp \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/LeftWidget.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/ui/LeftWidget.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/LeftWidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -358,17 +358,17 @@ CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/core/TrackMetadata.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/TrackMetadata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/ui/Visualizer.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/Visualizer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/c++/14/complex /usr/include/c++/14/sstream \
  /usr/include/c++/14/istream /usr/include/c++/14/ios \
  /usr/include/c++/14/bits/basic_ios.h \
@@ -381,7 +381,7 @@ CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: \
  /usr/include/c++/14/bits/ostream.tcc \
  /usr/include/c++/14/bits/istream.tcc \
  /usr/include/c++/14/bits/sstream.tcc \
- /home/kalos/Study/mp3players/mp3_new_design/src/ui/MarqueeLabel.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/MarqueeLabel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPropertyAnimation \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpropertyanimation.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantanimation.h \
@@ -389,10 +389,10 @@ CMakeFiles/Mp3Player.dir/src/ui/LeftWidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeasingcurve.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/core/AudioPlayer.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/miniaudio.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/core/readerwriterqueue.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/core/atomicops.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/AudioPlayer.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/miniaudio.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/readerwriterqueue.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/atomicops.h \
  /usr/include/c++/14/cassert /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \

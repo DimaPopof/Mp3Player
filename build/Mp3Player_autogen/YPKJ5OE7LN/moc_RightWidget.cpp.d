@@ -1,8 +1,8 @@
-/home/kalos/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_RightWidget.cpp: /home/kalos/Study/mp3players/mp3_new_design/src/ui/RightWidget.h \
-  /home/kalos/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/moc_predefs.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/CustomIconProvider.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/HighlightDelegate.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/ThemeManager.h \
+/home/kalos/Study/mp3players/mp3player_work/build/Mp3Player_autogen/YPKJ5OE7LN/moc_RightWidget.cpp: /home/kalos/Study/mp3players/mp3player_work/src/ui/RightWidget.h \
+  /home/kalos/Study/mp3players/mp3player_work/build/Mp3Player_autogen/moc_predefs.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/CustomIconProvider.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/HighlightDelegate.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

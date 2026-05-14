@@ -1,8 +1,8 @@
-/home/kalos/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/PRMOGMWJPH/moc_AudioPlayer.cpp: /home/kalos/Study/mp3players/mp3_new_design/src/core/AudioPlayer.h \
-  /home/kalos/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/moc_predefs.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/atomicops.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/readerwriterqueue.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/miniaudio.h \
+/home/kalos/Study/mp3players/mp3player_work/build/Mp3Player_autogen/PRMOGMWJPH/moc_AudioPlayer.cpp: /home/kalos/Study/mp3players/mp3player_work/src/core/AudioPlayer.h \
+  /home/kalos/Study/mp3players/mp3player_work/build/Mp3Player_autogen/moc_predefs.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/atomicops.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/readerwriterqueue.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/miniaudio.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

@@ -1,13 +1,13 @@
-/home/kalos/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/YPKJ5OE7LN/moc_MainWindow.cpp: /home/kalos/Study/mp3players/mp3_new_design/src/ui/MainWindow.h \
-  /home/kalos/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/moc_predefs.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/AudioPlayer.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/PlaylistManager.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/atomicops.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/core/readerwriterqueue.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/miniaudio.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/HighlightDelegate.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/InteractiveBackground.h \
-  /mnt/w_disk_D/Study/mp3players/mp3_new_design/src/ui/ThemeManager.h \
+/home/kalos/Study/mp3players/mp3player_work/build/Mp3Player_autogen/YPKJ5OE7LN/moc_MainWindow.cpp: /home/kalos/Study/mp3players/mp3player_work/src/ui/MainWindow.h \
+  /home/kalos/Study/mp3players/mp3player_work/build/Mp3Player_autogen/moc_predefs.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/AudioPlayer.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/PlaylistManager.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/atomicops.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/readerwriterqueue.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/miniaudio.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/HighlightDelegate.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/InteractiveBackground.h \
+  /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

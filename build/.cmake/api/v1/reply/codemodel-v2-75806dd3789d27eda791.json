@@ -43,7 +43,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Mp3Player::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Mp3Player-Debug-87e69fe6d482f274741d.json",
+					"jsonFile" : "target-Mp3Player-Debug-b8d34f7934423e5163f3.json",
 					"name" : "Mp3Player",
 					"projectIndex" : 0
 				},
@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/kalos/Study/mp3players/mp3_new_design/build",
-		"source" : "/home/kalos/Study/mp3players/mp3_new_design"
+		"build" : "/home/kalos/Study/mp3players/mp3player_work/build",
+		"source" : "/home/kalos/Study/mp3players/mp3player_work"
 	},
 	"version" : 
 	{

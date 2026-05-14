@@ -2,11 +2,16 @@
 
 #include "ThemeManager.h"
 #include "core/AudioPlayer.h"
+#include <QAction>
 #include <QColor>
+#include <QContextMenuEvent>
 #include <QDebug>
+#include <QHideEvent>
 #include <QLinearGradient>
+#include <QMenu>
 #include <QPaintEvent>
 #include <QPainter>
+#include <QShowEvent>
 #include <algorithm>
 #include <cmath>
 #include <complex>
@@ -59,7 +64,6 @@ Visualizer::Visualizer(QWidget *parent)
   m_peakHeights.resize(64, 0.0f);
   m_peakSpeeds.resize(64, 0.01f);
   m_smoothHeights.resize(64, 0.0f); // ensure paint path has data
-  m_smearHeights.resize(64, 0.0f);  // ensure paint path has data
   ensureBarColors(64);
   m_fftComplex.resize(FFT_SIZE);
   m_rawFFTData.resize(64, 0.0f);
@@ -140,7 +144,8 @@ void Visualizer::updateVisuals() {
     // Reset AGC between tracks so each song learns its own dynamic range.
     m_dynamicMax = 0.001f;
     m_idleFrames++;
-    if (m_idleFrames > 180) { // After ~3 seconds of silence, start idle animation
+    if (m_idleFrames >
+        180) { // After ~3 seconds of silence, start idle animation
       if (m_idleFade < 1.0f) {
         m_idleFade += 0.006f; // Takes ~1.6 seconds to fully arise
         if (m_idleFade > 1.0f) {
@@ -168,26 +173,29 @@ void Visualizer::updateVisuals() {
     m_peakHeights.resize(kFixedBarCount, 0.0f);
     m_peakSpeeds.resize(kFixedBarCount, 0.01f);
     m_smoothHeights.resize(kFixedBarCount, 0.0f);
-    m_smearHeights.resize(kFixedBarCount, 0.0f);
     ensureBarColors(kFixedBarCount);
   }
 
   // 1. Читаем новые семплы во временный буфер
   std::vector<float> newSamples(FFT_SIZE);
-  const std::size_t samplesRead = readForVisualizer(newSamples.data(), FFT_SIZE);
+  const std::size_t samplesRead =
+      readForVisualizer(newSamples.data(), FFT_SIZE);
 
   if (samplesRead > 0) {
-      // 2. Сдвигаем старые данные влево, чтобы освободить место справа
-      std::copy(m_audioData.begin() + samplesRead, m_audioData.end(), m_audioData.begin());
+    // 2. Сдвигаем старые данные влево, чтобы освободить место справа
+    std::copy(m_audioData.begin() + samplesRead, m_audioData.end(),
+              m_audioData.begin());
 
-      // 3. Копируем новые семплы в конец нашего окна
-      std::copy(newSamples.begin(), newSamples.begin() + samplesRead, m_audioData.end() - samplesRead);
+    // 3. Копируем новые семплы в конец нашего окна
+    std::copy(newSamples.begin(), newSamples.begin() + samplesRead,
+              m_audioData.end() - samplesRead);
   }
 
   if (m_inputScale <= 0.0f || !isPlaying) {
     std::fill(m_audioData.begin(), m_audioData.end(), 0.0f);
   } else if (m_inputScale < 1.0f && samplesRead > 0) {
-    for (std::size_t i = m_audioData.size() - samplesRead; i < m_audioData.size(); ++i) {
+    for (std::size_t i = m_audioData.size() - samplesRead;
+         i < m_audioData.size(); ++i) {
       m_audioData[i] *= m_inputScale;
     }
   }
@@ -254,8 +262,18 @@ void Visualizer::updateVisuals() {
       }
     }
 
-    m_smoothHeights[i] = m_barHeights[i];
-    m_smearHeights[i] = m_peakHeights[i];
+    // 1. Применяем EMA (Экспоненциальное сглаживание) для плавного движения
+    // полосок
+    const float currentH = m_smoothHeights[i];
+    const float smoothTargetH = m_barHeights[i];
+
+    if (smoothTargetH > currentH) {
+      // Быстрый подъем (почти моментально реагирует на скачки)
+      m_smoothHeights[i] = currentH + (smoothTargetH - currentH) * 0.8f;
+    } else {
+      // Плавный спад (с задержкой опускается вниз)
+      m_smoothHeights[i] = currentH + (smoothTargetH - currentH) * 0.3f;
+    }
   }
 
   update();
@@ -344,7 +362,8 @@ void Visualizer::paintEvent(QPaintEvent *event) {
   }
 
   const qreal baseline = static_cast<qreal>(height());
-  const qreal maxVisualHeight = static_cast<qreal>(height() * 0.85); // Увеличено до 100% высоты
+  const qreal maxVisualHeight =
+      static_cast<qreal>(height() * 0.85); // Увеличено до 100% высоты
   const qreal responseGamma = 0.88f;
   const qreal noiseGate = 0.04;
   const qreal availableWidth = static_cast<qreal>(std::max(1, width()));
@@ -357,134 +376,85 @@ void Visualizer::paintEvent(QPaintEvent *event) {
   };
 
   // Bars (equivalent to out_smooth lines in musializer's fft_render).
-  for (std::size_t i = 0; i < count; ++i) {
-    const qreal t =
-        std::clamp(static_cast<qreal>(m_smoothHeights[i]), 0.0, 1.0);
-    const qreal activeT =
-        std::clamp((t - noiseGate) / (1.0 - noiseGate), 0.0, 1.0);
-    if (activeT <= 0.0) {
-      continue;
-    }
-    int gammaIdx = static_cast<int>(activeT * 1023.0f);
-    if (gammaIdx < 0)
-      gammaIdx = 0;
-    if (gammaIdx > 1023)
-      gammaIdx = 1023;
-    const qreal boostedT = m_gammaLUT[gammaIdx];
-
-    const QColor &color = isIdle ? idleColor : m_cachedColors[i].barPenColor;
-
-    const qreal x = barCenterX(i);
-    const qreal heightPx = maxVisualHeight * boostedT;
-
-    int widthIdx = static_cast<int>(boostedT * 1023.0f);
-    if (widthIdx < 0)
-      widthIdx = 0;
-    if (widthIdx > 1023)
-      widthIdx = 1023;
-    const qreal widthT = m_widthLUT[widthIdx];
-
-    const qreal dynamicBarWidth =
-        minBarWidth + (maxBarWidth - minBarWidth) * widthT;
-
-    const qreal yTop = baseline - heightPx;
-
-    QPen barPen(color);
-    barPen.setCapStyle(Qt::RoundCap);
-    barPen.setWidthF(dynamicBarWidth);
-    painter.setPen(barPen);
-    painter.drawLine(QPointF(x, yTop), QPointF(x, baseline));
-  }
-
-  // Smears (between out_smear and out_smooth).
-  if (!isIdle) {
-    painter.setPen(Qt::NoPen);
+  if (m_enableBars) {
     for (std::size_t i = 0; i < count; ++i) {
-      const qreal startRaw =
-          std::clamp(static_cast<qreal>(m_smearHeights[i]), 0.0, 1.0);
-      const qreal endRaw =
+      const qreal t =
           std::clamp(static_cast<qreal>(m_smoothHeights[i]), 0.0, 1.0);
-      const qreal startNorm =
-          std::clamp((startRaw - noiseGate) / (1.0 - noiseGate), 0.0, 1.0);
-      const qreal endNorm =
-          std::clamp((endRaw - noiseGate) / (1.0 - noiseGate), 0.0, 1.0);
-      if (endNorm <= 0.0) {
+      const qreal activeT =
+          std::clamp((t - noiseGate) / (1.0 - noiseGate), 0.0, 1.0);
+      if (activeT <= 0.0) {
         continue;
       }
-      int startIdx = static_cast<int>(startNorm * 1023.0f);
-      if (startIdx < 0)
-        startIdx = 0;
-      if (startIdx > 1023)
-        startIdx = 1023;
-      const qreal start = m_gammaLUT[startIdx];
+      int gammaIdx = static_cast<int>(activeT * 1023.0f);
+      if (gammaIdx < 0)
+        gammaIdx = 0;
+      if (gammaIdx > 1023)
+        gammaIdx = 1023;
+      const qreal boostedT = m_gammaLUT[gammaIdx];
 
-      int endIdx = static_cast<int>(endNorm * 1023.0f);
-      if (endIdx < 0)
-        endIdx = 0;
-      if (endIdx > 1023)
-        endIdx = 1023;
-      const qreal end = m_gammaLUT[endIdx];
-      const QColor &centerColor =
-          isIdle ? idleColor : m_cachedColors[i].smearCenterColor;
-      const QColor edgeColor =
-          isIdle
-              ? QColor(idleColor.red(), idleColor.green(), idleColor.blue(), 0)
-              : m_cachedColors[i].smearEdgeColor;
+      const QColor &color = isIdle ? idleColor : m_cachedColors[i].barPenColor;
 
       const qreal x = barCenterX(i);
-      const qreal yStart = baseline - maxVisualHeight * start;
-      const qreal yEnd = baseline - maxVisualHeight * end;
-      const qreal top = std::min(yStart, yEnd);
-      const qreal bottom = std::max(yStart, yEnd);
-      const qreal radius = std::max<qreal>(
-          2.0, barSpacing * 1.2 * std::sqrt(std::max(end, 0.0)));
+      const qreal heightPx = maxVisualHeight * boostedT;
 
-      QRectF smearRect(x - radius * 0.5, top, radius,
-                       std::max<qreal>(1.0, bottom - top));
-      QLinearGradient smearGrad(smearRect.topLeft(), smearRect.bottomLeft());
-      smearGrad.setColorAt(0.0, edgeColor);
-      smearGrad.setColorAt(0.5, centerColor);
-      smearGrad.setColorAt(1.0, edgeColor);
-      painter.setBrush(smearGrad);
-      painter.drawRect(smearRect);
+      int widthIdx = static_cast<int>(boostedT * 1023.0f);
+      if (widthIdx < 0)
+        widthIdx = 0;
+      if (widthIdx > 1023)
+        widthIdx = 1023;
+      const qreal widthT = m_widthLUT[widthIdx];
+
+      const qreal dynamicBarWidth =
+          minBarWidth + (maxBarWidth - minBarWidth) * widthT;
+
+      const qreal yTop = baseline - heightPx;
+
+      QPen barPen(color);
+      barPen.setCapStyle(Qt::RoundCap);
+      barPen.setWidthF(dynamicBarWidth);
+      painter.setPen(barPen);
+      painter.drawLine(QPointF(x, yTop), QPointF(x, baseline));
     }
   }
 
   // Glow circles on peaks.
-  if (!isIdle) {
-    painter.setCompositionMode(QPainter::CompositionMode_Screen);
-  }
-  for (std::size_t i = 0; i < count; ++i) {
-    const qreal t =
-        std::clamp(static_cast<qreal>(m_smoothHeights[i]), 0.0, 1.0);
-    const qreal activeT =
-        std::clamp((t - noiseGate) / (1.0 - noiseGate), 0.0, 1.0);
-    if (activeT <= 0.0) {
-      continue;
+  if (m_enableGlow) {
+    if (!isIdle) {
+      painter.setCompositionMode(QPainter::CompositionMode_Screen);
     }
-    int gammaIdx = static_cast<int>(activeT * 1023.0f);
-    if (gammaIdx < 0)
-      gammaIdx = 0;
-    if (gammaIdx > 1023)
-      gammaIdx = 1023;
-    const qreal boostedT = m_gammaLUT[gammaIdx];
+    for (std::size_t i = 0; i < count; ++i) {
+      const qreal t =
+          std::clamp(static_cast<qreal>(m_smoothHeights[i]), 0.0, 1.0);
+      const qreal activeT =
+          std::clamp((t - noiseGate) / (1.0 - noiseGate), 0.0, 1.0);
+      if (activeT <= 0.0) {
+        continue;
+      }
+      int gammaIdx = static_cast<int>(activeT * 1023.0f);
+      if (gammaIdx < 0)
+        gammaIdx = 0;
+      if (gammaIdx > 1023)
+        gammaIdx = 1023;
+      const qreal boostedT = m_gammaLUT[gammaIdx];
 
-    const qreal x = barCenterX(i);
-    const qreal y = baseline - maxVisualHeight * boostedT;
-    const qreal radius =
-        std::max<qreal>(2.0, barSpacing * 1.4 * std::sqrt(boostedT));
+      const qreal x = barCenterX(i);
+      const qreal y = baseline - maxVisualHeight * boostedT;
+      const qreal radius =
+          std::max<qreal>(2.0, barSpacing * 1.4 * std::sqrt(boostedT));
 
-    const QPixmap &pixmap =
-        isIdle ? m_idleGlowPixmap : m_cachedColors[i].glowPixmap;
-    QRectF destRect(x - radius, y - radius, radius * 2.0, radius * 2.0);
-    painter.drawPixmap(destRect, pixmap, pixmap.rect());
+      const QPixmap &pixmap =
+          isIdle ? m_idleGlowPixmap : m_cachedColors[i].glowPixmap;
+      QRectF destRect(x - radius, y - radius, radius * 2.0, radius * 2.0);
+      painter.drawPixmap(destRect, pixmap, pixmap.rect());
 
-    // Inner almost-solid core, smaller than the outer glow.
-    const QColor &coreColor = isIdle ? idleColor : m_cachedColors[i].coreColor;
-    const qreal coreRadius = std::max<qreal>(0.9, radius * 0.38);
-    painter.setBrush(coreColor);
-    painter.setPen(Qt::NoPen);
-    painter.drawEllipse(QPointF(x, y), coreRadius, coreRadius);
+      // Inner almost-solid core, smaller than the outer glow.
+      const QColor &coreColor =
+          isIdle ? idleColor : m_cachedColors[i].coreColor;
+      const qreal coreRadius = std::max<qreal>(0.9, radius * 0.38);
+      painter.setBrush(coreColor);
+      painter.setPen(Qt::NoPen);
+      painter.drawEllipse(QPointF(x, y), coreRadius, coreRadius);
+    }
   }
 }
 void Visualizer::calculateFFT(const std::vector<float> &in_raw) {
@@ -560,7 +530,6 @@ void Visualizer::wave_animation() {
     m_peakHeights.resize(kFixedBarCount, 0.0f);
     m_peakSpeeds.resize(kFixedBarCount, 0.01f);
     m_smoothHeights.resize(kFixedBarCount, 0.0f);
-    m_smearHeights.resize(kFixedBarCount, 0.0f);
     ensureBarColors(kFixedBarCount);
   }
 
@@ -585,7 +554,45 @@ void Visualizer::wave_animation() {
 
     m_barHeights[i] = h;
     m_smoothHeights[i] = h;
-    m_smearHeights[i] = 0.0f; // Minimal smear for clean wave
     m_peakHeights[i] = h;
   }
+}
+
+void Visualizer::hideEvent(QHideEvent *event) {
+  // Когда окно сворачивается или скрывается, полностью глушим таймер отрисовки!
+  if (m_timer->isActive()) {
+    m_timer->stop();
+  }
+  // Обязательно вызываем базовый метод
+  QWidget::hideEvent(event);
+}
+
+void Visualizer::showEvent(QShowEvent *event) {
+  // Когда окно снова появляется на экране, запускаем таймер
+  if (!m_timer->isActive()) {
+    // Проверяем, играет ли музыка, чтобы задать правильный FPS
+    bool isPlaying = m_player && m_player->isAudioPlaying();
+    if (isPlaying) {
+      m_timer->start(16); // 60 FPS
+    } else {
+      m_timer->start(33); // 30 FPS для холостого хода
+    }
+  }
+  QWidget::showEvent(event);
+}
+
+void Visualizer::contextMenuEvent(QContextMenuEvent *event) {
+  QMenu menu(this);
+
+  QAction *glowAct = menu.addAction("Включить Glow");
+  glowAct->setCheckable(true);
+  glowAct->setChecked(m_enableGlow);
+
+  // Соединяем клик с изменением переменной
+  connect(glowAct, &QAction::triggered, [this](bool checked) {
+    m_enableGlow = checked;
+    update();
+  });
+
+  menu.exec(event->globalPos());
 }

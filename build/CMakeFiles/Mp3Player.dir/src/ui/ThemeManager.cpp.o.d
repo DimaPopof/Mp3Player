@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/ThemeManager.cpp.o: \
- /home/kalos/Study/mp3players/mp3_new_design/src/ui/ThemeManager.cpp \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/ThemeManager.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/ui/ThemeManager.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \

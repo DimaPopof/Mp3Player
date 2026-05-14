@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/models/CustomSortProxyModel.cpp.o: \
- /home/kalos/Study/mp3players/mp3_new_design/src/ui/models/CustomSortProxyModel.cpp \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/models/CustomSortProxyModel.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/ui/models/CustomSortProxyModel.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/models/CustomSortProxyModel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractproxymodel.h \

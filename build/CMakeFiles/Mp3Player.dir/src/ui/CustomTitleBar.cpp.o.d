@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/CustomTitleBar.cpp.o: \
- /home/kalos/Study/mp3players/mp3_new_design/src/ui/CustomTitleBar.cpp \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/CustomTitleBar.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3_new_design/src/ui/CustomTitleBar.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/CustomTitleBar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

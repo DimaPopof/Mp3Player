@@ -28,7 +28,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+        /home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
@@ -39,8 +39,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-G1OgbZ"
-      binary: "/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-G1OgbZ"
+      source: "/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-U5auZI"
+      binary: "/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-U5auZI"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -49,13 +49,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-G1OgbZ'
+        Change Dir: '/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-U5auZI'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6fac9/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_6fac9.dir/build.make CMakeFiles/cmTC_6fac9.dir/build
-        gmake[1]: Entering directory '/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-G1OgbZ'
-        Building CXX object CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/g++   -v -o CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c1119/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c1119.dir/build.make CMakeFiles/cmTC_c1119.dir/build
+        gmake[1]: Entering directory '/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-U5auZI'
+        Building CXX object CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/g++   -v -o CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/g++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -65,8 +65,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6fac9.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6fac9.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5SqIaZ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1119.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c1119.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccz7wafl.s
         GNU C++17 (Ubuntu 14.2.0-4ubuntu2~24.04.1) version 14.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -87,15 +87,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 5499d5209675a49f4b2d429e1c1e5405
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6fac9.dir/'
-         as -v --64 -o CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5SqIaZ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1119.dir/'
+         as -v --64 -o CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccz7wafl.s
         GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_6fac9
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fac9.dir/link.txt --verbose=1
-        /usr/bin/g++  -v CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6fac9 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_c1119
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1119.dir/link.txt --verbose=1
+        /usr/bin/g++  -v CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c1119 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/g++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper
@@ -108,10 +108,10 @@ events:
         gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6fac9' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6fac9.'
-         /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSmhGfr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6fac9 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6fac9' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6fac9.'
-        gmake[1]: Leaving directory '/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-G1OgbZ'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c1119' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c1119.'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXwfYZs.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c1119 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c1119' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c1119.'
+        gmake[1]: Leaving directory '/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-U5auZI'
         
       exitCode: 0
   -
@@ -151,13 +151,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-G1OgbZ']
+        ignore line: [Change Dir: '/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-U5auZI']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6fac9/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_6fac9.dir/build.make CMakeFiles/cmTC_6fac9.dir/build]
-        ignore line: [gmake[1]: Entering directory '/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-G1OgbZ']
-        ignore line: [Building CXX object CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/g++   -v -o CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c1119/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_c1119.dir/build.make CMakeFiles/cmTC_c1119.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-U5auZI']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/g++   -v -o CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/g++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -167,8 +167,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6fac9.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6fac9.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5SqIaZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1119.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c1119.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccz7wafl.s]
         ignore line: [GNU C++17 (Ubuntu 14.2.0-4ubuntu2~24.04.1) version 14.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -189,15 +189,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 5499d5209675a49f4b2d429e1c1e5405]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6fac9.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5SqIaZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1119.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccz7wafl.s]
         ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_6fac9]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fac9.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/g++  -v CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6fac9 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_c1119]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1119.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/g++  -v CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c1119 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/g++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper]
@@ -210,13 +210,13 @@ events:
         ignore line: [gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6fac9' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6fac9.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSmhGfr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6fac9 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c1119' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c1119.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXwfYZs.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c1119 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/14/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccSmhGfr.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccXwfYZs.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -234,7 +234,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_6fac9] ==> ignore
+          arg [cmTC_c1119] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
@@ -246,7 +246,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..]
-          arg [CMakeFiles/cmTC_6fac9.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_c1119.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -288,8 +288,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-E2CtbN"
-      binary: "/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-E2CtbN"
+      source: "/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-qDaNI3"
+      binary: "/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-qDaNI3"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -299,17 +299,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-E2CtbN'
+        Change Dir: '/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-qDaNI3'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed8f7/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_ed8f7.dir/build.make CMakeFiles/cmTC_ed8f7.dir/build
-        gmake[1]: Entering directory '/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-E2CtbN'
-        Building CXX object CMakeFiles/cmTC_ed8f7.dir/src.cxx.o
-        /usr/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_ed8f7.dir/src.cxx.o -c /home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-E2CtbN/src.cxx
-        Linking CXX executable cmTC_ed8f7
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed8f7.dir/link.txt --verbose=1
-        /usr/bin/g++ CMakeFiles/cmTC_ed8f7.dir/src.cxx.o -o cmTC_ed8f7 
-        gmake[1]: Leaving directory '/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-E2CtbN'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_04662/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_04662.dir/build.make CMakeFiles/cmTC_04662.dir/build
+        gmake[1]: Entering directory '/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-qDaNI3'
+        Building CXX object CMakeFiles/cmTC_04662.dir/src.cxx.o
+        /usr/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_04662.dir/src.cxx.o -c /home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-qDaNI3/src.cxx
+        Linking CXX executable cmTC_04662
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04662.dir/link.txt --verbose=1
+        /usr/bin/g++ CMakeFiles/cmTC_04662.dir/src.cxx.o -o cmTC_04662 
+        gmake[1]: Leaving directory '/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-qDaNI3'
         
       exitCode: 0
   -
@@ -327,8 +327,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-kBQQqX"
-      binary: "/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-kBQQqX"
+      source: "/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-rYylu9"
+      binary: "/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-rYylu9"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -338,17 +338,17 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-kBQQqX'
+        Change Dir: '/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-rYylu9'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5c648/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_5c648.dir/build.make CMakeFiles/cmTC_5c648.dir/build
-        gmake[1]: Entering directory '/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-kBQQqX'
-        Building CXX object CMakeFiles/cmTC_5c648.dir/src.cxx.o
-        /usr/bin/g++ -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles/cmTC_5c648.dir/src.cxx.o -c /home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-kBQQqX/src.cxx
-        Linking CXX executable cmTC_5c648
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c648.dir/link.txt --verbose=1
-        /usr/bin/g++ CMakeFiles/cmTC_5c648.dir/src.cxx.o -o cmTC_5c648 
-        gmake[1]: Leaving directory '/mnt/w_disk_D/Study/mp3players/mp3_new_design/build/CMakeFiles/CMakeScratch/TryCompile-kBQQqX'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0bdc5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0bdc5.dir/build.make CMakeFiles/cmTC_0bdc5.dir/build
+        gmake[1]: Entering directory '/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-rYylu9'
+        Building CXX object CMakeFiles/cmTC_0bdc5.dir/src.cxx.o
+        /usr/bin/g++ -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles/cmTC_0bdc5.dir/src.cxx.o -c /home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-rYylu9/src.cxx
+        Linking CXX executable cmTC_0bdc5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bdc5.dir/link.txt --verbose=1
+        /usr/bin/g++ CMakeFiles/cmTC_0bdc5.dir/src.cxx.o -o cmTC_0bdc5 
+        gmake[1]: Leaving directory '/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/CMakeScratch/TryCompile-rYylu9'
         
       exitCode: 0
 ...
