@@ -1,0 +1,17 @@
+# Music folder for testing. Ignoring to prevent accidental copyright infringement.
+music/
+
+# Musializer output
+*.mp4
+*.wav
+
+# Vim
+*.swp
+
+# Nob artifacts
+build/
+nob
+nob.old
+nob.exe
+nob.exe.old
+nob.obj

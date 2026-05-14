@@ -1,0 +1,32 @@
+{
+	"BUILD_DIR" : "/home/kalos/Study/mp3players/mp3_new_design/build/Mp3Player_autogen",
+	"CMAKE_BINARY_DIR" : "/home/kalos/Study/mp3players/mp3_new_design/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/kalos/Study/mp3players/mp3_new_design/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/kalos/Study/mp3players/mp3_new_design",
+	"CMAKE_SOURCE_DIR" : "/home/kalos/Study/mp3players/mp3_new_design",
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/kalos/Study/mp3players/mp3_new_design/build/Mp3Player_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/kalos/Study/mp3players/mp3_new_design/themes/theme_dark.qss",
+		"/home/kalos/Study/mp3players/mp3_new_design/themes/theme_pastel.qss",
+		"/home/kalos/Study/mp3players/mp3_new_design/assets/mp3.png",
+		"/home/kalos/Study/mp3players/mp3_new_design/assets/folder.png",
+		"/home/kalos/Study/mp3players/mp3_new_design/assets/heart_icon.png",
+		"/home/kalos/Study/mp3players/mp3_new_design/assets/cnst_folder.png",
+		"/home/kalos/Study/mp3players/mp3_new_design/assets/tree.png",
+		"/home/kalos/Study/mp3players/mp3_new_design/assets/list.png",
+		"/home/kalos/Study/mp3players/mp3_new_design/assets/app_icon.png",
+		"/home/kalos/Study/mp3players/mp3_new_design/assets/queue.png"
+	],
+	"LOCK_FILE" : "/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/Mp3Player_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/Mp3Player_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/kalos/Study/mp3players/mp3_new_design/resources.qrc",
+	"VERBOSITY" : 0
+}

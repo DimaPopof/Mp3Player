@@ -1,0 +1,5 @@
+/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/Mp3Player.dir
+/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/edit_cache.dir
+/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/rebuild_cache.dir
+/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/Mp3Player_autogen_timestamp_deps.dir
+/home/kalos/Study/mp3players/mp3_new_design/build/CMakeFiles/Mp3Player_autogen.dir
