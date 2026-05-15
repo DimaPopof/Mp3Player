@@ -722,8 +722,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/kalos/Study/mp3players/mp3player_work/build",
-		"source" : "/home/kalos/Study/mp3players/mp3player_work"
+		"build" : "/mnt/w_disk_D/Study/mp3players/mp3player_work/build",
+		"source" : "/mnt/w_disk_D/Study/mp3players/mp3player_work"
 	},
 	"version" : 
 	{

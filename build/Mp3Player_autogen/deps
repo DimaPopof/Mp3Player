@@ -1,55 +1,47 @@
 Mp3Player_autogen/timestamp: \
-	/home/kalos/Study/mp3players/mp3player_work/CMakeLists.txt \
-	/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
-	/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
-	/home/kalos/Study/mp3players/mp3player_work/build/Mp3Player_autogen/moc_predefs.h \
-	/home/kalos/Study/mp3players/mp3player_work/resources.qrc \
-	/home/kalos/Study/mp3players/mp3player_work/src/core/AudioPlayer.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/core/AudioPlayer.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/core/PlaylistManager.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/core/PlaylistManager.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/core/RingBuffer.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/core/RingBuffer.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/core/TrackMetadata.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/core/TrackMetadata.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/main.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/miniaudio_impl.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/BottomWidget.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/BottomWidget.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/ClickableSlider.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/CustomTitleBar.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/CustomTitleBar.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/HighlightDelegate.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/InteractiveBackground.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/InteractiveBackground.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/LeftWidget.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/LeftWidget.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/MainWindow.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/MainWindow.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/MarqueeLabel.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/MarqueeLabel.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/RightWidget.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/RightWidget.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/ThemeManager.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/Visualizer.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/Visualizer.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/models/CustomSortProxyModel.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/models/CustomSortProxyModel.h \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/models/FileBrowserModelFactory.cpp \
-	/home/kalos/Study/mp3players/mp3player_work/src/ui/models/FileBrowserModelFactory.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/CMakeLists.txt \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/build/Mp3Player_autogen/moc_predefs.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/resources.qrc \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/AudioPlayer.cpp \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/AudioPlayer.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/PlaylistManager.cpp \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/PlaylistManager.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/RingBuffer.cpp \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/RingBuffer.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/TrackMetadata.cpp \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/TrackMetadata.h \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/atomicops.h \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/readerwriterqueue.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/main.cpp \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/miniaudio.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/miniaudio_impl.cpp \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/BottomWidget.cpp \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/BottomWidget.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/ClickableSlider.h \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/CustomIconProvider.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/CustomTitleBar.cpp \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/CustomTitleBar.h \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/HighlightDelegate.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/InteractiveBackground.cpp \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/InteractiveBackground.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/LeftWidget.cpp \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/LeftWidget.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/MainWindow.cpp \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/MainWindow.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/MarqueeLabel.cpp \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/MarqueeLabel.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/RightWidget.cpp \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/RightWidget.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/ThemeManager.cpp \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/Visualizer.cpp \
 	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/Visualizer.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/models/CustomSortProxyModel.cpp \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/models/CustomSortProxyModel.h \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/models/FileBrowserModelFactory.cpp \
+	/mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/models/FileBrowserModelFactory.h \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/errno-base.h \
 	/usr/include/asm-generic/errno.h \

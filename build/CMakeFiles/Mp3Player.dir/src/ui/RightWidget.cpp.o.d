@@ -1,8 +1,8 @@
 CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o: \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/RightWidget.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/RightWidget.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/RightWidget.h \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/CustomIconProvider.h \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/RightWidget.h \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/CustomIconProvider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QAbstractFileIconProvider \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstractfileiconprovider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
@@ -360,8 +360,8 @@ CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/HighlightDelegate.h \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/HighlightDelegate.h \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
@@ -474,11 +474,11 @@ CMakeFiles/Mp3Player.dir/src/ui/RightWidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/c++/14/deque /usr/include/c++/14/bits/stl_deque.h \
  /usr/include/c++/14/bits/deque.tcc \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/models/CustomSortProxyModel.h \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/models/CustomSortProxyModel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractproxymodel.h \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/models/FileBrowserModelFactory.h \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/models/FileBrowserModelFactory.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QAbstractItemModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \

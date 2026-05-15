@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/kalos/Study/mp3players/mp3player_work/build"
+			"value" : "/mnt/w_disk_D/Study/mp3players/mp3player_work/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/pkgRedirects"
+			"value" : "/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/kalos/Study/mp3players/mp3player_work"
+			"value" : "/mnt/w_disk_D/Study/mp3players/mp3player_work"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1467,7 +1467,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/kalos/Study/mp3players/mp3player_work/build"
+			"value" : "/mnt/w_disk_D/Study/mp3players/mp3player_work/build"
 		},
 		{
 			"name" : "Mp3Player_IS_TOP_LEVEL",
@@ -1491,7 +1491,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/kalos/Study/mp3players/mp3player_work"
+			"value" : "/mnt/w_disk_D/Study/mp3players/mp3player_work"
 		},
 		{
 			"name" : "OPENGL_EGL_INCLUDE_DIR",

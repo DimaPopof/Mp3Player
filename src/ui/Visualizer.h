@@ -41,6 +41,7 @@ private:
 
   std::size_t readForVisualizer(float *dst, std::size_t maxSamples);
   void ensureBarColors(std::size_t barCount);
+  QPixmap generateGlowPixmap(const QColor& color) const;
 
   void calculateFFT(const std::vector<float> &in_raw);
   qreal compressAmplitude(qreal value);

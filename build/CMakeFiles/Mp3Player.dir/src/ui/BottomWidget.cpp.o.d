@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o: \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/BottomWidget.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/BottomWidget.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/BottomWidget.h \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/BottomWidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
@@ -372,7 +372,7 @@ CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/ClickableSlider.h \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/ClickableSlider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
@@ -410,5 +410,5 @@ CMakeFiles/Mp3Player.dir/src/ui/BottomWidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject

@@ -278,6 +278,21 @@ void Visualizer::updateVisuals() {
 
   update();
 }
+QPixmap Visualizer::generateGlowPixmap(const QColor& color) const {
+  QPixmap pixmap(64, 64);
+  pixmap.fill(Qt::transparent);
+  QPainter p(&pixmap);
+  p.setRenderHint(QPainter::Antialiasing, true);
+  QRadialGradient glow(32, 32, 32);
+  glow.setColorAt(0.0, QColor(color.red(), color.green(), color.blue(), 200));
+  glow.setColorAt(0.2, QColor(color.red(), color.green(), color.blue(), 140));
+  glow.setColorAt(0.5, QColor(color.red(), color.green(), color.blue(), 50));
+  glow.setColorAt(1.0, QColor(color.red(), color.green(), color.blue(), 0));
+  p.setBrush(glow);
+  p.setPen(Qt::NoPen);
+  p.drawEllipse(0, 0, 64, 64);
+  return pixmap;
+}
 
 void Visualizer::ensureBarColors(std::size_t barCount) {
   if (m_cachedColors.size() == barCount) {
@@ -313,16 +328,7 @@ void Visualizer::ensureBarColors(std::size_t barCount) {
     colors.coreColor = baseColor;
     colors.coreColor.setAlphaF(0.9);
 
-    colors.glowPixmap = QPixmap(64, 64);
-    colors.glowPixmap.fill(Qt::transparent);
-    QPainter p(&colors.glowPixmap);
-    p.setRenderHint(QPainter::Antialiasing, true);
-    QRadialGradient glow(32, 32, 32);
-    glow.setColorAt(0.0, colors.glowCenterColor);
-    glow.setColorAt(1.0, colors.glowEdgeColor);
-    p.setBrush(glow);
-    p.setPen(Qt::NoPen);
-    p.drawEllipse(0, 0, 64, 64);
+    colors.glowPixmap = generateGlowPixmap(baseColor);
   }
 }
 
@@ -338,17 +344,7 @@ void Visualizer::paintEvent(QPaintEvent *event) {
     idleColor = ThemeManager::instance().getVisualizerIdleColor();
     if (idleColor != m_lastIdleColor || m_idleGlowPixmap.isNull()) {
       m_lastIdleColor = idleColor;
-      m_idleGlowPixmap = QPixmap(64, 64);
-      m_idleGlowPixmap.fill(Qt::transparent);
-      QPainter p(&m_idleGlowPixmap);
-      p.setRenderHint(QPainter::Antialiasing, true);
-      QRadialGradient glow(32, 32, 32);
-      glow.setColorAt(0.0, idleColor);
-      glow.setColorAt(
-          1.0, QColor(idleColor.red(), idleColor.green(), idleColor.blue(), 0));
-      p.setBrush(glow);
-      p.setPen(Qt::NoPen);
-      p.drawEllipse(0, 0, 64, 64);
+      m_idleGlowPixmap = generateGlowPixmap(idleColor);
     }
   }
 
@@ -363,7 +359,7 @@ void Visualizer::paintEvent(QPaintEvent *event) {
 
   const qreal baseline = static_cast<qreal>(height());
   const qreal maxVisualHeight =
-      static_cast<qreal>(height() * 0.85); // Увеличено до 100% высоты
+      static_cast<qreal>(height() * 0.85); // Увеличено до 85% высоты
   const qreal responseGamma = 0.88f;
   const qreal noiseGate = 0.04;
   const qreal availableWidth = static_cast<qreal>(std::max(1, width()));
@@ -404,14 +400,17 @@ void Visualizer::paintEvent(QPaintEvent *event) {
         widthIdx = 1023;
       const qreal widthT = m_widthLUT[widthIdx];
 
-      const qreal dynamicBarWidth =
-          minBarWidth + (maxBarWidth - minBarWidth) * widthT;
-
       const qreal yTop = baseline - heightPx;
 
-      QPen barPen(color);
+      QLinearGradient barGrad(x, baseline, x, baseline - maxVisualHeight);
+      barGrad.setColorAt(1.0, QColor(color.red(), color.green(), color.blue(), 255)); // Плотный (солид) цвет на вершине
+
+      const qreal minDynamicWidth = std::max<qreal>(1.0, barSpacing * 0.02);
+      const qreal maxDynamicWidth = std::max<qreal>(2.0, barSpacing * 1.0);
+      const qreal dynamicBarWidth = minDynamicWidth + (maxDynamicWidth - minDynamicWidth) * widthT;      
+      QPen barPen(QBrush(barGrad), dynamicBarWidth); // Динамическая ширина линии, зависящая от высоты
+
       barPen.setCapStyle(Qt::RoundCap);
-      barPen.setWidthF(dynamicBarWidth);
       painter.setPen(barPen);
       painter.drawLine(QPointF(x, yTop), QPointF(x, baseline));
     }
@@ -440,7 +439,7 @@ void Visualizer::paintEvent(QPaintEvent *event) {
       const qreal x = barCenterX(i);
       const qreal y = baseline - maxVisualHeight * boostedT;
       const qreal radius =
-          std::max<qreal>(2.0, barSpacing * 1.4 * std::sqrt(boostedT));
+          std::max<qreal>(2.0, barSpacing * 2.8 * std::sqrt(boostedT));
 
       const QPixmap &pixmap =
           isIdle ? m_idleGlowPixmap : m_cachedColors[i].glowPixmap;
@@ -448,15 +447,16 @@ void Visualizer::paintEvent(QPaintEvent *event) {
       painter.drawPixmap(destRect, pixmap, pixmap.rect());
 
       // Inner almost-solid core, smaller than the outer glow.
-      const QColor &coreColor =
-          isIdle ? idleColor : m_cachedColors[i].coreColor;
-      const qreal coreRadius = std::max<qreal>(0.9, radius * 0.38);
+      QColor coreColor = isIdle ? idleColor : m_cachedColors[i].coreColor;
+      coreColor.setAlpha(255); // Делаем 100% непрозрачным
+      // Пики будут масштабироваться в зависимости от размера окна (barSpacing) и высоты звука (boostedT)
+      const qreal coreRadius = std::max<qreal>(1.5, barSpacing * (0.15 + 0.5 * boostedT));
       painter.setBrush(coreColor);
       painter.setPen(Qt::NoPen);
-      painter.drawEllipse(QPointF(x, y), coreRadius, coreRadius);
-    }
+      painter.drawEllipse(QPointF(x, y), coreRadius, coreRadius);    }
   }
 }
+
 void Visualizer::calculateFFT(const std::vector<float> &in_raw) {
   const std::size_t n = std::min(in_raw.size(), m_hannWindowFixed.size());
 
