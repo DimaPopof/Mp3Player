@@ -1,5 +1,5 @@
-/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/Mp3Player.dir
-/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/edit_cache.dir
-/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/rebuild_cache.dir
-/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/Mp3Player_autogen_timestamp_deps.dir
-/mnt/w_disk_D/Study/mp3players/mp3player_work/build/CMakeFiles/Mp3Player_autogen.dir
+/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/Mp3Player.dir
+/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/edit_cache.dir
+/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/rebuild_cache.dir
+/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/Mp3Player_autogen_timestamp_deps.dir
+/home/kalos/Study/mp3players/mp3player_work/build/CMakeFiles/Mp3Player_autogen.dir

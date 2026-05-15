@@ -145,6 +145,26 @@
     background-color: #a6a3f0;
 }
 
+#repeatButton,
+#shuffleButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 4px;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+#repeatButton:hover,
+#shuffleButton:hover {
+    background-color: rgba(200, 198, 250, 100);
+}
+
+#repeatButton:checked,
+#shuffleButton:checked {
+    background-color: rgba(255, 168, 182, 100); /* Розовый акцент при активации */
+}
+
 #playPauseButton {
     background-color: #ffa8b6;
     border: 1px solid transparent;

@@ -39,6 +39,8 @@ signals:
   void playPauseClicked();
   void volumeMuteClicked();
   void volumeChanged(int value);
+  void repeatToggled(bool enabled);
+  void shuffleToggled(bool enabled);
   void seekRequested(int position);
 
 private:
@@ -46,6 +48,8 @@ private:
   QPushButton *prevButton;
   QPushButton *playPauseButton;
   QPushButton *nextButton;
+  QPushButton *repeatButton;
+  QPushButton *shuffleButton;
   QPushButton *volumeButton;
   QSlider *volumeSlider;
   QLabel *timeLabel;
@@ -58,6 +62,8 @@ private:
   void setupConnections();
   QIcon tintedIcon(QStyle::StandardPixmap sp, const QSize &size,
                    const QColor &color) const;
+  QIcon tintedCustomIcon(const QString &path, const QSize &size,
+                         const QColor &color) const;
 
 protected:
   bool eventFilter(QObject *obj, QEvent *event) override;

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/mnt/w_disk_D/Study/mp3players/mp3player_work/build/Mp3Player_autogen/include -I/mnt/w_disk_D/Study/mp3players/mp3player_work/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets
+CXX_INCLUDES = -I/home/kalos/Study/mp3players/mp3player_work/build/Mp3Player_autogen/include -I/home/kalos/Study/mp3players/mp3player_work/src -I/usr/include/taglib -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets
 
 CXX_FLAGS = -g -std=gnu++17 -fPIC
 

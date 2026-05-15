@@ -23,6 +23,7 @@
 #include <QKeySequence>
 #include <QPainter>
 #include <QProcess>
+#include <QRandomGenerator>
 #include <QSettings>
 #include <QShortcut>
 #include <QStyle>
@@ -43,21 +44,23 @@ bool revealFileInExplorer(const QString &filePath) {
   }
 
   const QString folderPath = QDir::toNativeSeparators(fileInfo.absolutePath());
-  const QString nativePath = QDir::toNativeSeparators(fileInfo.absoluteFilePath());
+  const QString nativePath =
+      QDir::toNativeSeparators(fileInfo.absoluteFilePath());
 
-  const HRESULT coInitResult =
-      CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
-  const bool didInitializeCom = SUCCEEDED(coInitResult) || coInitResult == S_FALSE;
+  const HRESULT coInitResult = CoInitializeEx(
+      nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
+  const bool didInitializeCom =
+      SUCCEEDED(coInitResult) || coInitResult == S_FALSE;
 
   PIDLIST_ABSOLUTE folderPidl = nullptr;
   PIDLIST_ABSOLUTE filePidl = nullptr;
 
-  const HRESULT folderResult = SHParseDisplayName(
-      reinterpret_cast<LPCWSTR>(folderPath.utf16()), nullptr, &folderPidl, 0,
-      nullptr);
-  const HRESULT fileResult = SHParseDisplayName(
-      reinterpret_cast<LPCWSTR>(nativePath.utf16()), nullptr, &filePidl, 0,
-      nullptr);
+  const HRESULT folderResult =
+      SHParseDisplayName(reinterpret_cast<LPCWSTR>(folderPath.utf16()), nullptr,
+                         &folderPidl, 0, nullptr);
+  const HRESULT fileResult =
+      SHParseDisplayName(reinterpret_cast<LPCWSTR>(nativePath.utf16()), nullptr,
+                         &filePidl, 0, nullptr);
 
   if (FAILED(folderResult) || FAILED(fileResult) || !folderPidl || !filePidl) {
     if (filePidl) {
@@ -119,7 +122,8 @@ void MainWindow::setupUi() {
   mainLayout->setContentsMargins(0, 0, 0, 0);
   mainLayout->setSpacing(0);
 
-  InteractiveBackground *backgroundWidget = new InteractiveBackground(centralWidget);
+  InteractiveBackground *backgroundWidget =
+      new InteractiveBackground(centralWidget);
   backgroundWidget->setObjectName("interactiveBackground");
   QVBoxLayout *backgroundLayout = new QVBoxLayout(backgroundWidget);
   backgroundLayout->setContentsMargins(0, 0, 0, 0);
@@ -142,20 +146,22 @@ void MainWindow::setupUi() {
 
   leftWidget = new LeftWidget(leftContainer);
   leftWidget->pass_AudioPlayer_To_Visualizer()->setAudioPlayer(audioPlayer);
-  
+
   leftContainerLayout->addWidget(leftWidget);
-  // Removed container minimum width so QSplitter calculates exactly based on LeftWidget + margins
+  // Removed container minimum width so QSplitter calculates exactly based on
+  // LeftWidget + margins
 
   QWidget *rightContainer = new QWidget(backgroundWidget);
   QVBoxLayout *rightContainerLayout = new QVBoxLayout(rightContainer);
   rightContainerLayout->setContentsMargins(0, 10, 10,
-                                            10); // top=10, right=10, bottom=10
+                                           10); // top=10, right=10, bottom=10
   rightContainerLayout->setSpacing(0);
 
   rightWidget = new RightWidget(rightContainer);
 
   rightContainerLayout->addWidget(rightWidget);
-  // Removed container minimum width so QSplitter calculates exactly based on RightWidget + margins
+  // Removed container minimum width so QSplitter calculates exactly based on
+  // RightWidget + margins
 
   bottomWidget = new BottomWidget(centralWidget);
 
@@ -218,7 +224,7 @@ void MainWindow::setupConnections() {
 
   // Context menu signals
   connect(rightWidget, &RightWidget::playNextRequested, this,
-          &MainWindow::onPlayNextRequested);
+          &MainWindow::onEnqueueNextRequested);
   connect(rightWidget, &RightWidget::addToQueueRequested, this,
           &MainWindow::onAddToQueueRequested);
   connect(rightWidget, &RightWidget::queueTrackPlayRequested, this,
@@ -251,7 +257,14 @@ void MainWindow::setupConnections() {
   connect(skipBackwardShortcut, &QShortcut::activated, this,
           &MainWindow::skipBackward);
 
-  connect(titleBar, &CustomTitleBar::toggleViewRequested, this, &MainWindow::toggleViewMode);
+  connect(titleBar, &CustomTitleBar::toggleViewRequested, this,
+          &MainWindow::toggleViewMode);
+
+  // Repeat / Shuffle
+  connect(bottomWidget, &BottomWidget::repeatToggled, this,
+          &MainWindow::onRepeatToggled);
+  connect(bottomWidget, &BottomWidget::shuffleToggled, this,
+          &MainWindow::onShuffleToggled);
 
   resize(1000, 700);
   setMinimumSize(600, 400);
@@ -300,31 +313,7 @@ void MainWindow::loadListDirectory(const QString &folderPath,
     leftWidget->resetTrackDisplay();
   }
 }
-void MainWindow::onTrackFinished() {
-  // 1. First check the high-priority queue
-  if (playlistManager->getCurrentQueueIndex() + 1 < (int)playlistManager->getQueue().size()) {
-    playlistManager->setCurrentQueueIndex(playlistManager->getCurrentQueueIndex() + 1);
-    QString nextPath = playlistManager->getQueue()[playlistManager->getCurrentQueueIndex()];
-    playlistManager->maintainQueueHistory();
-    rightWidget->setQueue(playlistManager->getQueue());
-    qDebug() << "[Queue] Playing next track from queue at index"
-             << playlistManager->getCurrentQueueIndex() << ":" << nextPath;
-    playTrackByPath(nextPath);
-    return;
-  }
-
-  // 2. Fall back to PlaylistManager if queue is empty or finished
-  QString nextPath = playlistManager->nextTrack(currentTrackPath);
-
-  if (!nextPath.isEmpty()) {
-    playlistManager->setCurrentQueueIndex(playlistManager->addTrackToQueue(nextPath, playlistManager->getCurrentQueueIndex() == -1 ? 0 : playlistManager->getCurrentQueueIndex() + 1));
-    playlistManager->maintainQueueHistory();
-    rightWidget->setQueue(playlistManager->getQueue());
-    playTrackByPath(nextPath);
-  } else {
-    audioPlayer->stop();
-  }
-}
+void MainWindow::onTrackFinished() { advanceToNextTrack(true); }
 void MainWindow::updateTrackInfo(const QString &filePath) {
   TrackInfo trackInfo = TrackMetadataExtractor::extract(filePath);
   rightWidget->setPlayingTrackHighlight(filePath);
@@ -333,8 +322,11 @@ void MainWindow::updateTrackInfo(const QString &filePath) {
 void MainWindow::playTrackByPath(const QString &filePath) {
 
   // Update queue index if the track is not the one we expected from the queue
-  if (playlistManager->getCurrentQueueIndex() >= 0 && playlistManager->getCurrentQueueIndex() < (int)playlistManager->getQueue().size()) {
-    if (playlistManager->getQueue()[playlistManager->getCurrentQueueIndex()] != filePath) {
+  if (playlistManager->getCurrentQueueIndex() >= 0 &&
+      playlistManager->getCurrentQueueIndex() <
+          (int)playlistManager->getQueue().size()) {
+    if (playlistManager->getQueue()[playlistManager->getCurrentQueueIndex()] !=
+        filePath) {
       playlistManager->setCurrentQueueIndex(-1);
     }
   }
@@ -389,30 +381,57 @@ void MainWindow::togglePlayback() {
   }
 }
 
-void MainWindow::playNextTrack() {
-  // 1. Check high-priority queue first
-  if (playlistManager->getCurrentQueueIndex() + 1 < (int)playlistManager->getQueue().size()) {
-    playlistManager->setCurrentQueueIndex(playlistManager->getCurrentQueueIndex() + 1);
-    QString nextTrackPath = playlistManager->getQueue()[playlistManager->getCurrentQueueIndex()];
-    playlistManager->maintainQueueHistory();
-    rightWidget->setQueue(playlistManager->getQueue());
-    qDebug() << "[Queue] Skipping to next track in queue at index"
-             << playlistManager->getCurrentQueueIndex() << ":" << nextTrackPath;
-    playTrackByPath(nextTrackPath);
+void MainWindow::playNextTrack() { advanceToNextTrack(false); }
+
+void MainWindow::advanceToNextTrack(bool autoAdvance) {
+  if (currentTrackPath.isEmpty())
+    return;
+
+  // REPEAT: if the track ended on its own and repeat is on — replay it
+  if (autoAdvance && m_isRepeat) {
+    playTrackByPath(currentTrackPath);
     return;
   }
 
-  if (currentTrackPath.isEmpty()) {
-    return;
+  QString nextPath;
+  int currentIndex = playlistManager->getCurrentQueueIndex();
+
+  // 1. Check the manual queue first (shuffle doesn't apply here)
+  if (currentIndex + 1 < (int)playlistManager->getQueue().size()) {
+    playlistManager->setCurrentQueueIndex(currentIndex + 1);
+    nextPath =
+        playlistManager->getQueue()[playlistManager->getCurrentQueueIndex()];
   }
 
-  // 2. Fall back to PlaylistManager
-  QString nextTrackPath = playlistManager->nextTrack(currentTrackPath);
-  if (!nextTrackPath.isEmpty()) {
-    playlistManager->setCurrentQueueIndex(playlistManager->addTrackToQueue(nextTrackPath, playlistManager->getCurrentQueueIndex() == -1 ? 0 : playlistManager->getCurrentQueueIndex() + 1));
+  // 2. Fall back to the full playlist
+  else {
+    // SHUFFLE: pick a random track
+    if (m_isShuffle) {
+      QStringList allTracks = playlistManager->getTrackList();
+      if (!allTracks.isEmpty()) {
+        int randomIndex = QRandomGenerator::global()->bounded(allTracks.size());
+        nextPath = allTracks.at(randomIndex);
+      }
+    }
+    // NORMAL: advance sequentially
+    else {
+      nextPath = playlistManager->nextTrack(currentTrackPath);
+    }
+
+    // Add the chosen track to the queue history
+    if (!nextPath.isEmpty()) {
+      playlistManager->setCurrentQueueIndex(playlistManager->addTrackToQueue(
+          nextPath, currentIndex == -1 ? 0 : currentIndex + 1));
+    }
+  }
+
+  // Play the track or stop if nothing was found
+  if (!nextPath.isEmpty()) {
     playlistManager->maintainQueueHistory();
     rightWidget->setQueue(playlistManager->getQueue());
-    playTrackByPath(nextTrackPath);
+    playTrackByPath(nextPath);
+  } else if (autoAdvance) {
+    audioPlayer->stop();
   }
 }
 
@@ -423,8 +442,10 @@ void MainWindow::playPreviousTrack() {
 
   // 1. Check if we have a previous track in the queue
   if (playlistManager->getCurrentQueueIndex() > 0) {
-    playlistManager->setCurrentQueueIndex(playlistManager->getCurrentQueueIndex() - 1);
-    QString prevTrackPath = playlistManager->getQueue()[playlistManager->getCurrentQueueIndex()];
+    playlistManager->setCurrentQueueIndex(
+        playlistManager->getCurrentQueueIndex() - 1);
+    QString prevTrackPath =
+        playlistManager->getQueue()[playlistManager->getCurrentQueueIndex()];
     playlistManager->maintainQueueHistory();
     rightWidget->setQueue(playlistManager->getQueue());
     qDebug() << "[Queue] Skipping to previous track in queue at index"
@@ -436,7 +457,10 @@ void MainWindow::playPreviousTrack() {
   // 2. Fall back to PlaylistManager
   QString previousTrackPath = playlistManager->previousTrack(currentTrackPath);
   if (!previousTrackPath.isEmpty()) {
-    playlistManager->setCurrentQueueIndex(playlistManager->addTrackToQueue(previousTrackPath, playlistManager->getCurrentQueueIndex() == -1 ? 0 : playlistManager->getCurrentQueueIndex()));
+    playlistManager->setCurrentQueueIndex(playlistManager->addTrackToQueue(
+        previousTrackPath, playlistManager->getCurrentQueueIndex() == -1
+                               ? 0
+                               : playlistManager->getCurrentQueueIndex()));
     playlistManager->maintainQueueHistory();
     rightWidget->setQueue(playlistManager->getQueue());
     playTrackByPath(previousTrackPath);
@@ -550,8 +574,8 @@ bool MainWindow::eventFilter(QObject *watched, QEvent *event) {
 
 void MainWindow::closeEvent(QCloseEvent *event) {
   QSettings settings;
-  const QString currentFolder = rightWidget ? rightWidget->getCurrentFolderPath()
-                                            : QString();
+  const QString currentFolder =
+      rightWidget ? rightWidget->getCurrentFolderPath() : QString();
   if (!currentFolder.isEmpty()) {
     settings.setValue("defaultFolder", currentFolder);
   }
@@ -591,14 +615,15 @@ void MainWindow::zoomOutText() {
   }
 }
 
-void MainWindow::onPlayNextRequested(const QString &filePath) {
+void MainWindow::onEnqueueNextRequested(const QString &filePath) {
   qDebug() << "[Queue] Play Next requested. Inserting after current index:"
            << filePath;
   if (playlistManager->getCurrentQueueIndex() == -1) {
     playlistManager->addTrackToQueue(filePath, 0);
   } else {
     // If next is current index, but +1
-    playlistManager->addTrackToQueue(filePath, playlistManager->getCurrentQueueIndex() + 1);
+    playlistManager->addTrackToQueue(
+        filePath, playlistManager->getCurrentQueueIndex() + 1);
   }
   rightWidget->setQueue(playlistManager->getQueue());
 }
@@ -617,7 +642,8 @@ void MainWindow::onQueueTrackPlayRequested(int index) {
              << playlistManager->getQueue()[index];
     playlistManager->maintainQueueHistory();
     rightWidget->setQueue(playlistManager->getQueue());
-    playTrackByPath(playlistManager->getQueue()[playlistManager->getCurrentQueueIndex()]);
+    playTrackByPath(
+        playlistManager->getQueue()[playlistManager->getCurrentQueueIndex()]);
   }
 }
 
@@ -657,9 +683,11 @@ void MainWindow::onTrackManualPlayRequested(const QString &filePath) {
            << filePath;
 
   if (playlistManager->getCurrentQueueIndex() == -1) {
-    playlistManager->setCurrentQueueIndex(playlistManager->addTrackToQueue(filePath, 0));
+    playlistManager->setCurrentQueueIndex(
+        playlistManager->addTrackToQueue(filePath, 0));
   } else {
-    playlistManager->setCurrentQueueIndex(playlistManager->addTrackToQueue(filePath, playlistManager->getCurrentQueueIndex() + 1));
+    playlistManager->setCurrentQueueIndex(playlistManager->addTrackToQueue(
+        filePath, playlistManager->getCurrentQueueIndex() + 1));
   }
 
   playlistManager->maintainQueueHistory();
@@ -708,4 +736,3 @@ void MainWindow::toggleViewMode() {
     topSplitter->setSizes({700, 10000}); // 700 for LeftWidget, rest for right
   }
 }
-

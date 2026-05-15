@@ -61,12 +61,16 @@ private slots:
   void zoomOutText();
 
   // Context menu stubs
-  void onPlayNextRequested(const QString &filePath);
+  void onEnqueueNextRequested(const QString &filePath);
   void onAddToQueueRequested(const QString &filePath);
   void onQueueTrackPlayRequested(int index);
   void onOpenFileLocationRequested(const QString &filePath);
   void onTrackManualPlayRequested(const QString &filePath);
   void onFileRenamed(const QString &oldPath, const QString &newPath);
+
+  // Repeat / Shuffle
+  void onRepeatToggled(bool enabled) { m_isRepeat = enabled; }
+  void onShuffleToggled(bool enabled) { m_isShuffle = enabled; }
 
 private:
   HighlightDelegate *highlightDelegate;
@@ -81,6 +85,8 @@ private:
   QString listCurrentRootPath{QDir::homePath()};
   bool isMuted{false};
   int savedVolume{35};
+  bool m_isRepeat{false};
+  bool m_isShuffle{false};
 
   QString currentRootPath;
   QString currentTrackPath;
@@ -95,6 +101,7 @@ private:
   void updateTrackInfo(const QString &filePath);
   void applyZoom();
   void playTrackByPath(const QString &filePath);
+  void advanceToNextTrack(bool autoAdvance);
 
   // --- Блок UI элементов ---
 

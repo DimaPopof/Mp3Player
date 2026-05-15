@@ -39,6 +39,14 @@ void BottomWidget::setupUi() {
   nextButton->setIcon(tintedIcon(QStyle::SP_MediaSkipForward, mediaIconSize,
                                  ThemeManager::instance().getMediaIconColor()));
 
+  repeatButton = new QPushButton(this);
+  repeatButton->setObjectName("repeatButton");
+  repeatButton->setCheckable(true);
+
+  shuffleButton = new QPushButton(this);
+  shuffleButton->setObjectName("shuffleButton");
+  shuffleButton->setCheckable(true);
+
   // Volume button rendering logic (copied from your code)
   volumeButton = new QPushButton(this);
   volumeButton->setObjectName("volumeButton");
@@ -90,6 +98,8 @@ void BottomWidget::setupUi() {
   timelineSlider->raise();
 
   bottomLayout->addWidget(sliderContainer, 1);
+  bottomLayout->addWidget(repeatButton);
+  bottomLayout->addWidget(shuffleButton);
 }
 
 void BottomWidget::setupConnections() {
@@ -104,6 +114,10 @@ void BottomWidget::setupConnections() {
           &BottomWidget::volumeMuteClicked);
   connect(volumeSlider, &QSlider::valueChanged, this,
           &BottomWidget::volumeChanged);
+  connect(repeatButton, &QPushButton::toggled, this,
+          &BottomWidget::repeatToggled);
+  connect(shuffleButton, &QPushButton::toggled, this,
+          &BottomWidget::shuffleToggled);
   connect(timelineSlider, &QSlider::sliderMoved, this, [this](int value) {
     timeLabel->setText(
         QString("%1 / %2").arg(formatTime(value / 1000),
@@ -142,11 +156,38 @@ void BottomWidget::updateVolumeIcon(bool isMuted) {
 void BottomWidget::refreshTheme() {
   updatePlayButtonState(m_isPlaying);
   updateVolumeIcon(m_isMuted);
+
+  const QSize mediaIconSize(14, 14);
+  const QSize extraIconSize(20, 20);
+  repeatButton->setIcon(tintedCustomIcon(":/assets/repeat-button.svg", extraIconSize,
+                                         ThemeManager::instance().getMediaIconColor()));
+  shuffleButton->setIcon(tintedCustomIcon(":/assets/shuffle.svg", extraIconSize,
+                                          ThemeManager::instance().getMediaIconColor()));
 }
 
 QIcon BottomWidget::tintedIcon(QStyle::StandardPixmap sp, const QSize &size,
                                const QColor &color) const {
   QPixmap src = style()->standardIcon(sp).pixmap(size);
+  QPixmap tinted(src.size());
+  tinted.fill(Qt::transparent);
+
+  QPainter painter(&tinted);
+  painter.setCompositionMode(QPainter::CompositionMode_Source);
+  painter.drawPixmap(0, 0, src);
+  painter.setCompositionMode(QPainter::CompositionMode_SourceIn);
+  painter.fillRect(tinted.rect(), color);
+
+  return QIcon(tinted);
+}
+
+QIcon BottomWidget::tintedCustomIcon(const QString &path, const QSize &size,
+                                     const QColor &color) const {
+  QPixmap src(path);
+  if (src.isNull()) {
+    return QIcon();
+  }
+  src = src.scaled(size, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+
   QPixmap tinted(src.size());
   tinted.fill(Qt::transparent);
 

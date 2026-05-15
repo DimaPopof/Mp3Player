@@ -9,6 +9,8 @@
         <file>assets/cnst_folder.png</file>
         <file>assets/queue.png</file>
         <file>assets/heart_icon.png</file>
+        <file>assets/repeat-button.svg</file>
+        <file>assets/shuffle.svg</file>
     </qresource>
 
     <qresource prefix="/">

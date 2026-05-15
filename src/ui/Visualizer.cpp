@@ -278,7 +278,7 @@ void Visualizer::updateVisuals() {
 
   update();
 }
-QPixmap Visualizer::generateGlowPixmap(const QColor& color) const {
+QPixmap Visualizer::generateGlowPixmap(const QColor &color) const {
   QPixmap pixmap(64, 64);
   pixmap.fill(Qt::transparent);
   QPainter p(&pixmap);
@@ -403,12 +403,16 @@ void Visualizer::paintEvent(QPaintEvent *event) {
       const qreal yTop = baseline - heightPx;
 
       QLinearGradient barGrad(x, baseline, x, baseline - maxVisualHeight);
-      barGrad.setColorAt(1.0, QColor(color.red(), color.green(), color.blue(), 255)); // Плотный (солид) цвет на вершине
+      barGrad.setColorAt(1.0, QColor(color.red(), color.green(), color.blue(),
+                                     255)); // Плотный (солид) цвет на вершине
 
       const qreal minDynamicWidth = std::max<qreal>(1.0, barSpacing * 0.02);
       const qreal maxDynamicWidth = std::max<qreal>(2.0, barSpacing * 1.0);
-      const qreal dynamicBarWidth = minDynamicWidth + (maxDynamicWidth - minDynamicWidth) * widthT;      
-      QPen barPen(QBrush(barGrad), dynamicBarWidth); // Динамическая ширина линии, зависящая от высоты
+      const qreal dynamicBarWidth =
+          minDynamicWidth + (maxDynamicWidth - minDynamicWidth) * widthT;
+      QPen barPen(
+          QBrush(barGrad),
+          dynamicBarWidth); // Динамическая ширина линии, зависящая от высоты
 
       barPen.setCapStyle(Qt::RoundCap);
       painter.setPen(barPen);
@@ -449,11 +453,14 @@ void Visualizer::paintEvent(QPaintEvent *event) {
       // Inner almost-solid core, smaller than the outer glow.
       QColor coreColor = isIdle ? idleColor : m_cachedColors[i].coreColor;
       coreColor.setAlpha(255); // Делаем 100% непрозрачным
-      // Пики будут масштабироваться в зависимости от размера окна (barSpacing) и высоты звука (boostedT)
-      const qreal coreRadius = std::max<qreal>(1.5, barSpacing * (0.15 + 0.5 * boostedT));
+      // Пики будут масштабироваться в зависимости от размера окна (barSpacing)
+      // и высоты звука (boostedT)
+      const qreal coreRadius =
+          std::max<qreal>(1.5, barSpacing * (0.15 + 0.5 * boostedT));
       painter.setBrush(coreColor);
       painter.setPen(Qt::NoPen);
-      painter.drawEllipse(QPointF(x, y), coreRadius, coreRadius);    }
+      painter.drawEllipse(QPointF(x, y), coreRadius, coreRadius);
+    }
   }
 }
 

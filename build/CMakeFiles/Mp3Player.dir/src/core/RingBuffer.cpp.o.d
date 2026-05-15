@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/core/RingBuffer.cpp.o: \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/RingBuffer.cpp \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/RingBuffer.cpp \
  /usr/include/stdc-predef.h \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/RingBuffer.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/RingBuffer.h \
  /usr/include/c++/14/cstddef \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \

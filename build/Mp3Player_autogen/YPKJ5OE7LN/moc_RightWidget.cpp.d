@@ -1,5 +1,5 @@
-/mnt/w_disk_D/Study/mp3players/mp3player_work/build/Mp3Player_autogen/YPKJ5OE7LN/moc_RightWidget.cpp: /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/RightWidget.h \
-  /mnt/w_disk_D/Study/mp3players/mp3player_work/build/Mp3Player_autogen/moc_predefs.h \
+/home/kalos/Study/mp3players/mp3player_work/build/Mp3Player_autogen/YPKJ5OE7LN/moc_RightWidget.cpp: /home/kalos/Study/mp3players/mp3player_work/src/ui/RightWidget.h \
+  /home/kalos/Study/mp3players/mp3player_work/build/Mp3Player_autogen/moc_predefs.h \
   /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/CustomIconProvider.h \
   /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/HighlightDelegate.h \
   /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \

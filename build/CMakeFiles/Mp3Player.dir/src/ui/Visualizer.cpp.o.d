@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o: \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/Visualizer.cpp \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/Visualizer.cpp \
  /usr/include/stdc-predef.h \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/Visualizer.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/Visualizer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
@@ -355,15 +355,15 @@ CMakeFiles/Mp3Player.dir/src/ui/Visualizer.cpp.o: \
  /usr/include/c++/14/bits/ostream.tcc \
  /usr/include/c++/14/bits/istream.tcc \
  /usr/include/c++/14/bits/sstream.tcc \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/AudioPlayer.h \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/miniaudio.h \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/readerwriterqueue.h \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/atomicops.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/AudioPlayer.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/miniaudio.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/readerwriterqueue.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/atomicops.h \
  /usr/include/c++/14/cassert /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \

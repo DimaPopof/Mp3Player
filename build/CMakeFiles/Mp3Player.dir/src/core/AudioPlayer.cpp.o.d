@@ -1,8 +1,8 @@
 CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/AudioPlayer.cpp \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/AudioPlayer.cpp \
  /usr/include/stdc-predef.h \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/AudioPlayer.h \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/miniaudio.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/AudioPlayer.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/miniaudio.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h /usr/include/pthread.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -42,8 +42,8 @@ CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/readerwriterqueue.h \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/atomicops.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/readerwriterqueue.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/atomicops.h \
  /usr/include/c++/14/cassert \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -303,7 +303,7 @@ CMakeFiles/Mp3Player.dir/src/core/AudioPlayer.cpp.o: \
  /usr/include/c++/14/bits/unique_lock.h /usr/include/c++/14/mutex \
  /usr/include/c++/14/thread /usr/include/c++/14/bits/std_thread.h \
  /usr/include/c++/14/bits/this_thread_sleep.h \
- /mnt/w_disk_D/Study/mp3players/mp3player_work/src/core/../ui/Visualizer.h \
+ /home/kalos/Study/mp3players/mp3player_work/src/core/../ui/Visualizer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \

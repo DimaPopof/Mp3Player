@@ -27,7 +27,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_BottomWidget_t {
-    uint offsetsAndSizes[20];
+    uint offsetsAndSizes[26];
     char stringdata0[13];
     char stringdata1[16];
     char stringdata2[1];
@@ -37,7 +37,10 @@ struct qt_meta_stringdata_BottomWidget_t {
     char stringdata6[14];
     char stringdata7[6];
     char stringdata8[14];
-    char stringdata9[9];
+    char stringdata9[8];
+    char stringdata10[15];
+    char stringdata11[14];
+    char stringdata12[9];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_BottomWidget_t::offsetsAndSizes) + ofs), len 
@@ -51,8 +54,11 @@ Q_CONSTINIT static const qt_meta_stringdata_BottomWidget_t qt_meta_stringdata_Bo
         QT_MOC_LITERAL(59, 17),  // "volumeMuteClicked"
         QT_MOC_LITERAL(77, 13),  // "volumeChanged"
         QT_MOC_LITERAL(91, 5),  // "value"
-        QT_MOC_LITERAL(97, 13),  // "seekRequested"
-        QT_MOC_LITERAL(111, 8)   // "position"
+        QT_MOC_LITERAL(97, 13),  // "repeatToggled"
+        QT_MOC_LITERAL(111, 7),  // "enabled"
+        QT_MOC_LITERAL(119, 14),  // "shuffleToggled"
+        QT_MOC_LITERAL(134, 13),  // "seekRequested"
+        QT_MOC_LITERAL(148, 8)   // "position"
     },
     "BottomWidget",
     "previousClicked",
@@ -62,6 +68,9 @@ Q_CONSTINIT static const qt_meta_stringdata_BottomWidget_t qt_meta_stringdata_Bo
     "volumeMuteClicked",
     "volumeChanged",
     "value",
+    "repeatToggled",
+    "enabled",
+    "shuffleToggled",
     "seekRequested",
     "position"
 };
@@ -74,20 +83,22 @@ Q_CONSTINIT static const uint qt_meta_data_BottomWidget[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       6,       // signalCount
+       8,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   50,    2, 0x06,    1 /* Public */,
-       3,    0,   51,    2, 0x06,    2 /* Public */,
-       4,    0,   52,    2, 0x06,    3 /* Public */,
-       5,    0,   53,    2, 0x06,    4 /* Public */,
-       6,    1,   54,    2, 0x06,    5 /* Public */,
-       8,    1,   57,    2, 0x06,    7 /* Public */,
+       1,    0,   62,    2, 0x06,    1 /* Public */,
+       3,    0,   63,    2, 0x06,    2 /* Public */,
+       4,    0,   64,    2, 0x06,    3 /* Public */,
+       5,    0,   65,    2, 0x06,    4 /* Public */,
+       6,    1,   66,    2, 0x06,    5 /* Public */,
+       8,    1,   69,    2, 0x06,    7 /* Public */,
+      10,    1,   72,    2, 0x06,    9 /* Public */,
+      11,    1,   75,    2, 0x06,   11 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -95,7 +106,9 @@ Q_CONSTINIT static const uint qt_meta_data_BottomWidget[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,    7,
-    QMetaType::Void, QMetaType::Int,    9,
+    QMetaType::Void, QMetaType::Bool,    9,
+    QMetaType::Void, QMetaType::Bool,    9,
+    QMetaType::Void, QMetaType::Int,   12,
 
        0        // eod
 };
@@ -120,6 +133,12 @@ Q_CONSTINIT const QMetaObject BottomWidget::staticMetaObject = { {
         // method 'volumeChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'repeatToggled'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'shuffleToggled'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
         // method 'seekRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>
@@ -138,7 +157,9 @@ void BottomWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 2: _t->playPauseClicked(); break;
         case 3: _t->volumeMuteClicked(); break;
         case 4: _t->volumeChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 5: _t->seekRequested((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 5: _t->repeatToggled((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 6: _t->shuffleToggled((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 7: _t->seekRequested((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -179,9 +200,23 @@ void BottomWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
             }
         }
         {
+            using _t = void (BottomWidget::*)(bool );
+            if (_t _q_method = &BottomWidget::repeatToggled; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 5;
+                return;
+            }
+        }
+        {
+            using _t = void (BottomWidget::*)(bool );
+            if (_t _q_method = &BottomWidget::shuffleToggled; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 6;
+                return;
+            }
+        }
+        {
             using _t = void (BottomWidget::*)(int );
             if (_t _q_method = &BottomWidget::seekRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 5;
+                *result = 7;
                 return;
             }
         }
@@ -207,13 +242,13 @@ int BottomWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 8)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 8;
     }
     return _id;
 }
@@ -250,10 +285,24 @@ void BottomWidget::volumeChanged(int _t1)
 }
 
 // SIGNAL 5
-void BottomWidget::seekRequested(int _t1)
+void BottomWidget::repeatToggled(bool _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 5, _a);
+}
+
+// SIGNAL 6
+void BottomWidget::shuffleToggled(bool _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 6, _a);
+}
+
+// SIGNAL 7
+void BottomWidget::seekRequested(int _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 7, _a);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE
