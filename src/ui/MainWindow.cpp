@@ -733,6 +733,26 @@ void MainWindow::toggleViewMode() {
     topSplitter->setSizes({400, 10000}); // 400 for LeftWidget, rest for right
   } else {
     showMaximized();
-    topSplitter->setSizes({700, 10000}); // 700 for LeftWidget, rest for right
+    topSplitter->setSizes({800, 10000}); // 800 for LeftWidget, rest for right
+  }
+}
+
+void MainWindow::onRepeatToggled(bool enabled) {
+  m_isRepeat = enabled;
+  if (enabled) {
+    m_isShuffle = false;
+    if (bottomWidget) {
+      bottomWidget->setShuffleActive(false);
+    }
+  }
+}
+
+void MainWindow::onShuffleToggled(bool enabled) {
+  m_isShuffle = enabled;
+  if (enabled) {
+    m_isRepeat = false;
+    if (bottomWidget) {
+      bottomWidget->setRepeatActive(false);
+    }
   }
 }

@@ -313,6 +313,7 @@ void AudioPlayer::setPosition(int seconds) {
 }
 
 void AudioPlayer::updateTime() {
+  if (seekRequested.load()) return;
   emit positionChanged(positionMs());
   emit bufferedAmountChanged(getBufferedMs());
 }

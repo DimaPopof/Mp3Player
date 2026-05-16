@@ -42,6 +42,8 @@ public:
     QColor getSelectionColor() const;
     QColor getPlayingColor() const;
     QColor getMediaIconColor() const;
+    QColor getPrimaryButtonColor() const;
+    QColor getSecondaryButtonColor() const;
     QColor getPanelColor() const;
     QColor getPanelBorderColor() const;
     QColor getVisualizerIdleColor() const;

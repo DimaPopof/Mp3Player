@@ -28,7 +28,7 @@ void InteractiveBackground::initializeClouds(int width, int height) {
 
   CloudThemeConfig config = ThemeManager::instance().getCloudConfig();
 
-  int numberOfClouds = 16;
+  int numberOfClouds = 12;
   for (int i = 0; i < numberOfClouds; ++i) {
     Cloud cloud;
 

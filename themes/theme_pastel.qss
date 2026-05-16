@@ -130,19 +130,44 @@
     background-color: rgba(200, 198, 250, 180);
 }
 
+/* --- Кнопки навигации (Glassmorphism) --- */
 #prevButton,
 #nextButton {
-    background-color: #c8c6fa;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    padding: 6px;
-    min-width: 14px; /* let padding and icon size dictate */
-    min-height: 14px;
+    background: rgba(126, 34, 206, 0.25);
+    border-radius: 16px;
+    min-width: 32px;
+    max-width: 32px;
+    min-height: 32px;
+    max-height: 32px;
+    padding: 0;
 }
 
 #prevButton:hover,
 #nextButton:hover {
-    background-color: #a6a3f0;
+    background: rgba(126, 34, 206, 0.5);
+}
+
+#prevButton:pressed,
+#nextButton:pressed {
+    background: rgba(126, 34, 206, 0.8);
+}
+
+#playPauseButton {
+    background: rgba(219, 39, 119, 0.2);
+    border-radius: 20px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    padding: 0;
+}
+
+#playPauseButton:hover {
+    background: rgba(219, 39, 119, 0.4);
+}
+
+#playPauseButton:pressed {
+    background: rgba(219, 39, 119, 0.7);
 }
 
 #repeatButton,
@@ -162,20 +187,7 @@
 
 #repeatButton:checked,
 #shuffleButton:checked {
-    background-color: rgba(255, 168, 182, 100); /* Розовый акцент при активации */
-}
-
-#playPauseButton {
-    background-color: #ffa8b6;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    padding: 6px;
-    min-width: 14px;
-    min-height: 14px;
-}
-
-#playPauseButton:hover {
-    background-color: #ff8a9d;
+    background-color: rgba(219, 39, 119, 100); /* Розовый акцент при активации */
 }
 
 #bufferProgressBar {
@@ -228,8 +240,8 @@
 /* Кружок при наведении (яркий розовый, вместо старого агрессивного красного) */
 #timelineSlider::handle:horizontal:hover,
 #volumeSlider::handle:horizontal:hover {
-    background: #ff8a9d;
-    border: 1px solid #ff8a9d;
+    background: #fd8c9f;
+    border: 1px solid #FFA8B6;
 }
 
 #fileTreeView,
@@ -431,9 +443,9 @@ QMenu::separator {
     background-color: rgba(200, 198, 250, 190);
 }
 #titleBarCloseBtn:hover {
-    background-color: #ff8a9d;
+    background-color: #be185d;
     color: white;
 }
 #titleBarCloseBtn:pressed {
-    background-color: #ffa8b6;
+    background-color: #db2777;
 }

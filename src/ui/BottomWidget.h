@@ -31,6 +31,8 @@ public:
   void updateBufferedAmount(qint64 bufferedMs);
   void resetSlider();
   void refreshTheme();
+  void setRepeatActive(bool active);
+  void setShuffleActive(bool active);
 
 signals:
   // Signals emitted when user interacts with this widget

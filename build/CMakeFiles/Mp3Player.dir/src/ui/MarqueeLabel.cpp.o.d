@@ -1,7 +1,7 @@
 CMakeFiles/Mp3Player.dir/src/ui/MarqueeLabel.cpp.o: \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/MarqueeLabel.cpp \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/MarqueeLabel.cpp \
  /usr/include/stdc-predef.h \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/MarqueeLabel.h \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/MarqueeLabel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -350,7 +350,7 @@ CMakeFiles/Mp3Player.dir/src/ui/MarqueeLabel.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
- /home/kalos/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
+ /mnt/w_disk_D/Study/mp3players/mp3player_work/src/ui/ThemeManager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \

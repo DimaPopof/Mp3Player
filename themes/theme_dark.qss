@@ -128,20 +128,46 @@
     background-color: rgba(143, 183, 255, 52);
 }
 
-/* --- Кнопки навигации (Лунный голубой) --- */
+/* --- Кнопки навигации (Glassmorphism) --- */
 #prevButton,
 #nextButton {
-    background-color: #79C0FF;
-    border: 1px solid transparent;
-    border-radius: 8px; /* Облачные скругления */
-    padding: 6px;
-    min-width: 14px;
-    min-height: 14px;
+    background: rgba(126, 34, 206, 0.25);
+    border: 1px solid rgba(126, 34, 206, 0.6);
+    border-radius: 16px;
+    min-width: 32px;
+    max-width: 32px;
+    min-height: 32px;
+    max-height: 32px;
+    padding: 0;
 }
 
 #prevButton:hover,
 #nextButton:hover {
-    background-color: #58A6FF;
+    background: rgba(126, 34, 206, 0.5);
+}
+
+#prevButton:pressed,
+#nextButton:pressed {
+    background: rgba(126, 34, 206, 0.8);
+}
+
+#playPauseButton {
+    background: rgba(219, 39, 119, 0.2);
+    border: 1px solid rgba(219, 39, 119, 0.6); 
+    border-radius: 20px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    padding: 0;
+}
+
+#playPauseButton:hover {
+    background: rgba(219, 39, 119, 0.4);
+}
+
+#playPauseButton:pressed {
+    background: rgba(219, 39, 119, 0.7);
 }
 
 #repeatButton,
@@ -161,21 +187,7 @@
 
 #repeatButton:checked,
 #shuffleButton:checked {
-    background-color: rgba(255, 143, 163, 80); /* Розовый акцент при активации */
-}
-
-/* --- Главная кнопка (Светящийся розовый) --- */
-#playPauseButton {
-    background-color: #FF8FA3;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    padding: 6px;
-    min-width: 14px;
-    min-height: 14px;
-}
-
-#playPauseButton:hover {
-    background-color: #FF7088;
+    background-color: rgba(219, 39, 119, 80); /* Розовый акцент при активации */
 }
 
 /* --- Ползунки (Неоновые треки) --- */
@@ -201,7 +213,7 @@
 
 #timelineSlider::sub-page:horizontal,
 #volumeSlider::sub-page:horizontal {
-    background: #79C0FF; /* Заполненный трек в цвет кнопок */
+    background: #7e22ce; /* Заполненный трек в цвет кнопок */
     height: 6px;
     border-radius: 3px;
 }
@@ -225,8 +237,8 @@
 
 #timelineSlider::handle:horizontal:hover,
 #volumeSlider::handle:horizontal:hover {
-    background: #FF8FA3; /* Розовый отклик при наведении */
-    border: 1px solid #FF8FA3;
+    background: #FFA8B6; /* Розовый отклик при наведении */
+    border: 1px solid #FFA8B6;
 }
 
 #fileTreeView,
@@ -428,9 +440,9 @@ QMenu::separator {
     background-color: rgba(143, 183, 255, 64);
 }
 #titleBarCloseBtn:hover {
-    background-color: #FF8FA3;
+    background-color: #db2777;
     color: white;
 }
 #titleBarCloseBtn:pressed {
-    background-color: #FF7088;
+    background-color: #be185d;
 }

@@ -69,8 +69,8 @@ private slots:
   void onFileRenamed(const QString &oldPath, const QString &newPath);
 
   // Repeat / Shuffle
-  void onRepeatToggled(bool enabled) { m_isRepeat = enabled; }
-  void onShuffleToggled(bool enabled) { m_isShuffle = enabled; }
+  void onRepeatToggled(bool enabled);
+  void onShuffleToggled(bool enabled);
 
 private:
   HighlightDelegate *highlightDelegate;

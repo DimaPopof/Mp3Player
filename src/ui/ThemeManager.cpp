@@ -20,6 +20,8 @@ struct ThemePalette {
   QColor panelBorderColor;
   CloudThemeConfig cloudConfig;
   QColor visualizerIdleColor;
+  QColor primaryButtonColor;
+  QColor secondaryButtonColor;
 };
 
 ThemePalette paletteForTheme(ThemeManager::ThemeId theme) {
@@ -39,7 +41,9 @@ ThemePalette paletteForTheme(ThemeManager::ThemeId theme) {
         QColor(20, 26, 40, 240),   // panelColor (ночной туман)
         QColor(143, 183, 255, 30), // panelBorderColor
         {15, 45, 15, 50, QColor(255, 248, 210)}, // cloudConfig
-        QColor(121, 192, 255, 60)                // visualizerIdleColor
+        QColor(121, 192, 255, 60),                // visualizerIdleColor
+        QColor("#db2777"),         // primaryButtonColor
+        QColor("#7e22ce")          // secondaryButtonColor
     };
   case ThemeManager::ThemeId::PastelDream:
     return {
@@ -56,24 +60,28 @@ ThemePalette paletteForTheme(ThemeManager::ThemeId theme) {
         QColor(255, 255, 255, 240), // panelColor (белый полупрозрачный)
         QColor(200, 198, 250, 200),                // panelBorderColor
         {30, 60, 100, 200, QColor(255, 255, 255)}, // cloudConfig
-        QColor(255, 168, 182, 60)                  // visualizerIdleColor
+        QColor("#E9EDF5"),                 // visualizerIdleColor
+        QColor("#db2777"),          // primaryButtonColor
+        QColor("#7e22ce")           // secondaryButtonColor
     };
   }
 
   return {QColor("#E9EDF5"),
           QColor("#E9EDF5"),
-          QColor("#79C0FF"),
-          QColor("#FF8FA3"),
+          QColor("#7e22ce"),
+          QColor("#db2777"),
           QColor(255, 255, 255, 56),
           QColor(4, 57, 94, 190),
           QColor(143, 183, 255, 40),
           QColor(143, 183, 255, 60),
-          QColor("#79C0FF"),
+          QColor("#7e22ce"),
           QColor("#121926"),
           QColor(20, 26, 40, 240),
           QColor(143, 183, 255, 30),
           {15, 45, 15, 50, QColor(255, 248, 210)},
-          QColor(121, 192, 255, 60)};
+          QColor(121, 192, 255, 60),
+          QColor("#db2777"),
+          QColor("#7e22ce")};
 }
 } // namespace
 
@@ -185,6 +193,15 @@ QColor ThemeManager::getPanelColor() const {
 QColor ThemeManager::getPanelBorderColor() const {
   return paletteForTheme(m_currentTheme).panelBorderColor;
 }
+
+QColor ThemeManager::getPrimaryButtonColor() const {
+  return paletteForTheme(m_currentTheme).primaryButtonColor;
+}
+
+QColor ThemeManager::getSecondaryButtonColor() const {
+  return paletteForTheme(m_currentTheme).secondaryButtonColor;
+}
+
 CloudThemeConfig ThemeManager::getCloudConfig() const {
   return paletteForTheme(m_currentTheme).cloudConfig;
 }
@@ -192,3 +209,4 @@ CloudThemeConfig ThemeManager::getCloudConfig() const {
 QColor ThemeManager::getVisualizerIdleColor() const {
   return paletteForTheme(m_currentTheme).visualizerIdleColor;
 }
+

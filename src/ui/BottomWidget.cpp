@@ -10,7 +10,7 @@ BottomWidget::BottomWidget(QWidget *parent) : QWidget(parent) {
   setAttribute(Qt::WA_StyledBackground, true);
 
   // Включаем отрисовку фона через стили
-  setMinimumHeight(50);
+  setMinimumHeight(64);
   setupUi();
   setupConnections();
   connect(&ThemeManager::instance(), &ThemeManager::themeChanged, this,
@@ -26,18 +26,18 @@ void BottomWidget::setupUi() {
   prevButton = new QPushButton(this);
   prevButton->setObjectName("prevButton");
   prevButton->setIcon(tintedIcon(QStyle::SP_MediaSkipBackward, mediaIconSize,
-                                 ThemeManager::instance().getMediaIconColor()));
+                                 ThemeManager::instance().getSecondaryButtonColor()));
 
   playPauseButton = new QPushButton(this);
   playPauseButton->setObjectName("playPauseButton");
   playPauseButton->setIcon(
       tintedIcon(QStyle::SP_MediaPlay, mediaIconSize,
-                 ThemeManager::instance().getMediaIconColor()));
+                 ThemeManager::instance().getPrimaryButtonColor()));
 
   nextButton = new QPushButton(this);
   nextButton->setObjectName("nextButton");
   nextButton->setIcon(tintedIcon(QStyle::SP_MediaSkipForward, mediaIconSize,
-                                 ThemeManager::instance().getMediaIconColor()));
+                                 ThemeManager::instance().getSecondaryButtonColor()));
 
   repeatButton = new QPushButton(this);
   repeatButton->setObjectName("repeatButton");
@@ -128,16 +128,16 @@ void BottomWidget::setupConnections() {
 }
 void BottomWidget::updatePlayButtonState(bool isPlaying) {
   m_isPlaying = isPlaying;
-  const QSize mediaIconSize(14, 14);
+  const QSize playIconSize(18, 18);
 
   if (isPlaying) {
     playPauseButton->setIcon(
-        tintedIcon(QStyle::SP_MediaPause, mediaIconSize,
-                   ThemeManager::instance().getMediaIconColor()));
+        tintedIcon(QStyle::SP_MediaPause, playIconSize,
+                   ThemeManager::instance().getPrimaryButtonColor()));
   } else {
     playPauseButton->setIcon(
-        tintedIcon(QStyle::SP_MediaPlay, mediaIconSize,
-                   ThemeManager::instance().getMediaIconColor()));
+        tintedIcon(QStyle::SP_MediaPlay, playIconSize,
+                   ThemeManager::instance().getPrimaryButtonColor()));
   }
 }
 void BottomWidget::updateVolumeIcon(bool isMuted) {
@@ -158,11 +158,17 @@ void BottomWidget::refreshTheme() {
   updateVolumeIcon(m_isMuted);
 
   const QSize mediaIconSize(14, 14);
+  
+  prevButton->setIcon(tintedIcon(QStyle::SP_MediaSkipBackward, mediaIconSize,
+                                 ThemeManager::instance().getSecondaryButtonColor()));
+  nextButton->setIcon(tintedIcon(QStyle::SP_MediaSkipForward, mediaIconSize,
+                                 ThemeManager::instance().getSecondaryButtonColor()));
+
   const QSize extraIconSize(20, 20);
   repeatButton->setIcon(tintedCustomIcon(":/assets/repeat-button.svg", extraIconSize,
-                                         ThemeManager::instance().getMediaIconColor()));
+                                         ThemeManager::instance().getSecondaryButtonColor()));
   shuffleButton->setIcon(tintedCustomIcon(":/assets/shuffle.svg", extraIconSize,
-                                          ThemeManager::instance().getMediaIconColor()));
+                                          ThemeManager::instance().getSecondaryButtonColor()));
 }
 
 QIcon BottomWidget::tintedIcon(QStyle::StandardPixmap sp, const QSize &size,
@@ -253,4 +259,16 @@ void BottomWidget::updateBufferedAmount(qint64 bufferedMs) {
     val = bufferProgressBar->maximum();
   }
   bufferProgressBar->setValue(val);
+}
+
+void BottomWidget::setRepeatActive(bool active) {
+  bool wasBlocked = repeatButton->blockSignals(true);
+  repeatButton->setChecked(active);
+  repeatButton->blockSignals(wasBlocked);
+}
+
+void BottomWidget::setShuffleActive(bool active) {
+  bool wasBlocked = shuffleButton->blockSignals(true);
+  shuffleButton->setChecked(active);
+  shuffleButton->blockSignals(wasBlocked);
 }
